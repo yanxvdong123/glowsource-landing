@@ -1,0 +1,16 @@
+{
+  "name": "beauty-supply-chain-landing",
+  "version": "1.0.0",
+  "description": "Beauty supply chain landing page — connect global buyers with Chinese manufacturers",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "express": "^4.18.2",
+    "nodemailer": "^8.0.10"
+  }
+}

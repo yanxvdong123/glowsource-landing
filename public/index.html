@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlowSource — Connect Global Beauty Brands with Chinese Manufacturers</title>
+  <meta name="description" content="We connect beauty brands worldwide with verified Chinese cosmetics manufacturers. OEM, ODM, and ready-stock supply. Get matched in 24 hours.">
+  <style>
+    :root {
+      --bg: #faf9f7;
+      --surface: #ffffff;
+      --text: #1a1a1a;
+      --text-muted: #666666;
+      --accent: #c9a96e;
+      --accent-dark: #a8843f;
+      --accent-light: #f5edd9;
+      --border: #e8e4de;
+      --radius: 12px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* ─── Header ─── */
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo-mark {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 16px;
+    }
+
+    nav {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: var(--accent-dark); }
+
+    .btn {
+      background: var(--accent);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: background 0.2s, transform 0.1s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover { background: var(--accent-dark); }
+    .btn:active { transform: scale(0.98); }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--accent-dark);
+      border: 1.5px solid var(--accent);
+    }
+
+    .btn-outline:hover { background: var(--accent-light); }
+
+    /* ─── Hero ─── */
+    .hero {
+      padding: 80px 0 60px;
+      text-align: center;
+      background: linear-gradient(180deg, var(--surface) 0%, var(--bg) 100%);
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent-light);
+      color: var(--accent-dark);
+      padding: 6px 14px;
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 20px;
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--accent-dark);
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: var(--text-muted);
+      max-width: 560px;
+      margin: 0 auto 32px;
+      line-height: 1.7;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 48px;
+      justify-content: center;
+      margin-top: 56px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-value {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--accent-dark);
+      letter-spacing: -0.02em;
+    }
+
+    .stat-label {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* ─── Section shared ─── */
+    section { padding: 72px 0; }
+
+    .section-label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: clamp(24px, 3.5vw, 36px);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+
+    .section-desc {
+      font-size: 16px;
+      color: var(--text-muted);
+      max-width: 520px;
+    }
+
+    .section-header {
+      margin-bottom: 48px;
+    }
+
+    .section-header.centered {
+      text-align: center;
+    }
+
+    .section-header.centered .section-desc {
+      margin: 0 auto;
+    }
+
+    /* ─── Categories ─── */
+    .categories-section { background: var(--surface); }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .category-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      background: var(--bg);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .category-card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 4px 24px rgba(201, 169, 110, 0.12);
+    }
+
+    .category-icon {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .category-name {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .category-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+    }
+
+    .category-meta span {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .category-meta strong {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    /* ─── How It Works ─── */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 24px;
+    }
+
+    .step {
+      text-align: center;
+      padding: 24px 16px;
+    }
+
+    .step-number {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--accent-light);
+      color: var(--accent-dark);
+      font-size: 18px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+    }
+
+    .step h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .step p {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    /* ─── Why ─── */
+    .why-section { background: var(--surface); }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .why-card {
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+
+    .why-card-icon {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .why-card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .why-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ─── Contact ─── */
+    .contact-section {
+      background: var(--bg);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    @media (max-width: 640px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+
+    .contact-info {
+      padding: 32px 0;
+    }
+
+    .contact-info h2 {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .contact-info p {
+      color: var(--text-muted);
+      font-size: 15px;
+      margin-bottom: 32px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .contact-item-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--accent-light);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .contact-item-text strong {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 2px;
+    }
+
+    .contact-item-text span {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* ─── Form ─── */
+    .form-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+    }
+
+    .form-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      font-size: 14px;
+      font-family: inherit;
+      transition: border-color 0.2s;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 32px;
+    }
+
+    .form-success.show { display: block; }
+    .form-success .emoji { font-size: 48px; margin-bottom: 16px; }
+    .form-success h4 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+    .form-success p { color: var(--text-muted); font-size: 14px; }
+
+    /* ─── Footer ─── */
+    footer {
+      background: var(--text);
+      color: rgba(255,255,255,0.7);
+      padding: 40px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-brand {
+      font-size: 16px;
+      font-weight: 700;
+      color: white;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-links a {
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    .footer-links a:hover { color: white; }
+
+    /* ─── Divider ─── */
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ─── Header ─── -->
+<header>
+  <div class="container">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <div class="logo-mark">G</div>
+        GlowSource
+      </a>
+      <nav>
+        <a href="#categories">Products</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact" class="btn btn-outline">Get Matched →</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- ─── Hero ─── -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">🌸 Trusted by 50+ global beauty brands</div>
+
+    <h1>Source <em>beauty products</em> directly from China — without the headache</h1>
+
+    <p>We connect you with verified cosmetics manufacturers in Guangzhou, Yiwu, and across China. OEM formulas, ODM packaging, or ready-stock — matched to your needs in 24 hours.</p>
+
+    <div class="hero-actions">
+      <a href="#contact" class="btn">Start Sourcing →</a>
+      <a href="#categories" class="btn btn-outline">View Products</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-value">50+</div>
+        <div class="stat-label">Verified Factories</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">6</div>
+        <div class="stat-label">Product Categories</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">15+</div>
+        <div class="stat-label">Countries Served</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">48h</div>
+        <div class="stat-label">Avg. Match Time</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ─── Categories ─── -->
+<section class="categories-section" id="categories">
+  <div class="container">
+    <div class="section-header centered">
+      <div class="section-label">What We Source</div>
+      <h2 class="section-title">Every major beauty category covered</h2>
+      <p class="section-desc">From skincare to fragrances, we work with factories that meet international quality and compliance standards.</p>
+    </div>
+
+    <div class="category-grid">
+      <div class="category-card">
+        <div class="category-icon">🧴</div>
+        <div class="category-name">Skincare</div>
+        <p style="font-size:13px;color:var(--text-muted)">Moisturizers, serums, cleansers, sunscreen, anti-aging formulations</p>
+        <div class="category-meta">
+          <span><strong>MOQ</strong> 500 units</span>
+          <span><strong>Lead</strong> 21 days</span>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon">💄</div>
+        <div class="category-name">Makeup / Color Cosmetics</div>
+        <p style="font-size:13px;color:var(--text-muted)">Lipstick, foundation, eyeshadow, mascara, blush, concealer</p>
+        <div class="category-meta">
+          <span><strong>MOQ</strong> 300 units</span>
+          <span><strong>Lead</strong> 25 days</span>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon">💇‍♀️</div>
+        <div class="category-name">Hair Care</div>
+        <p style="font-size:13px;color:var(--text-muted)">Shampoo, conditioner, hair masks, styling products, colorants</p>
+        <div class="category-meta">
+          <span><strong>MOQ</strong> 1,000 units</span>
+          <span><strong>Lead</strong> 18 days</span>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon">🌸</div>
+        <div class="category-name">Fragrances</div>
+        <p style="font-size:13px;color:var(--text-muted)">Eau de parfum, body mist, aromatherapy, reed diffusers</p>
+        <div class="category-meta">
+          <span><strong>MOQ</strong> 1,000 units</span>
+          <span><strong>Lead</strong> 30 days</span>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon">🔧</div>
+        <div class="category-name">Beauty Tools</div>
+        <p style="font-size:13px;color:var(--text-muted)">Brushes, sponges, facial rollers, gua sha, manicure tools</p>
+        <div class="category-meta">
+          <span><strong>MOQ</strong> 200 units</span>
+          <span><strong>Lead</strong> 15 days</span>
+        </div>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon">🧪</div>
+        <div class="category-name">OEM / ODM Custom</div>
+        <p style="font-size:13px;color:var(--text-muted)">Custom formulation, branding, packaging design from scratch</p>
+        <div class="category-meta">
+          <span><strong>MOQ</strong> 5,000 units</span>
+          <span><strong>Lead</strong> 45 days</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ─── How It Works ─── -->
+<section id="how-it-works">
+  <div class="container">
+    <div class="section-header centered">
+      <div class="section-label">How It Works</div>
+      <h2 class="section-title">From inquiry to shipment in 4 steps</h2>
+      <p class="section-desc">We handle the sourcing complexity so you can focus on building your brand.</p>
+    </div>
+
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Tell Us What You Need</h3>
+        <p>Fill out a short form with your product requirements, quantity, and budget.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>We Match You to Factories</h3>
+        <p>We evaluate 50+ verified suppliers and match you with the best-fit options.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Sample & Approve</h3>
+        <p>Request samples, review quality, finalize pricing and specifications.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <h3>Production & Delivery</h3>
+        <p>We coordinate production, QC, and shipping to your door.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ─── Why ─── -->
+<section class="why-section" id="why">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Why GlowSource</div>
+      <h2 class="section-title">Built by people who understand both sides</h2>
+      <p class="section-desc">We've operated in China's beauty manufacturing industry for years. We know the factories, the standards, and the pitfalls.</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-card-icon">✅</div>
+        <h3>Verified Factories Only</h3>
+        <p>Every factory in our network passes a manual vetting process: business license, production capacity, and quality certifications are verified in person.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon">📋</div>
+        <h3>Compliance Ready</h3>
+        <p>We work with factories that hold FDA, CE, ISO 22716, and GMPC certifications — so your products can enter US and EU markets without surprises.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon">💰</div>
+        <h3>Transparent Pricing</h3>
+        <p>No hidden fees. We quote you the factory price plus our service fee — clearly. You'll always know what you're paying for.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon">🔍</div>
+        <h3>Quality Control</h3>
+        <p>Pre-shipment inspection is standard. We check your order before it leaves the factory, so you receive what you approved.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon">🌐</div>
+        <h3>English-Speaking Support</h3>
+        <p>No more lost-in-translation moments. We speak both English and Chinese and bridge the communication gap for you.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon">📦</div>
+        <h3>Low MOQ Options</h3>
+        <p>Starting small? We partner with factories that accept low MOQs — as low as 50-200 units for some categories — so you can test the market first.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ─── Contact ─── -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="section-label">Get Started</div>
+        <h2>Ready to source smarter?</h2>
+        <p>Fill out the form and we'll match you with the right manufacturers within 24 hours. No commitment required.</p>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">📧</div>
+          <div class="contact-item-text">
+            <strong>Email</strong>
+            <span>hello@glowsource.io</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">🌍</div>
+          <div class="contact-item-text">
+            <strong>Headquarters</strong>
+            <span>Guangzhou, China — Serving Global Brands</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">⏱️</div>
+          <div class="contact-item-text">
+            <strong>Response Time</strong>
+            <span>Within 24 hours on business days</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h3>Request a Supplier Match</h3>
+
+        <form id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Work Email *</label>
+              <input type="email" id="email" name="email" placeholder="jane@brand.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="company">Company / Brand Name</label>
+            <input type="text" id="company" name="company" placeholder="Your brand or company name">
+          </div>
+
+          <div class="form-group">
+            <label for="interest">Product Interest *</label>
+            <select id="interest" name="interest" required>
+              <option value="" disabled selected>Select a category</option>
+              <option value="skincare">Skincare</option>
+              <option value="makeup">Makeup / Color Cosmetics</option>
+              <option value="haircare">Hair Care</option>
+              <option value="fragrances">Fragrances</option>
+              <option value="beauty-tools">Beauty Tools</option>
+              <option value="oem-odm">OEM / ODM Custom</option>
+              <option value="multiple">Multiple Categories</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Tell us about your project *</label>
+            <textarea id="message" name="message" placeholder="Product type, quantity you're looking for, budget range, timeline..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn" style="width:100%;justify-content:center;">Send Request →</button>
+        </form>
+
+        <div class="form-success" id="form-success">
+          <div class="emoji">🎉</div>
+          <h4>Request received!</h4>
+          <p>We'll review your requirements and match you with the right manufacturers within 24 hours. Check your inbox!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Footer ─── -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">GlowSource</div>
+      <div class="footer-links">
+        <a href="#categories">Products</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div style="font-size:13px;">© 2026 GlowSource. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ─── Contact Form ───────────────────────────────────────────────────────────
+  document.getElementById('contact-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const btn = form.querySelector('button[type="submit"]');
+    const originalText = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+
+    const data = {
+      name: form.name.value,
+      email: form.email.value,
+      company: form.company.value,
+      interest: form.interest.value,
+      message: form.message.value,
+    };
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      if (res.ok) {
+        form.style.display = 'none';
+        document.getElementById('form-success').classList.add('show');
+      } else {
+        alert('Something went wrong. Please try again or email us directly at hello@glowsource.io');
+        btn.disabled = false;
+        btn.textContent = originalText;
+      }
+    } catch (err) {
+      alert('Network error. Please try again or email us at hello@glowsource.io');
+      btn.disabled = false;
+      btn.textContent = originalText;
+    }
+  });
+
+  // ─── Smooth Scroll ──────────────────────────────────────────────────────────
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
