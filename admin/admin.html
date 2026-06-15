@@ -460,7 +460,6 @@ function openWhatsApp(email, name){
   const msg = encodeURIComponent(`Hi ${name || ''}, this is Charles from GlowSource. Following up on your inquiry about our beauty products...`);
   window.open(`https://wa.me/?text=${msg}`,'_blank');
 }
-}
 
 function openContactModal(asin,title,category){
   document.getElementById('formProduct').value=asin;
