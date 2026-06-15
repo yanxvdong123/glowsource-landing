@@ -43,8 +43,14 @@
   .cat-tab.active{background:var(--accent-grad);color:#fff;border-color:transparent}
   .product-grid-wrap{max-width:1400px;margin:0 auto;padding:20px 24px 60px}
   .product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
-  .product-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px;display:flex;flex-direction:column;gap:10px;transition:all .2s}
+  .product-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:0;display:flex;flex-direction:column;gap:10px;transition:all .2s;overflow:hidden}
+  .product-image{width:100%;height:160px;background:var(--surface2);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+  .product-image img{width:100%;height:100%;object-fit:cover;display:block}
+  .product-image-fallback{font-size:42px;opacity:.5;display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:linear-gradient(135deg, rgba(168,85,247,.1), rgba(236,72,153,.1))}
+  .product-image-badge{position:absolute;top:8px;left:8px;background:rgba(0,0,0,.7);color:#fff;font-size:10px;padding:3px 8px;border-radius:4px;font-weight:600}
+  .product-image-loading{position:absolute;inset:0;background:var(--surface2);display:flex;align-items:center;justify-content:center;color:var(--text3);font-size:11px}
   .product-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 8px 24px rgba(168,85,247,.12)}
+  .product-card-body{padding:18px;display:flex;flex-direction:column;gap:10px}
   .product-card-header{display:flex;align-items:flex-start;gap:12px}
   .product-rank{width:32px;height:32px;min-width:32px;background:var(--surface2);border:1px solid var(--border);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:var(--accent)}
   .product-rank.top3{background:var(--accent-grad);color:#fff;border-color:transparent}
@@ -305,6 +311,30 @@ function renderProducts(){
   const grid=document.getElementById('productGrid');
   if(!filtered.length){grid.innerHTML=`<div class="empty-state"><div class="empty-state-icon">🔍</div><h3>No products found</h3></div>`;return;}
   grid.innerHTML=`<div class="product-grid">${filtered.map(p=>renderCard(p)).join('')}</div>`;
+  // Lazy-load images for visible products
+  setTimeout(() => {
+    filtered.slice(0, 30).forEach(p => loadProductImage(p));
+  }, 100);
+}
+
+async function loadProductImage(p) {
+  if (!p.asin) return;
+  const container = document.getElementById(`img-${p.asin}`);
+  if (!container || container.dataset.loaded === 'true') return;
+  try {
+    const res = await fetch(`/api/product-image/${p.asin}`);
+    if (!res.ok) return;
+    const data = await res.json();
+    if (data.imageUrl) {
+      const img = new Image();
+      img.onload = () => {
+        container.innerHTML = `<img src="${data.imageUrl}" alt="${escHtml(p.title||'')}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'product-image-fallback\\'>${emojiForCategory(p.category)}</div><div class=\\'product-image-badge\\'>#${p.rank||'?'}</div>'">` + `<div class="product-image-badge">#${p.rank||'?'}</div>`;
+        container.dataset.loaded = 'true';
+      };
+      img.onerror = () => {};
+      img.src = data.imageUrl;
+    }
+  } catch {}
 }
 
 function renderCard(p){
@@ -314,15 +344,22 @@ function renderCard(p){
   const reviews=formatNumber(p.reviews||0);
   const title=escHtml(p.title||'Unknown Product');
   const shortTitle=title.length>90?title.slice(0,87)+'...':title;
+  const fallbackEmoji = emojiForCategory(p.category);
+  const imgId = `img-${p.asin || p.rank}`;
   return `<div class="product-card">
-    <div class="product-card-header">
-      <div class="product-rank ${rankClass}">#${p.rank||'?'}</div>
-      <div class="product-title" title="${title}">${shortTitle}</div>
+    <div class="product-image" id="${imgId}">
+      <div class="product-image-fallback">${fallbackEmoji}</div>
+      <div class="product-image-badge">#${p.rank||'?'}</div>
     </div>
-    <div class="product-meta">
-      <span class="meta-chip"><span class="price">${price}</span></span>
-      <span class="meta-chip">⭐ <span class="rating">${rating}</span></span>
-      <span class="meta-chip">💬 <span class="reviews">${reviews}</span></span>
+    <div class="product-card-body">
+      <div class="product-card-header">
+        <div class="product-rank ${rankClass}">#${p.rank||'?'}</div>
+        <div class="product-title" title="${title}">${shortTitle}</div>
+      </div>
+      <div class="product-meta">
+        <span class="meta-chip"><span class="price">${price}</span></span>
+        <span class="meta-chip">⭐ <span class="rating">${rating}</span></span>
+        <span class="meta-chip">💬 <span class="reviews">${reviews}</span></span>
     </div>
     <span class="product-category-tag">${emojiForCategory(p.category)} ${p.category||''}</span>
     <div class="product-card-actions">
@@ -330,6 +367,7 @@ function renderCard(p){
       <a class="btn-view" href="https://www.amazon.com/dp/${p.asin||''}" target="_blank" rel="noopener">↗ Amazon</a>
     </div>
     <a class="source-1688" href="https://s.1688.com/selloffer/offer_search.htm?keywords=${encodeURIComponent((p.title||'').split(' ').slice(0,4).join(' '))}" target="_blank" rel="noopener">🔍 Find 1688 source (~30-50% of US price)</a>
+    </div>
   </div>`;
 }
 
