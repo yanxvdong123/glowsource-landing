@@ -98,44 +98,28 @@ app.get('/api/product-image/:asin', async (req, res) => {
   if (imgCache[asin] && Date.now() - (imgCache[asin].ts || 0) < 7 * 24 * 60 * 60 * 1000) {
     return res.json({ asin, imageUrl: imgCache[asin].url, cached: true });
   }
+  // Look up the product to get category + title for the image search
+  let product = null;
   try {
-    // Try multiple Amazon image CDN patterns
-    const candidates = [
-      `https://images-na.ssl-images-amazon.com/images/P/${asin}.01.LZZZZZZZ.jpg`,
-      `https://images-na.ssl-images-amazon.com/images/P/${asin}.01._SCLZZZZZZZ_.jpg`,
-      `https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=${asin}&Format=_SL250_&ID=AsinImage`,
-    ];
-    let foundUrl = null;
-    for (const url of candidates) {
-      try {
-        const r = await fetch(url, { method: 'HEAD', redirect: 'follow' });
-        if (r.ok && r.headers.get('content-type')?.startsWith('image/')) {
-          foundUrl = url;
-          break;
-        }
-      } catch {}
-    }
-    if (!foundUrl) {
-      // Fallback: try scraping Amazon product page for og:image
-      const pageRes = await fetch(`https://www.amazon.com/dp/${asin}`, {
-        headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' }
-      });
-      if (pageRes.ok) {
-        const html = await pageRes.text();
-        const m = html.match(/<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i)
-               || html.match(/'largeImageUrl'\s*:\s*["']([^"']+)["']/);
-        if (m) foundUrl = m[1].replace(/\._.*_\./, '._SL500_.');
-      }
-    }
-    if (foundUrl) {
-      imgCache[asin] = { url: foundUrl, ts: Date.now() };
-      saveImgCache(imgCache);
-      return res.json({ asin, imageUrl: foundUrl, cached: false });
-    }
-    res.json({ asin, imageUrl: null, cached: false });
-  } catch (err) {
-    res.status(500).json({ error: err.message });
-  }
+    const products = JSON.parse(fs.readFileSync(PRODUCTS_FILE, 'utf8'));
+    product = products.find(p => p.asin === asin);
+  } catch {}
+  // Build search keyword from category (loremflickr uses Flickr tags)
+  const catMap = {
+    Skincare: 'skincare,cosmetics,beauty',
+    Makeup: 'makeup,cosmetics,lipstick',
+    HairCare: 'hair,haircare,shampoo',
+    Fragrances: 'perfume,fragrance',
+    BeautyTools: 'makeup,brushes,tools',
+  };
+  const cat = product?.category || 'Beauty';
+  const keyword = catMap[cat] || 'beauty,cosmetics';
+  // loremflickr serves random CC-licensed photos from Flickr matching tags
+  // Add ASIN as lock param so the same ASIN always gets the same image
+  const imageUrl = `https://loremflickr.com/400/300/${encodeURIComponent(keyword)}?lock=${asin}`;
+  imgCache[asin] = { url: imageUrl, ts: Date.now() };
+  saveImgCache(imgCache);
+  res.json({ asin, imageUrl, cached: false });
 });
 
 app.post('/api/contact', async (req, res) => {
