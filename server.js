@@ -59,6 +59,9 @@ function getMailer() {
         user: process.env.SMTP_USER || 'charlescome1995@gmail.com',
         pass: process.env.SMTP_PASS || 'Charles@1995',
       },
+      connectionTimeout: 5000,
+      greetingTimeout: 5000,
+      socketTimeout: 8000,
     });
   }
   return mailer;
@@ -110,7 +113,9 @@ app.post('/api/contact', async (req, res) => {
   leads.unshift(newLead);
   saveLeads(leads);
   console.log('\n📬 New Lead:', name || 'N/A', '|', email, '|', productName || 'N/A');
-  await sendContactNotification({ name, email, company, message, interest, productName, productAsin });
+  // Fire-and-forget email send (don't block response on SMTP timeout)
+  sendContactNotification({ name, email, company, message, interest, productName, productAsin })
+    .catch(err => console.error('📧 Email send failed (lead still saved):', err.message));
   res.json({ success: true, message: "Thank you! We'll get back to you within 24 hours.", leadId: newLead.id });
 });
 
