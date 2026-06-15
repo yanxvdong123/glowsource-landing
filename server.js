@@ -35,7 +35,8 @@ function basicAuth(req, res, next) {
 }
 
 // Leads store
-const LEADS_FILE = path.join(__dirname, '..', 'data', 'leads.json');
+const LEADS_FILE = path.join(__dirname, 'data', 'leads.json');
+const PRODUCTS_FILE = path.join(__dirname, 'data', 'amazon-beauty-top100.json');
 function loadLeads() {
   try {
     if (!fs.existsSync(LEADS_FILE)) return [];
@@ -142,7 +143,7 @@ app.delete('/api/leads/:id', basicAuth, (req, res) => {
 
 app.get('/api/products', (req, res) => {
   try {
-    const dataPath = path.join(__dirname, '..', 'data', 'amazon-beauty-top100.json');
+    const dataPath = PRODUCTS_FILE;
     if (!fs.existsSync(dataPath)) {
       return res.status(404).json({ error: 'Product data not found. Run the scraper first.' });
     }
