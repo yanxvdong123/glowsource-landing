@@ -3,7 +3,6 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const nodemailer = require('nodemailer');
 const path = require('path');
 const fs = require('fs');
 
@@ -47,43 +46,31 @@ function saveLeads(leads) {
   fs.writeFileSync(LEADS_FILE, JSON.stringify(leads, null, 2));
 }
 
-// Email
-let mailer;
-function getMailer() {
-  if (!mailer) {
-    mailer = nodemailer.createTransport({
-      host: 'smtp.gmail.com',
-      port: 465,
-      secure: true,
-      auth: {
-        user: process.env.SMTP_USER || 'charlescome1995@gmail.com',
-        pass: process.env.SMTP_PASS || 'Charles@1995',
-      },
-      connectionTimeout: 5000,
-      greetingTimeout: 5000,
-      socketTimeout: 8000,
-    });
-  }
-  return mailer;
-}
-
+// Email via Resend HTTP API (works from any cloud, no SMTP port needed)
 async function sendContactNotification({ name, email, company, message, interest, productName, productAsin }) {
+  const apiKey = process.env.RESEND_API_KEY;
+  const to = process.env.CONTACT_TO || 'charlescome1995@gmail.com';
+  const from = process.env.RESEND_FROM || 'GlowSource <onboarding@resend.dev>';
+  if (!apiKey) {
+    console.warn('📧 RESEND_API_KEY not set, skipping email');
+    return { skipped: true };
+  }
+  const productInfo = productName ? `<li><strong>Product:</strong> ${productName} (ASIN: ${productAsin})</li>` : '';
+  const html = `<div style="font-family:-apple-system,sans-serif;max-width:600px;margin:0 auto"><div style="background:linear-gradient(135deg,#a855f7,#ec4899);padding:20px;border-radius:12px 12px 0 0"><h2 style="color:#fff;margin:0">🌸 New GlowSource Lead</h2></div><div style="background:#fff;padding:24px;border:1px solid #e5e7eb;border-radius:0 0 12px 12px"><table style="width:100%;border-collapse:collapse"><tr><td style="padding:8px 0;color:#6b7280;width:100px">Name</td><td style="padding:8px 0;font-weight:600">${name || 'N/A'}</td></tr><tr><td style="padding:8px 0;color:#6b7280">Email</td><td style="padding:8px 0"><a href="mailto:${email}" style="color:#a855f7">${email}</a></td></tr><tr><td style="padding:8px 0;color:#6b7280">Company</td><td style="padding:8px 0">${company || 'N/A'}</td></tr><tr><td style="padding:8px 0;color:#6b7280">Interest</td><td style="padding:8px 0">${interest || 'N/A'}</td></tr>${productName ? `<tr><td style="padding:8px 0;color:#6b7280">Product</td><td style="padding:8px 0">${productName}<br><span style="font-family:monospace;font-size:12px;color:#9ca3af">ASIN: ${productAsin}</span></td></tr>` : ''}</table><div style="margin-top:20px;padding:16px;background:#f9fafb;border-radius:8px;border-left:3px solid #a855f7"><p style="margin:0;color:#374151;white-space:pre-wrap">${message.replace(/</g, '&lt;')}</p></div><a href="https://glowsource-landing-production.up.railway.app/admin" style="display:inline-block;margin-top:20px;padding:10px 20px;background:linear-gradient(135deg,#a855f7,#ec4899);color:#fff;text-decoration:none;border-radius:6px;font-weight:600">View in Admin →</a></div></div>`;
+  const text = `New GlowSource Lead\n\nName: ${name || 'N/A'}\nEmail: ${email}\nCompany: ${company || 'N/A'}\nInterest: ${interest || 'N/A'}\n${productName ? `Product: ${productName} (ASIN: ${productAsin})` : ''}\n\nMessage:\n${message}`;
   try {
-    const transport = getMailer();
-    const to = process.env.CONTACT_TO || 'charlescome1995@gmail.com';
-    const productInfo = productName ? `<li><strong>Product:</strong> ${productName} (ASIN: ${productAsin})</li>` : '';
-    await transport.sendMail({
-      from: `"GlowSource Website" <${process.env.SMTP_USER || 'charlescome1995@gmail.com'}>`,
-      to,
-      subject: `[GlowSource] New lead${productName ? ': ' + productName : ''} from ${name || email}`,
-      text: `New contact form submission:\n\nName: ${name || 'N/A'}\nEmail: ${email}\nCompany: ${company || 'N/A'}\nInterest: ${interest || 'N/A'}\n${productName ? `Product: ${productName} (ASIN: ${productAsin})` : ''}\n\nMessage:\n${message}`,
-      html: `<h2>New GlowSource Lead</h2><ul><li><strong>Name:</strong> ${name || 'N/A'}</li><li><strong>Email:</strong> ${email}</li><li><strong>Company:</strong> ${company || 'N/A'}</li><li><strong>Interest:</strong> ${interest || 'N/A'}</li>${productInfo}</ul><h3>Message:</h3><p>${message.replace(/\n/g, '<br>')}</p>`,
+    const res = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: { 'Authorization': `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ from, to, subject: `[GlowSource] New lead${productName ? ': ' + productName : ''} from ${name || email}`, html, text }),
     });
-    console.log(`[EMAIL] Sent notification to ${to}`);
-    return true;
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.message || res.statusText);
+    console.log('📧 Email sent via Resend:', data.id);
+    return data;
   } catch (err) {
-    console.error('[EMAIL] Failed:', err.message);
-    return false;
+    console.error('📧 Resend send failed:', err.message);
+    throw err;
   }
 }
 
@@ -125,15 +112,34 @@ app.get('/api/leads', basicAuth, (req, res) => {
 
 app.patch('/api/leads/:id', basicAuth, (req, res) => {
   const { id } = req.params;
-  const { status } = req.body;
+  const { status, note } = req.body;
   const leads = loadLeads();
   const idx = leads.findIndex(l => l.id === id);
   if (idx === -1) return res.status(404).json({ error: 'Lead not found' });
-  leads[idx].status = status || leads[idx].status;
-  if (status === 'contacted') leads[idx].contactedAt = new Date().toISOString();
-  if (status === 'replied') leads[idx].repliedAt = new Date().toISOString();
+  if (status) {
+    leads[idx].status = status;
+    if (status === 'contacted') leads[idx].contactedAt = new Date().toISOString();
+    if (status === 'replied') leads[idx].repliedAt = new Date().toISOString();
+  }
+  if (note !== undefined) {
+    if (!leads[idx].notes) leads[idx].notes = [];
+    leads[idx].notes.push({ text: note, at: new Date().toISOString() });
+  }
   saveLeads(leads);
   res.json({ success: true, lead: leads[idx] });
+});
+
+app.post('/api/leads/:id/note', basicAuth, (req, res) => {
+  const { id } = req.params;
+  const { text } = req.body;
+  if (!text) return res.status(400).json({ error: 'Note text required' });
+  const leads = loadLeads();
+  const idx = leads.findIndex(l => l.id === id);
+  if (idx === -1) return res.status(404).json({ error: 'Lead not found' });
+  if (!leads[idx].notes) leads[idx].notes = [];
+  leads[idx].notes.push({ text, at: new Date().toISOString() });
+  saveLeads(leads);
+  res.json({ success: true, notes: leads[idx].notes });
 });
 
 app.delete('/api/leads/:id', basicAuth, (req, res) => {

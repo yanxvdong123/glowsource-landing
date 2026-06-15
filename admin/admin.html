@@ -55,6 +55,8 @@
   .meta-chip .rating{color:var(--warning);font-weight:700}
   .product-category-tag{display:inline-block;background:rgba(168,85,247,.12);border:1px solid rgba(168,85,247,.3);border-radius:6px;padding:3px 10px;font-size:11px;color:var(--accent);font-weight:600}
   .product-card-actions{display:flex;gap:8px;margin-top:4px}
+  .source-1688{display:block;font-size:11px;color:var(--text3);text-align:center;padding:4px;border-radius:4px;background:var(--surface2);text-decoration:none;margin-top:4px;transition:color .15s}
+  .source-1688:hover{color:var(--accent)}
   .btn-contact{flex:1;background:var(--accent-grad);color:#fff;border:none;border-radius:var(--radius-sm);padding:9px 14px;font-size:13px;font-weight:600;cursor:pointer}
   .btn-contact:hover{opacity:.85}
   .btn-view{background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:9px 14px;font-size:13px;font-weight:600;cursor:pointer;color:var(--text2);text-decoration:none;display:inline-flex;align-items:center;gap:5px}
@@ -98,6 +100,12 @@
   .lead-btn{font-size:11px;padding:4px 10px;background:var(--surface2);border:1px solid var(--border);border-radius:6px;color:var(--text2);cursor:pointer}
   .lead-btn:hover{color:var(--text);border-color:var(--accent)}
   .lead-btn.danger:hover{border-color:var(--danger);color:var(--danger)}
+  .lead-notes{margin-top:10px;display:flex;flex-direction:column;gap:6px}
+  .lead-note{background:rgba(168,85,247,.06);border-left:2px solid var(--accent);padding:6px 10px;border-radius:4px;font-size:12px;color:var(--text2)}
+  .lead-note-time{color:var(--text3);font-size:10px;margin-right:6px;font-family:monospace}
+  .lead-add-note{margin-top:10px;display:flex;gap:6px}
+  .lead-add-note input{flex:1;background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:6px 10px;color:var(--text);font-size:12px;outline:none}
+  .lead-add-note input:focus{border-color:var(--accent)}
   footer{text-align:center;padding:24px;font-size:12px;color:var(--text3);border-top:1px solid var(--border)}
   .section{display:none}
   .section.active{display:block}
@@ -321,6 +329,7 @@ function renderCard(p){
       <button class="btn-contact" onclick="openContactModal('${p.asin||''}',&quot;${title.replace(/"/g,'&quot;')}&quot;,'${p.category||''}')">💌 Contact</button>
       <a class="btn-view" href="https://www.amazon.com/dp/${p.asin||''}" target="_blank" rel="noopener">↗ Amazon</a>
     </div>
+    <a class="source-1688" href="https://s.1688.com/selloffer/offer_search.htm?keywords=${encodeURIComponent((p.title||'').split(' ').slice(0,4).join(' '))}" target="_blank" rel="noopener">🔍 Find 1688 source (~30-50% of US price)</a>
   </div>`;
 }
 
@@ -346,6 +355,8 @@ function renderLeads(){
 function renderLeadCard(l){
   const date=new Date(l.createdAt).toLocaleString();
   const product=l.productName?`<div class="lead-product">📦 ${escHtml(l.productName)} (${l.productAsin||''})</div>`:'';
+  const notes = (l.notes||[]).map(n => `<div class="lead-note"><span class="lead-note-time">${new Date(n.at).toLocaleString()}</span>${escHtml(n.text)}</div>`).join('');
+  const whatsappLink = `https://wa.me/${(l.email||'').replace(/[^0-9]/g,'')}`;
   return `<div class="lead-card">
     <div>
       <div class="lead-meta">${date}</div>
@@ -353,6 +364,11 @@ function renderLeadCard(l){
       <div class="lead-meta">${l.company?escHtml(l.company)+' · ':''}${l.interest?escHtml(l.interest):''}</div>
       ${product}
       <div class="lead-message">${escHtml(l.message)}</div>
+      ${notes?`<div class="lead-notes">${notes}</div>`:''}
+      <div class="lead-add-note">
+        <input type="text" id="noteInput-${l.id}" placeholder="Add a follow-up note (e.g. 'Sent quote 2026-06-15')" onkeydown="if(event.key==='Enter')addLeadNote('${l.id}')">
+        <button class="lead-btn" onclick="addLeadNote('${l.id}')">+ Note</button>
+      </div>
     </div>
     <div class="lead-actions">
       <span class="lead-status ${l.status||'new'}">${l.status||'new'}</span>
@@ -388,6 +404,24 @@ async function deleteLead(id){
     if(res.ok){showToast('✅ Lead deleted');await loadLeads();}
     else showToast('❌ Failed to delete',true);
   } catch(e){showToast('❌ Network error',true);}
+}
+
+async function addLeadNote(id){
+  const input = document.getElementById('noteInput-'+id);
+  const text = input.value.trim();
+  if(!text) return;
+  try{
+    const res = await fetch('/api/leads/'+id+'/note',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text})});
+    if(res.ok){showToast('📝 Note added');input.value='';await loadLeads();}
+    else showToast('❌ Failed to add note',true);
+  } catch(e){showToast('❌ Network error',true);}
+}
+
+function openWhatsApp(email, name){
+  // Open WhatsApp with prefilled message
+  const msg = encodeURIComponent(`Hi ${name || ''}, this is Charles from GlowSource. Following up on your inquiry about our beauty products...`);
+  window.open(`https://wa.me/?text=${msg}`,'_blank');
+}
 }
 
 function openContactModal(asin,title,category){
