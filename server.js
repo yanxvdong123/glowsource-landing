@@ -225,4 +225,5 @@ app.listen(PORT, () => {
   console.log(`   Landing:  http://localhost:${PORT}`);
   console.log(`   Admin:    http://localhost:${PORT}/admin`);
   console.log(`   Auth:     ${ADMIN_USER} / ${ADMIN_PASS}`);
-});
+});/ /   f o r c e   r e b u i l d   0 6 / 1 6 / 2 0 2 6   0 9 : 1 2 : 4 0  
+ 
