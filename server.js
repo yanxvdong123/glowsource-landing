@@ -94,32 +94,20 @@ app.get('/api/product-image/:asin', async (req, res) => {
   if (!asin || !/^[A-Z0-9]{10}$/.test(asin)) {
     return res.status(400).json({ error: 'Invalid ASIN' });
   }
-  // Check cache first
-  if (imgCache[asin] && Date.now() - (imgCache[asin].ts || 0) < 7 * 24 * 60 * 60 * 1000) {
-    return res.json({ asin, imageUrl: imgCache[asin].url, cached: true });
-  }
-  // Look up the product to get category + title for the image search
+  // Look up the product to use its pre-baked real Amazon image URL
   let product = null;
   try {
     const products = JSON.parse(fs.readFileSync(PRODUCTS_FILE, 'utf8'));
     product = products.find(p => p.asin === asin);
   } catch {}
-  // Build search keyword from category (loremflickr uses Flickr tags)
-  const catMap = {
-    Skincare: 'skincare,cosmetics,beauty',
-    Makeup: 'makeup,cosmetics,lipstick',
-    HairCare: 'hair,haircare,shampoo',
-    Fragrances: 'perfume,fragrance',
-    BeautyTools: 'makeup,brushes,tools',
-  };
-  const cat = product?.category || 'Beauty';
-  const keyword = catMap[cat] || 'beauty,cosmetics';
-  // loremflickr serves random CC-licensed photos from Flickr matching tags
-  // Add ASIN as lock param so the same ASIN always gets the same image
-  const imageUrl = `https://loremflickr.com/400/300/${encodeURIComponent(keyword)}?lock=${asin}`;
-  imgCache[asin] = { url: imageUrl, ts: Date.now() };
-  saveImgCache(imgCache);
-  res.json({ asin, imageUrl, cached: false });
+  if (!product) {
+    return res.status(404).json({ error: 'Product not found' });
+  }
+  if (product.imageUrl) {
+    return res.json({ asin, imageUrl: product.imageUrl, cached: true, source: 'amazon' });
+  }
+  // No pre-baked image yet — return null so client can show category fallback emoji
+  return res.json({ asin, imageUrl: null, cached: false, source: 'none' });
 });
 
 app.post('/api/contact', async (req, res) => {
