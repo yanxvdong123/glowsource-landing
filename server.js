@@ -35,7 +35,7 @@ function basicAuth(req, res, next) {
 
 // Leads store
 const LEADS_FILE = path.join(__dirname, 'data', 'leads.json');
-const PRODUCTS_FILE = path.join(__dirname, 'data', 'amazon-beauty-top100.json');
+const PRODUCTS_FILE = path.join(__dirname, 'data', 'products.json');
 function loadLeads() {
   try {
     if (!fs.existsSync(LEADS_FILE)) return [];
