@@ -190,10 +190,42 @@ app.get('/api/products', (req, res) => {
       return res.status(404).json({ error: 'Product data not found. Run the scraper first.' });
     }
     const raw = fs.readFileSync(dataPath, 'utf8');
-    res.json({ total: JSON.parse(raw).length, products: JSON.parse(raw) });
+    const products = JSON.parse(raw).map(p => {
+      const oem = computeOemViability(p);
+      return {
+        ...p,
+        oemScore: oem.score,
+        oemReasons: oem.reasons,
+      };
+    });
+    res.json({ total: products.length, products });
   } catch (err) {
     res.status(500).json({ error: 'Failed to load product data' });
   }
+});
+
+// Refresh a single product by ASIN (admin-only via Basic Auth)
+app.post('/api/refresh-asin', (req, res) => {
+  const auth = req.headers.authorization || '';
+  const expected = 'Basic ' + Buffer.from(ADMIN_USER + ':' + ADMIN_PASS).toString('base64');
+  if (auth !== expected) {
+    return res.status(401).json({ error: 'Unauthorized' });
+  }
+  const { asin } = req.body || {};
+  if (!asin || !/^[A-Z0-9]{10}$/.test(asin)) {
+    return res.status(400).json({ error: 'Invalid ASIN' });
+  }
+  // Spawn background refresh script
+  const { spawn } = require('child_process');
+  const script = path.join(__dirname, 'scripts', 'refresh-products.js');
+  const child = spawn(process.execPath, [script, '--asin', asin], {
+    cwd: __dirname,
+    env: { ...process.env, XCRAWL_API_KEY: process.env.XCRAWL_API_KEY || '' },
+    detached: true,
+    stdio: 'ignore',
+  });
+  child.unref();
+  res.json({ success: true, asin, pid: child.pid, message: 'Refresh started in background' });
 });
 
 // Trending products — sorted by trendingScore desc, top N

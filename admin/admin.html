@@ -70,6 +70,19 @@
   .btn-contact:hover{opacity:.85}
   .btn-view{background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:9px 14px;font-size:13px;font-weight:600;cursor:pointer;color:var(--text2);text-decoration:none;display:inline-flex;align-items:center;gap:5px}
   .btn-view:hover{color:var(--text)}
+
+  .btn-refresh{background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:9px 11px;font-size:14px;cursor:pointer;color:var(--text2);transition:background .15s}
+  .btn-refresh:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .btn-refresh:disabled{opacity:0.6;cursor:wait}
+
+  .oem-badge{display:inline-flex;align-items:center;gap:3px;background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:3px 8px;font-size:11px;font-weight:700}
+  .oem-badge.high{background:#d1fae5;border-color:#10b981;color:#065f46}
+  .oem-badge.mid{background:#fef3c7;border-color:#f59e0b;color:#92400e}
+  .oem-badge.low{background:var(--surface2);color:var(--text2)}
+
+  .filter-toggle{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--text2);cursor:pointer;user-select:none;padding:8px 12px;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--surface)}
+  .filter-toggle input{margin:0;cursor:pointer}
+  .filter-toggle:hover{background:var(--surface2)}
   .empty-state{text-align:center;padding:80px 24px;color:var(--text2)}
   .empty-state-icon{font-size:48px;margin-bottom:16px}
   .empty-state h3{font-size:18px;color:var(--text);margin-bottom:8px}
@@ -155,14 +168,25 @@
     <select class="input-select" id="sortSelect" onchange="applyFilters()">
       <option value="rank-asc">Sort: Rank ↑</option>
       <option value="rank-desc">Sort: Rank ↓</option>
+      <option value="oem-desc">Sort: OEM Score ↓</option>
+      <option value="trending-desc">Sort: Trending ↓</option>
+      <option value="freshness-desc">Sort: Freshest first</option>
+      <option value="stale-desc">Sort: Stalest first</option>
       <option value="price-asc">Price: Low → High</option>
       <option value="price-desc">Price: High → Low</option>
       <option value="rating-desc">Rating: Highest</option>
       <option value="reviews-desc">Reviews: Most</option>
+      <option value="title-asc">Title: A → Z</option>
     </select>
     <select class="input-select" id="catSelect" onchange="applyFilters()">
       <option value="">All Categories</option>
     </select>
+    <label class="filter-toggle" title="Show only products without price or image (cleanup candidates)">
+      <input type="checkbox" id="missingToggle" onchange="applyFilters()"> ⚠️ Missing data only
+    </label>
+    <label class="filter-toggle" title="Show only products refreshed in the last 24h">
+      <input type="checkbox" id="freshToggle" onchange="applyFilters()"> ✓ Fresh only
+    </label>
   </div>
   <div class="category-tabs" id="categoryTabs"></div>
   <div class="product-grid-wrap">
@@ -294,20 +318,37 @@ function applyFilters(){
   const q=document.getElementById('searchInput').value.toLowerCase();
   const cat=document.getElementById('catSelect').value;
   const sort=document.getElementById('sortSelect').value;
+  const missingOnly = document.getElementById('missingToggle')?.checked;
+  const freshOnly = document.getElementById('freshToggle')?.checked;
+  const now = Date.now();
+  const FRESH_CUTOFF = 24 * 3600 * 1000;
   filtered=allProducts.filter(p=>{
     const matchCat=!cat||p.category===cat;
     const matchActiveCat=!activeCategory||p.category===activeCategory;
     const matchSearch=!q||(p.title||'').toLowerCase().includes(q);
-    return matchCat&&matchActiveCat&&matchSearch;
+    const matchMissing = !missingOnly || (!p.price || p.price <= 0 || !p.imageUrl);
+    const matchFresh = !freshOnly || (p.scrapedAt && (now - new Date(p.scrapedAt).getTime()) < FRESH_CUTOFF);
+    return matchCat && matchActiveCat && matchSearch && matchMissing && matchFresh;
   });
   const [field,dir]=sort.split('-');
-  const fields={rank:'rank',price:'price',rating:'ratingValue',reviews:'reviews'};
-  const f=fields[field]||'rank';
-  filtered.sort((a,b)=>{
-    let va=a[f],vb=b[f];
-    if(va==null)va=0;if(vb==null)vb=0;
-    return dir==='desc'?vb-va:va-vb;
-  });
+  if (field === 'oem') {
+    filtered.sort((a,b) => (b.oemScore||0) - (a.oemScore||0));
+  } else if (field === 'trending') {
+    filtered.sort((a,b) => (b.trendingScore||0) - (a.trendingScore||0));
+  } else if (field === 'freshness' || field === 'stale') {
+    const getT = p => p.scrapedAt ? new Date(p.scrapedAt).getTime() : 0;
+    filtered.sort((a,b) => field === 'freshness' ? getT(b) - getT(a) : getT(a) - getT(b));
+  } else if (field === 'title') {
+    filtered.sort((a,b) => (a.title||'').localeCompare(b.title||''));
+  } else {
+    const fields={rank:'rank',price:'price',rating:'ratingValue',reviews:'reviews'};
+    const f=fields[field]||'rank';
+    filtered.sort((a,b)=>{
+      let va=a[f],vb=b[f];
+      if(va==null)va=0;if(vb==null)vb=0;
+      return dir==='desc'?vb-va:va-vb;
+    });
+  }
   document.getElementById('statShowing').textContent=filtered.length;
   renderProducts();
 }
@@ -359,6 +400,10 @@ function renderCard(p){
   const shortTitle=title.length>90?title.slice(0,87)+'...':title;
   const fallbackEmoji = emojiForCategory(p.category);
   const imgId = `img-${p.asin || p.rank}`;
+  const oemScore = p.oemScore != null ? p.oemScore : 0;
+  const oemBadge = oemScore >= 80 ? `<span class="oem-badge high" title="OEM viability: ${oemScore}/100">🏭 ${oemScore}</span>` :
+                   oemScore >= 50 ? `<span class="oem-badge mid" title="OEM viability: ${oemScore}/100">🏭 ${oemScore}</span>` :
+                   `<span class="oem-badge low" title="OEM viability: ${oemScore}/100">🏭 ${oemScore}</span>`;
   // Trending & best seller badges
   let trendBadge = '';
   if (p.isTrending && p.trendingScore != null) {
@@ -368,8 +413,9 @@ function renderCard(p){
   let awardBadge = '';
   if (p.isBestSeller) awardBadge += '<div class="award-badge" title="Amazon Best Seller">🏆 BS</div>';
   if (p.isAmazonChoice) awardBadge += '<div class="award-badge" title="Amazon\'s Choice">✓ Choice</div>';
+  const asin = p.asin || '';
   return `<div class="product-card">
-    <div class="product-image" id="${imgId}" data-asin="${p.asin||''}">
+    <div class="product-image" id="${imgId}" data-asin="${asin}">
       <div class="product-image-fallback">${fallbackEmoji}</div>
       <div class="product-image-badge">#${p.rank||'?'}</div>
       ${trendBadge}
@@ -384,15 +430,40 @@ function renderCard(p){
         <span class="meta-chip"><span class="price">${price}</span></span>
         <span class="meta-chip">⭐ <span class="rating">${rating}</span></span>
         <span class="meta-chip">💬 <span class="reviews">${reviews}</span></span>
-    </div>
-    <span class="product-category-tag">${emojiForCategory(p.category)} ${p.category||''}</span>
-    <div class="product-card-actions">
-      <button class="btn-contact" onclick="openContactModal('${p.asin||''}',&quot;${title.replace(/"/g,'&quot;')}&quot;,'${p.category||''}')">💌 Contact</button>
-      <a class="btn-view" href="https://www.amazon.com/dp/${p.asin||''}" target="_blank" rel="noopener">↗ Amazon</a>
-    </div>
-    <a class="source-1688" href="https://s.1688.com/selloffer/offer_search.htm?keywords=${encodeURIComponent((p.title||'').split(' ').slice(0,4).join(' '))}" target="_blank" rel="noopener">🔍 Find 1688 source (~30-50% of US price)</a>
+        ${oemBadge}
+      </div>
+      <span class="product-category-tag">${emojiForCategory(p.category)} ${p.category||''}</span>
+      <div class="product-card-actions">
+        <button class="btn-contact" onclick="openContactModal('${asin}',&quot;${title.replace(/"/g,'&quot;')}&quot;,'${p.category||''}')">💌 Contact</button>
+        <a class="btn-view" href="https://www.amazon.com/dp/${asin}" target="_blank" rel="noopener">↗ Amazon</a>
+        <button class="btn-refresh" id="refresh-${asin}" onclick="refreshAsin('${asin}', this)" title="Re-scrape this product from Amazon">🔄</button>
+      </div>
+      <a class="source-1688" href="https://s.1688.com/selloffer/offer_search.htm?keywords=${encodeURIComponent((p.title||'').split(' ').slice(0,4).join(' '))}" target="_blank" rel="noopener">🔍 Find 1688 source (~30-50% of US price)</a>
     </div>
   </div>`;
+}
+
+async function refreshAsin(asin, btn) {
+  if (!asin) return;
+  const original = btn.textContent;
+  btn.disabled = true;
+  btn.textContent = '⏳';
+  try {
+    const res = await fetch('/api/refresh-asin', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': 'Basic ' + btoa('admin:glowsource2026') },
+      credentials: 'include',
+      body: JSON.stringify({ asin }),
+    });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    btn.textContent = '✓';
+    btn.title = 'Refresh started in background — will appear in products on next load';
+    setTimeout(() => { btn.textContent = original; btn.disabled = false; }, 4000);
+  } catch (err) {
+    console.error('refresh failed', err);
+    btn.textContent = '✗';
+    setTimeout(() => { btn.textContent = original; btn.disabled = false; }, 3000);
+  }
 }
 
 function updateStats(){
