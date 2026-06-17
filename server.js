@@ -266,6 +266,42 @@ app.get('/api/oem-scores', (req, res) => {
   }
 });
 
+// Top products by popularity-weighted rating (for landing page showcase)
+// Filter: rating >= 4.6, reviews >= 500, has price + image
+// Sort: ratingValue * log(reviews + 1)
+app.get('/api/top-products', (req, res) => {
+  try {
+    const limit = parseInt(req.query.limit, 10) || 10;
+    const products = JSON.parse(fs.readFileSync(PRODUCTS_FILE, 'utf8'));
+    const eligible = products.filter(p =>
+      p.ratingValue >= 4.6 &&
+      p.reviews >= 500 &&
+      p.price > 0 &&
+      p.imageUrl
+    );
+    eligible.sort((a, b) =>
+      (b.ratingValue * Math.log(b.reviews + 1)) - (a.ratingValue * Math.log(a.reviews + 1))
+    );
+    const top = eligible.slice(0, limit).map(p => ({
+      asin: p.asin,
+      title: p.title,
+      category: p.category,
+      price: p.price,
+      rating: p.ratingValue,
+      reviews: p.reviews,
+      imageUrl: p.imageUrl,
+      link: p.link,
+    }));
+    res.json({
+      total: eligible.length,
+      lastRefreshed: products[0]?.scrapedAt || null,
+      products: top,
+    });
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to load top products' });
+  }
+});
+
 app.get('/api/market-data', (req, res) => {
   res.json({
     source: 'beauty-supply-chain-platform',
