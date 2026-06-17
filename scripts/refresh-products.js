@@ -37,6 +37,12 @@ const onlyAsin = (args.includes('--asin') ? args[args.indexOf('--asin') + 1] : n
 const limitIdx = args.indexOf('--limit');
 const limitCount = limitIdx > -1 ? parseInt(args[limitIdx + 1], 10) : null;
 const skipImages = args.includes('--skip-images');
+const concurrencyIdx = args.indexOf('--concurrency');
+const CONCURRENCY = concurrencyIdx > -1 ? parseInt(args[concurrencyIdx + 1], 10) || 4 : 4;
+const skipExisting = args.includes('--skip-existing');
+// Skip products scraped in the last N hours (default 6)
+const skipHoursIdx = args.indexOf('--skip-hours');
+const SKIP_HOURS = skipHoursIdx > -1 ? parseInt(args[skipHoursIdx + 1], 10) || 6 : 6;
 
 const API_KEY = process.env.XCRAWL_API_KEY;
 if (!API_KEY) {
@@ -159,19 +165,27 @@ async function main() {
 
   let targets = products.filter(p => p.asin);
   if (onlyAsin) targets = targets.filter(p => p.asin === onlyAsin);
+  if (skipExisting) {
+    const cutoff = Date.now() - SKIP_HOURS * 3600 * 1000;
+    targets = targets.filter(p => {
+      const scraped = p.scrapedAt ? new Date(p.scrapedAt).getTime() : 0;
+      return scraped < cutoff;
+    });
+  }
   if (limitCount) targets = targets.slice(0, limitCount);
 
   let updated = 0, failed = 0;
-  for (let i = 0; i < targets.length; i++) {
+  // Process in parallel with limited concurrency
+  let cursor = 0;
+  const inFlight = new Map();
+
+  async function processOne(i) {
     const target = targets[i];
     const fresh = await fetchOne(target.asin, i + 1, targets.length);
-    if (!fresh) {
-      failed++;
-      continue;
-    }
+    if (!fresh) return { failed: true };
 
     const idx = products.findIndex(p => p.asin === target.asin);
-    if (idx === -1) continue;
+    if (idx === -1) return { failed: true };
 
     const old = products[idx];
     const oldReviews = old.reviews;
@@ -179,7 +193,9 @@ async function main() {
     const newPrice = sanitizePrice(fresh.price);
 
     const trendingScore = computeTrending(oldReviews, newReviews);
-    const isTrending = trendingScore >= 0.20;
+    // Only flag trending if baseline >= 100 reviews AND growth >= 50%
+    // (avoids false positives from small-baseline products where 5 reviews growth = huge %)
+    const isTrending = oldReviews != null && oldReviews >= 100 && newReviews != null && trendingScore >= 0.50;
 
     const priceHistory = old.priceHistory || (old.price ? [{ price: old.price, at: old.scrapedAt }] : []);
     const reviewsHistory = old.reviewsHistory || (old.reviews ? [{ count: old.reviews, at: old.scrapedAt }] : []);
@@ -206,14 +222,30 @@ async function main() {
       console.log(`   🔥 Trending! +${(trendingScore * 100).toFixed(0)}% reviews growth`);
     }
 
-    updated++;
-    fs.writeFileSync(PRODUCTS_FILE, JSON.stringify(products, null, 2));
+    return { failed: false, isTrending };
+  }
 
-    if (i < targets.length - 1) {
-      const wait = jitter(1500, 3000);
-      await sleep(wait);
+  while (cursor < targets.length || inFlight.size > 0) {
+    // Start new tasks up to concurrency limit
+    while (inFlight.size < CONCURRENCY && cursor < targets.length) {
+      const i = cursor++;
+      const p = processOne(i).then(result => {
+        inFlight.delete(p);
+        if (result.failed) failed++; else updated++;
+        // Save incrementally every 5 updates
+        if ((updated + failed) % 5 === 0) {
+          fs.writeFileSync(PRODUCTS_FILE, JSON.stringify(products, null, 2));
+        }
+        return result;
+      });
+      inFlight.set(p, i);
+    }
+    if (inFlight.size > 0) {
+      await Promise.race(inFlight.keys());
     }
   }
+  // Final save
+  fs.writeFileSync(PRODUCTS_FILE, JSON.stringify(products, null, 2));
 
   const trendingCount = products.filter(p => p.isTrending).length;
   console.log(`\n📊 Summary:`);

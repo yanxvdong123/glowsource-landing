@@ -11,24 +11,10 @@
     "category": "Skincare",
     "scrapedAt": "2026-06-17T03:03:06.745Z",
     "imageUrl": "https://m.media-amazon.com/images/I/71i0u2yqJuL._AC_SL1000_.jpg",
-    "priceHistory": [
-      {
-        "price": 29.7,
-        "at": "2026-06-17T03:03:06.744Z"
-      }
-    ],
-    "reviewsHistory": [
-      {
-        "count": 46,
-        "at": "2026-06-10T04:10:40.298Z"
-      },
-      {
-        "count": 2615,
-        "at": "2026-06-17T03:03:06.745Z"
-      }
-    ],
-    "trendingScore": 55.848,
-    "isTrending": true,
+    "priceHistory": [],
+    "reviewsHistory": [],
+    "trendingScore": 0,
+    "isTrending": false,
     "isBestSeller": true,
     "isAmazonChoice": false
   },
@@ -122,24 +108,10 @@
     "category": "Fragrances",
     "scrapedAt": "2026-06-17T03:04:05.294Z",
     "imageUrl": "https://m.media-amazon.com/images/I/71kA+TuqRLL._AC_SL1000_.jpg",
-    "priceHistory": [
-      {
-        "price": 195,
-        "at": "2026-06-17T03:04:05.294Z"
-      }
-    ],
-    "reviewsHistory": [
-      {
-        "count": 45,
-        "at": "2026-06-10T04:11:39.600Z"
-      },
-      {
-        "count": 5853,
-        "at": "2026-06-17T03:04:05.294Z"
-      }
-    ],
-    "trendingScore": 129.067,
-    "isTrending": true,
+    "priceHistory": [],
+    "reviewsHistory": [],
+    "trendingScore": 0,
+    "isTrending": false,
     "isBestSeller": false,
     "isAmazonChoice": true
   },
@@ -287,24 +259,10 @@
     "category": "Fragrances",
     "scrapedAt": "2026-06-17T03:06:22.482Z",
     "imageUrl": "https://m.media-amazon.com/images/I/71nPQZd-AFL._AC_SL1000_.jpg",
-    "priceHistory": [
-      {
-        "price": 159,
-        "at": "2026-06-17T03:06:22.482Z"
-      }
-    ],
-    "reviewsHistory": [
-      {
-        "count": 46,
-        "at": "2026-06-10T04:11:39.601Z"
-      },
-      {
-        "count": 2400,
-        "at": "2026-06-17T03:06:22.482Z"
-      }
-    ],
-    "trendingScore": 51.174,
-    "isTrending": true,
+    "priceHistory": [],
+    "reviewsHistory": [],
+    "trendingScore": 0,
+    "isTrending": false,
     "isBestSeller": false,
     "isAmazonChoice": true
   },
@@ -353,24 +311,10 @@
     "category": "Skincare",
     "scrapedAt": "2026-06-17T03:07:03.598Z",
     "imageUrl": "https://m.media-amazon.com/images/I/71YVdkGE+YL._AC_SL1000_.jpg",
-    "priceHistory": [
-      {
-        "price": 25,
-        "at": "2026-06-17T03:07:03.598Z"
-      }
-    ],
-    "reviewsHistory": [
-      {
-        "count": 45,
-        "at": "2026-06-10T04:10:40.303Z"
-      },
-      {
-        "count": 269,
-        "at": "2026-06-17T03:07:03.598Z"
-      }
-    ],
-    "trendingScore": 4.978,
-    "isTrending": true,
+    "priceHistory": [],
+    "reviewsHistory": [],
+    "trendingScore": 0,
+    "isTrending": false,
     "isBestSeller": true,
     "isAmazonChoice": false
   },
@@ -584,28 +528,10 @@
     "category": "HairCare",
     "scrapedAt": "2026-06-17T03:10:17.523Z",
     "imageUrl": "https://m.media-amazon.com/images/I/517b7RkKn8L._AC_SL1000_.jpg",
-    "priceHistory": [
-      {
-        "price": 31.99,
-        "at": "2026-06-10T04:11:20.098Z"
-      },
-      {
-        "price": 31.99,
-        "at": "2026-06-17T03:10:17.523Z"
-      }
-    ],
-    "reviewsHistory": [
-      {
-        "count": 1212,
-        "at": "2026-06-10T04:11:20.098Z"
-      },
-      {
-        "count": 27581,
-        "at": "2026-06-17T03:10:17.523Z"
-      }
-    ],
-    "trendingScore": 21.757,
-    "isTrending": true,
+    "priceHistory": [],
+    "reviewsHistory": [],
+    "trendingScore": 0,
+    "isTrending": false,
     "isBestSeller": true,
     "isAmazonChoice": true
   },
@@ -621,24 +547,10 @@
     "category": "Fragrances",
     "scrapedAt": "2026-06-17T03:10:38.904Z",
     "imageUrl": "https://m.media-amazon.com/images/I/71yblcwBIwL._AC_SL1000_.jpg",
-    "priceHistory": [
-      {
-        "price": 72,
-        "at": "2026-06-17T03:10:38.904Z"
-      }
-    ],
-    "reviewsHistory": [
-      {
-        "count": 33,
-        "at": "2026-06-10T04:11:39.604Z"
-      },
-      {
-        "count": 4857,
-        "at": "2026-06-17T03:10:38.904Z"
-      }
-    ],
-    "trendingScore": 146.182,
-    "isTrending": true,
+    "priceHistory": [],
+    "reviewsHistory": [],
+    "trendingScore": 0,
+    "isTrending": false,
     "isBestSeller": false,
     "isAmazonChoice": true
   },
@@ -687,28 +599,10 @@
     "category": "Skincare",
     "scrapedAt": "2026-06-17T03:11:20.285Z",
     "imageUrl": "https://m.media-amazon.com/images/I/51vJ9387rhL._AC_SL1000_.jpg",
-    "priceHistory": [
-      {
-        "price": 55,
-        "at": "2026-06-10T04:10:40.316Z"
-      },
-      {
-        "price": 55,
-        "at": "2026-06-17T03:11:20.285Z"
-      }
-    ],
-    "reviewsHistory": [
-      {
-        "count": 33,
-        "at": "2026-06-10T04:10:40.316Z"
-      },
-      {
-        "count": 3353,
-        "at": "2026-06-17T03:11:20.285Z"
-      }
-    ],
-    "trendingScore": 100.606,
-    "isTrending": true,
+    "priceHistory": [],
+    "reviewsHistory": [],
+    "trendingScore": 0,
+    "isTrending": false,
     "isBestSeller": false,
     "isAmazonChoice": false
   },
@@ -790,24 +684,10 @@
     "category": "Fragrances",
     "scrapedAt": "2026-06-17T03:12:20.812Z",
     "imageUrl": "https://m.media-amazon.com/images/I/41NswvBLa8L._AC_SL1000_.jpg",
-    "priceHistory": [
-      {
-        "price": 35,
-        "at": "2026-06-17T03:12:20.812Z"
-      }
-    ],
-    "reviewsHistory": [
-      {
-        "count": 44,
-        "at": "2026-06-10T04:11:39.608Z"
-      },
-      {
-        "count": 2406,
-        "at": "2026-06-17T03:12:20.812Z"
-      }
-    ],
-    "trendingScore": 53.682,
-    "isTrending": true,
+    "priceHistory": [],
+    "reviewsHistory": [],
+    "trendingScore": 0,
+    "isTrending": false,
     "isBestSeller": false,
     "isAmazonChoice": true
   },
@@ -1595,28 +1475,10 @@
     "category": "HairCare",
     "scrapedAt": "2026-06-17T03:34:07.017Z",
     "imageUrl": "https://m.media-amazon.com/images/I/61DxNd3iYqL._AC_SL1000_.jpg",
-    "priceHistory": [
-      {
-        "price": 14.08,
-        "at": "2026-06-10T04:11:20.108Z"
-      },
-      {
-        "price": 81,
-        "at": "2026-06-17T03:34:07.017Z"
-      }
-    ],
-    "reviewsHistory": [
-      {
-        "count": 2222,
-        "at": "2026-06-10T04:11:20.108Z"
-      },
-      {
-        "count": 10131,
-        "at": "2026-06-17T03:34:07.017Z"
-      }
-    ],
-    "trendingScore": 3.559,
-    "isTrending": true,
+    "priceHistory": [],
+    "reviewsHistory": [],
+    "trendingScore": 0,
+    "isTrending": false,
     "isBestSeller": true,
     "isAmazonChoice": false
   },
@@ -1921,28 +1783,10 @@
     "category": "HairCare",
     "scrapedAt": "2026-06-17T03:37:29.709Z",
     "imageUrl": "https://m.media-amazon.com/images/I/71K4A0Zhn4L._AC_SL1000_.jpg",
-    "priceHistory": [
-      {
-        "price": 25,
-        "at": "2026-06-10T04:11:20.110Z"
-      },
-      {
-        "price": 25,
-        "at": "2026-06-17T03:37:29.709Z"
-      }
-    ],
-    "reviewsHistory": [
-      {
-        "count": 22,
-        "at": "2026-06-10T04:11:20.110Z"
-      },
-      {
-        "count": 1591,
-        "at": "2026-06-17T03:37:29.709Z"
-      }
-    ],
-    "trendingScore": 71.318,
-    "isTrending": true,
+    "priceHistory": [],
+    "reviewsHistory": [],
+    "trendingScore": 0,
+    "isTrending": false,
     "isBestSeller": true,
     "isAmazonChoice": true
   },
@@ -1958,24 +1802,10 @@
     "category": "Fragrances",
     "scrapedAt": "2026-06-17T03:37:48.198Z",
     "imageUrl": "https://m.media-amazon.com/images/I/61BmkPeaONL._AC_SL1000_.jpg",
-    "priceHistory": [
-      {
-        "price": 185,
-        "at": "2026-06-17T03:37:48.198Z"
-      }
-    ],
-    "reviewsHistory": [
-      {
-        "count": 33,
-        "at": "2026-06-10T04:11:39.618Z"
-      },
-      {
-        "count": 548,
-        "at": "2026-06-17T03:37:48.198Z"
-      }
-    ],
-    "trendingScore": 15.606,
-    "isTrending": true,
+    "priceHistory": [],
+    "reviewsHistory": [],
+    "trendingScore": 0,
+    "isTrending": false,
     "isBestSeller": false,
     "isAmazonChoice": true
   },
@@ -2090,28 +1920,10 @@
     "category": "HairCare",
     "scrapedAt": "2026-06-17T03:39:07.841Z",
     "imageUrl": "https://m.media-amazon.com/images/I/71qXD4YXS0L._AC_SL1000_.jpg",
-    "priceHistory": [
-      {
-        "price": 18.89,
-        "at": "2026-06-10T04:11:20.112Z"
-      },
-      {
-        "price": 18.89,
-        "at": "2026-06-17T03:39:07.841Z"
-      }
-    ],
-    "reviewsHistory": [
-      {
-        "count": 66,
-        "at": "2026-06-10T04:11:20.112Z"
-      },
-      {
-        "count": 1224,
-        "at": "2026-06-17T03:39:07.841Z"
-      }
-    ],
-    "trendingScore": 17.545,
-    "isTrending": true,
+    "priceHistory": [],
+    "reviewsHistory": [],
+    "trendingScore": 0,
+    "isTrending": false,
     "isBestSeller": false,
     "isAmazonChoice": true
   },
@@ -2424,28 +2236,10 @@
     "category": "HairCare",
     "scrapedAt": "2026-06-17T03:42:53.846Z",
     "imageUrl": "https://m.media-amazon.com/images/I/41JavjTqINL._AC_SL1000_.jpg",
-    "priceHistory": [
-      {
-        "price": 36,
-        "at": "2026-06-10T04:11:20.114Z"
-      },
-      {
-        "price": 36,
-        "at": "2026-06-17T03:42:53.846Z"
-      }
-    ],
-    "reviewsHistory": [
-      {
-        "count": 22,
-        "at": "2026-06-10T04:11:20.114Z"
-      },
-      {
-        "count": 720,
-        "at": "2026-06-17T03:42:53.846Z"
-      }
-    ],
-    "trendingScore": 31.727,
-    "isTrending": true,
+    "priceHistory": [],
+    "reviewsHistory": [],
+    "trendingScore": 0,
+    "isTrending": false,
     "isBestSeller": false,
     "isAmazonChoice": false
   },
@@ -2514,846 +2308,1990 @@
   {
     "rank": 18,
     "asin": "B07BB1F11Z",
-    "title": "Essential Living: Witch Hazel Toner - Pure and Unscented - 12 oz. Natural Botanical Facial Skin Care Product for Acne and ...",
+    "title": "Essential Living: Witch Hazel Toner - Pure and Unscented - 12 oz. Natural Botanical Facial Skin Care Product for Acne and Blemishes - Helps Balance Skin pH - Fights Skin Inflammation - Made in the USA",
     "price": 19,
     "rating": "4.7 out of 5 stars",
     "ratingValue": 4.7,
-    "reviews": null,
-    "link": "https://www.amazon.com/Essential-Living-Unscented-Botanical-Inflammation/dp/B07BB1F11Z/ref=sr_1_11?dib=eyJ2IjoiMSJ9.anVEqyOvaJKdKNwBWTh5TA6pgngKkbfxTrAgc9cawHh7CiWns5ucXxVKc7sjPCnoa6sDI4uFnc0Ax9iphABEpq1BImKFqk5AKJ_TlQmZQrIvyzILJxdrEkBiz40WXgNsMF8AXKO095hN9cTQbb3M0Lj3Pb7RobvHnSgw72Zc1krvFFVJq4VPNihr3sOVkw20eejajZvavB0axCiKXD41Mt3vNgjy2lA2XsOKqjYmJM_jMXTdv_l9KADTJ52PP3H0EvtJPtPv0JLyQaEcqRXBdr4UymFxoHX5c6UEiSWEMaw.Q8vhLSbJFFz0ntuVP2-kMu_e7wurHazs29A7j-c0wzY&dib_tag=se&keywords=skincare+products&qid=1781064641&sr=8-11",
+    "reviews": 349,
+    "link": "https://www.amazon.com/dp/B07BB1F11Z/",
     "category": "Skincare",
-    "scrapedAt": "2026-06-10T04:10:40.339Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/61nvOANZcVL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:43:51.105Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/61nvOANZcVL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 19,
+        "at": "2026-06-10T04:10:40.339Z"
+      },
+      {
+        "price": 19,
+        "at": "2026-06-17T03:43:51.105Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 349,
+        "at": "2026-06-17T03:43:51.105Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": false
   },
   {
     "rank": 18,
     "asin": "B08VC6YWBY",
-    "title": "Sigma Beauty On-the-Go Eyeshadow Palette - Ivy - 9 Bold Eyeshadow Shades in Matte, Shimmer and Metalic Finishes - Highly P...",
-    "price": 35.5,
+    "title": "Sigma Beauty On-the-Go Eyeshadow Palette - Ivy - 9 Bold Eyeshadow Shades in Matte, Shimmer and Metalic Finishes - Highly Pigmented Vegan Eye Makeup Palette - Clean Beauty Products",
+    "price": 36,
     "rating": "4.4 out of 5 stars",
     "ratingValue": 4.4,
-    "reviews": null,
-    "link": "https://www.amazon.com/Sigma-Beauty-Ivy-Eyeshadow-Palette/dp/B08VC6YWBY/ref=sr_1_15?dib=eyJ2IjoiMSJ9.gE8XQ4-yei3dANc0kYslx_b2_fW9R7Lb3A_EVBoJKWzdZkGZMiOlo_3DhFu7iBYcHDKKIR0-ofSMr7BjX7HuoGq3t0__ypAMq-w5Wgx--lHkYpA7buIzQTcVVjdQ233FnBPoaWWQ0KRXy9vWUzoYpGwThB-wXY1Gm1kBQextg_6QAOfRmN1HE8QpUD7tuuNwwu_WdBngfGNphqsLd3RMCDigFEzHRksMpAHoxX76LfhsWWFSnLpyieMUCVNxL2KrENP7DQ-p6Ap5PN_sCZSIW1a9xtZQEJiM392Lme52Ji0.Y0AKKZkvADq2yxWE7vIMpkDh9ltMCm1mHLiED8Aq1js&dib_tag=se&keywords=makeup+products&qid=1781064662&sr=8-15",
+    "reviews": 253,
+    "link": "https://www.amazon.com/dp/B08VC6YWBY/",
     "category": "Makeup",
-    "scrapedAt": "2026-06-10T04:10:59.883Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/81uMjKanQIL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:44:11.440Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/81uMjKanQIL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 35.5,
+        "at": "2026-06-10T04:10:59.883Z"
+      },
+      {
+        "price": 36,
+        "at": "2026-06-17T03:44:11.440Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 253,
+        "at": "2026-06-17T03:44:11.440Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": false
   },
   {
     "rank": 18,
     "asin": "B01IDN0D2U",
-    "title": "TIGI Bed Head Hair Gel for Men, Power Play 2-Pack – Firm Finish, Anti-Humidity, Frizz Control Hair Care Products for Men, ...",
+    "title": "TIGI Bed Head Hair Gel for Men, Power Play 2-Pack – Firm Finish, Anti-Humidity, Frizz Control Hair Care Products for Men, 6.76 Oz Ea",
     "price": 19.99,
     "rating": "4.7 out of 5 stars",
     "ratingValue": 4.7,
-    "reviews": null,
-    "link": "https://www.amazon.com/Head-Power-Finish-Fluid-Ounce/dp/B01IDN0D2U/ref=sr_1_12?dib=eyJ2IjoiMSJ9.sa9N5NJJFMRSQokf7Qx2FbF5dZ6xi5u0-X9t9vNzLe3OB-nKhln4mXwaaO8HioXqYQHv0aXUj3aPZiVeEMdH8ZnCWGdHV_gUy1G9yDZyPnKZjhJ6ngzDThhQrOFJjADw6MFNlHPSYM9M9_c3Lp-quNuueJYKRTUPygw9Tw87WszCCBXZJWXbDqHBh13JG7IBba23cQe4MNKvcvnBwaNezBHR7bX9n2M5CBQLIi0SPIIM4o8B0Pjiqm_leXUVnFxbC3ftq0bhfRAwQFqNyIeMgb_sTk-mPmznRmuDLcdWPHU.3XfAC1vC7B9tQejBWENGMDyVir7hZiosEuIpy8eKSpw&dib_tag=se&keywords=hair+care+products&qid=1781064681&sr=8-12",
+    "reviews": 715,
+    "link": "https://www.amazon.com/dp/B01IDN0D2U/",
     "category": "HairCare",
-    "scrapedAt": "2026-06-10T04:11:20.115Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/81ojBQQTdiL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:44:31.597Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/81ojBQQTdiL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 19.99,
+        "at": "2026-06-10T04:11:20.115Z"
+      },
+      {
+        "price": 19.99,
+        "at": "2026-06-17T03:44:31.597Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 715,
+        "at": "2026-06-17T03:44:31.597Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": false
   },
   {
     "rank": 18,
     "asin": "B00B86EQFA",
     "title": "Geir Ness - Laila Eau De Parfum Spray - Long Lasting Fresh, Airy and Clean Fragrance",
-    "price": null,
+    "price": 95,
     "rating": "4.8 out of 5 stars",
     "ratingValue": 4.8,
-    "reviews": null,
-    "link": "https://www.amazon.com/Laila-Geir-Parfum-Spray-Women/dp/B00B86EQFA/ref=sr_1_13?dib=eyJ2IjoiMSJ9.t_4PZapEI-OIE9sayiZuOFtIsw7ZH_b75s0IkRuT9Oj2P7wDadwC2_4f5zwCJbzalSJPiFIC7wCht1YqWv4qddFSkz9LtYSLA_pcNXy1t__phIf8Jnz08Wckg4qihq68RGBKpx7j0BEFdv65L5fOl3VWYwnaNipck6kNy4Ra4iCe0J9JD-fXcnfCVu_Fb2E2aW8BG14_ZgSdwCRrEb60n2F1g4Xid4sxb0Pbwo57Cv7Kmfb_RxzRmQUTLIiMXvMBBrnNlau8ChKn3eveU03DV7LntwoJG786R3mynG5Zpro.YhevGJULG1B3jDdao8uICeAcLkFcm06wGi-m28cKGjs&dib_tag=se&keywords=fragrances+for+women&qid=1781064702&sr=8-13",
+    "reviews": 350,
+    "link": "https://www.amazon.com/dp/B00B86EQFA/",
     "category": "Fragrances",
-    "scrapedAt": "2026-06-10T04:11:39.621Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/71y7mx7joDL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:44:55.140Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/71y7mx7joDL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 95,
+        "at": "2026-06-17T03:44:55.140Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 350,
+        "at": "2026-06-17T03:44:55.140Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": true
   },
   {
     "rank": 18,
     "asin": "B0BX2VQ67Q",
     "title": "ChefBee 200PCS Lip Gloss Applicators Disposable, Lint Free Lip Brush Lipstick Applicator Wands, Beauty Tool Kits Black",
-    "price": 4.99,
+    "price": 4.89,
     "rating": "4.8 out of 5 stars",
     "ratingValue": 4.8,
-    "reviews": null,
-    "link": "https://www.amazon.com/ChefBee-200PCS-Lip-Applicators-Disposable/dp/B0BX2VQ67Q/ref=sr_1_15?dib=eyJ2IjoiMSJ9.R9N_uOBldLUjkw4FNGv13Wn7Hcqm9V4p2kw-yY9DVehCQD8ZRxO3lFuewMWHhZellfalSF1aPD2HrZs_mLFM3wQ5fAdg_tdiXNSh65KnTQpGebJrQnk2D927WklSUeQLjVhza_9xOAZLOr9TTVMLdpy4DxdjZCia47zQ7pBJIyf9JOsjb61y9SicDRbBquApXNlKgr0dwMx5r2ZIvHFz_iIf5sEUZroUbsMJt1y6u-kgqQYEsp54gDbJFVKVBEhyhB31ZMnwRobSParPfMvb6OpYBQGYA07jfEhTcTVevKE.osGyfjmqzNHw89y99_PnDplwh3B3IpNWtsfkb40dpKo&dib_tag=se&keywords=beauty+tools&qid=1781064721&sr=8-15",
+    "reviews": 468,
+    "link": "https://www.amazon.com/dp/B0BX2VQ67Q/",
     "category": "BeautyTools",
-    "scrapedAt": "2026-06-10T04:12:00.046Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/61Uz4oApVLL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:45:14.512Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/61Uz4oApVLL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 4.99,
+        "at": "2026-06-10T04:12:00.046Z"
+      },
+      {
+        "price": 4.89,
+        "at": "2026-06-17T03:45:14.512Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 468,
+        "at": "2026-06-17T03:45:14.512Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": true
   },
   {
     "rank": 19,
     "asin": "B0BPVS7V1B",
-    "title": "Glorio Calm Aloe Clay Masks (8 count & Applicator), for Reducing Redness & Inflamed Skin, Face Mask Skin Care for Dry, Sen...",
+    "title": "Glorio Calm Aloe Clay Masks (8 count & Applicator), for Reducing Redness & Inflamed Skin, Face Mask Skin Care for Dry, Sensitive Skin Types, Facial Care for Men & Women, Skincare Products for Face",
     "price": 39.99,
     "rating": "4.7 out of 5 stars",
     "ratingValue": 4.7,
-    "reviews": null,
-    "link": "https://www.amazon.com/Glorio-Applicator-Reducing-Inflamed-Sensitive/dp/B0BPVS7V1B/ref=sr_1_12?dib=eyJ2IjoiMSJ9.anVEqyOvaJKdKNwBWTh5TA6pgngKkbfxTrAgc9cawHh7CiWns5ucXxVKc7sjPCnoa6sDI4uFnc0Ax9iphABEpq1BImKFqk5AKJ_TlQmZQrIvyzILJxdrEkBiz40WXgNsMF8AXKO095hN9cTQbb3M0Lj3Pb7RobvHnSgw72Zc1krvFFVJq4VPNihr3sOVkw20eejajZvavB0axCiKXD41Mt3vNgjy2lA2XsOKqjYmJM_jMXTdv_l9KADTJ52PP3H0EvtJPtPv0JLyQaEcqRXBdr4UymFxoHX5c6UEiSWEMaw.Q8vhLSbJFFz0ntuVP2-kMu_e7wurHazs29A7j-c0wzY&dib_tag=se&keywords=skincare+products&qid=1781064641&sr=8-12",
+    "reviews": 132,
+    "link": "https://www.amazon.com/dp/B0BPVS7V1B/",
     "category": "Skincare",
-    "scrapedAt": "2026-06-10T04:10:40.340Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/71svrF8i-QL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:45:36.364Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/71svrF8i-QL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 39.99,
+        "at": "2026-06-10T04:10:40.340Z"
+      },
+      {
+        "price": 39.99,
+        "at": "2026-06-17T03:45:36.364Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 132,
+        "at": "2026-06-17T03:45:36.364Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": true,
+    "isAmazonChoice": true
   },
   {
     "rank": 19,
     "asin": "B09NXBFDJN",
-    "title": "wet n wild Prime Focus Facial Serum Primer Makeup Extending, Hydrating Face Skin Care Product, Reduces Fine Lines And Wrin...",
+    "title": "wet n wild Prime Focus Facial Serum Primer Makeup Extending, Hydrating Face Skin Care Product, Reduces Fine Lines And Wrinkles, For Repairing Dry Skin, Retinol Alternative",
     "price": 8.49,
     "rating": "4.3 out of 5 stars",
     "ratingValue": 4.3,
-    "reviews": null,
-    "link": "https://www.amazon.com/wet-wild-Extending-Hydrating-Alternative/dp/B09NXBFDJN/ref=sr_1_16?dib=eyJ2IjoiMSJ9.gE8XQ4-yei3dANc0kYslx_b2_fW9R7Lb3A_EVBoJKWzdZkGZMiOlo_3DhFu7iBYcHDKKIR0-ofSMr7BjX7HuoGq3t0__ypAMq-w5Wgx--lHkYpA7buIzQTcVVjdQ233FnBPoaWWQ0KRXy9vWUzoYpGwThB-wXY1Gm1kBQextg_6QAOfRmN1HE8QpUD7tuuNwwu_WdBngfGNphqsLd3RMCDigFEzHRksMpAHoxX76LfhsWWFSnLpyieMUCVNxL2KrENP7DQ-p6Ap5PN_sCZSIW1a9xtZQEJiM392Lme52Ji0.Y0AKKZkvADq2yxWE7vIMpkDh9ltMCm1mHLiED8Aq1js&dib_tag=se&keywords=makeup+products&qid=1781064662&sr=8-16",
+    "reviews": 5380,
+    "link": "https://www.amazon.com/dp/B09NXBFDJN/",
     "category": "Makeup",
-    "scrapedAt": "2026-06-10T04:10:59.886Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/71EXSrnCMcL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:45:56.199Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/71EXSrnCMcL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 8.49,
+        "at": "2026-06-10T04:10:59.886Z"
+      },
+      {
+        "price": 8.49,
+        "at": "2026-06-17T03:45:56.199Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 5380,
+        "at": "2026-06-17T03:45:56.199Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": true,
+    "isAmazonChoice": true
   },
   {
     "rank": 19,
     "asin": "B07TXWT7C2",
-    "title": "Ever Ego Italy Garlic Mask For Damaged, Bleached or Colored Hair | Repairing And Hydrating Hair Care Product For Men And W...",
-    "price": 22.48,
+    "title": "Garlic Mask For Damaged, Bleached or Colored Hair | Repairing And Hydrating Hair Care Product For Men And Women | 500ml Tub",
+    "price": 22.47,
     "rating": "4.7 out of 5 stars",
     "ratingValue": 4.7,
-    "reviews": null,
-    "link": "https://www.amazon.com/Ever-Ego-Italy-Repairing-Hydrating/dp/B07TXWT7C2/ref=sr_1_13?dib=eyJ2IjoiMSJ9.sa9N5NJJFMRSQokf7Qx2FbF5dZ6xi5u0-X9t9vNzLe3OB-nKhln4mXwaaO8HioXqYQHv0aXUj3aPZiVeEMdH8ZnCWGdHV_gUy1G9yDZyPnKZjhJ6ngzDThhQrOFJjADw6MFNlHPSYM9M9_c3Lp-quNuueJYKRTUPygw9Tw87WszCCBXZJWXbDqHBh13JG7IBba23cQe4MNKvcvnBwaNezBHR7bX9n2M5CBQLIi0SPIIM4o8B0Pjiqm_leXUVnFxbC3ftq0bhfRAwQFqNyIeMgb_sTk-mPmznRmuDLcdWPHU.3XfAC1vC7B9tQejBWENGMDyVir7hZiosEuIpy8eKSpw&dib_tag=se&keywords=hair+care+products&qid=1781064681&sr=8-13",
+    "reviews": 544,
+    "link": "https://www.amazon.com/dp/B07TXWT7C2/",
     "category": "HairCare",
-    "scrapedAt": "2026-06-10T04:11:20.116Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/71v57d21W7L._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:46:17.958Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/71v57d21W7L._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 22.48,
+        "at": "2026-06-10T04:11:20.116Z"
+      },
+      {
+        "price": 22.47,
+        "at": "2026-06-17T03:46:17.958Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 544,
+        "at": "2026-06-17T03:46:17.958Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": false
   },
   {
     "rank": 19,
     "asin": "B0DBVZVKHX",
-    "title": "Lancôme La Vie Est Belle L'Elixir Eau de Parfum - Long Lasting Fragrance with Raspberry, Violet & Cocoa Butter - Floral Wo...",
+    "title": "Lancôme La Vie Est Belle L'Elixir Eau de Parfum - Long Lasting Fragrance with Raspberry, Violet & Cocoa Butter - Floral Women's Perfume",
     "price": null,
     "rating": "4.8 out of 5 stars",
     "ratingValue": 4.8,
-    "reviews": 44,
-    "link": "https://www.amazon.com/Lanc%C3%B4me-Vie-Belle-LElixir-Parfum/dp/B0DBVZVKHX/ref=sr_1_14?dib=eyJ2IjoiMSJ9.t_4PZapEI-OIE9sayiZuOFtIsw7ZH_b75s0IkRuT9Oj2P7wDadwC2_4f5zwCJbzalSJPiFIC7wCht1YqWv4qddFSkz9LtYSLA_pcNXy1t__phIf8Jnz08Wckg4qihq68RGBKpx7j0BEFdv65L5fOl3VWYwnaNipck6kNy4Ra4iCe0J9JD-fXcnfCVu_Fb2E2aW8BG14_ZgSdwCRrEb60n2F1g4Xid4sxb0Pbwo57Cv7Kmfb_RxzRmQUTLIiMXvMBBrnNlau8ChKn3eveU03DV7LntwoJG786R3mynG5Zpro.YhevGJULG1B3jDdao8uICeAcLkFcm06wGi-m28cKGjs&dib_tag=se&keywords=fragrances+for+women&qid=1781064702&sr=8-14",
+    "reviews": 330,
+    "link": "https://www.amazon.com/dp/B0DBVZVKHX/",
     "category": "Fragrances",
-    "scrapedAt": "2026-06-10T04:11:39.622Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/61M2L3cd63L._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:47:10.160Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/61M2L3cd63L._AC_SL1000_.jpg",
+    "priceHistory": [],
+    "reviewsHistory": [],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": true,
+    "isAmazonChoice": true
   },
   {
     "rank": 19,
     "asin": "B0CXDG4KN2",
-    "title": "MAPVOLUT 120Pcs Micro Eyebrow Brush with Cap - Professional Makeup Kit for Brow Lamination, Eyelash Extensions & Beauty Sa...",
+    "title": "MAPVOLUT 120Pcs Micro Eyebrow Brush with Cap - Professional Makeup Kit for Brow Lamination, Eyelash Extensions & Beauty Salon Use - Multi-Purpose Eyebrow Tools for Home or Salon (Black, White)",
     "price": 9.99,
     "rating": "4.8 out of 5 stars",
     "ratingValue": 4.8,
-    "reviews": null,
-    "link": "https://www.amazon.com/MAPVOLUT-Lamination-Supplies-Spoolies-Extensions/dp/B0CXDG4KN2/ref=sr_1_16?dib=eyJ2IjoiMSJ9.R9N_uOBldLUjkw4FNGv13Wn7Hcqm9V4p2kw-yY9DVehCQD8ZRxO3lFuewMWHhZellfalSF1aPD2HrZs_mLFM3wQ5fAdg_tdiXNSh65KnTQpGebJrQnk2D927WklSUeQLjVhza_9xOAZLOr9TTVMLdpy4DxdjZCia47zQ7pBJIyf9JOsjb61y9SicDRbBquApXNlKgr0dwMx5r2ZIvHFz_iIf5sEUZroUbsMJt1y6u-kgqQYEsp54gDbJFVKVBEhyhB31ZMnwRobSParPfMvb6OpYBQGYA07jfEhTcTVevKE.osGyfjmqzNHw89y99_PnDplwh3B3IpNWtsfkb40dpKo&dib_tag=se&keywords=beauty+tools&qid=1781064721&sr=8-16",
+    "reviews": 235,
+    "link": "https://www.amazon.com/dp/B0CXDG4KN2/",
     "category": "BeautyTools",
-    "scrapedAt": "2026-06-10T04:12:00.049Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/71fLOmYmcCL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:47:30.151Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/71fLOmYmcCL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 9.99,
+        "at": "2026-06-10T04:12:00.049Z"
+      },
+      {
+        "price": 9.99,
+        "at": "2026-06-17T03:47:30.151Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 235,
+        "at": "2026-06-17T03:47:30.151Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": true
   },
   {
     "rank": 20,
     "asin": "B0CTXRC14F",
-    "title": "Boho Aromatic Calendula Nourishing Face Cream for Dry Skin, Natural & Organic Facial Cream, Hydrating and Moisturizing ski...",
+    "title": "Calendula Nourishing Face Cream for Dry Skin, Natural & Organic Facial Cream, Hydrating and Moisturizing skin care product, Vegan Face Cream, calendula face cream, Facial Moisturizer",
     "price": 24.99,
     "rating": "4.9 out of 5 stars",
     "ratingValue": 4.9,
-    "reviews": null,
-    "link": "https://www.amazon.com/Boho-Aromatic-Nourishing-Moisturizing-Moisturizer/dp/B0CTXRC14F/ref=sr_1_13?dib=eyJ2IjoiMSJ9.anVEqyOvaJKdKNwBWTh5TA6pgngKkbfxTrAgc9cawHh7CiWns5ucXxVKc7sjPCnoa6sDI4uFnc0Ax9iphABEpq1BImKFqk5AKJ_TlQmZQrIvyzILJxdrEkBiz40WXgNsMF8AXKO095hN9cTQbb3M0Lj3Pb7RobvHnSgw72Zc1krvFFVJq4VPNihr3sOVkw20eejajZvavB0axCiKXD41Mt3vNgjy2lA2XsOKqjYmJM_jMXTdv_l9KADTJ52PP3H0EvtJPtPv0JLyQaEcqRXBdr4UymFxoHX5c6UEiSWEMaw.Q8vhLSbJFFz0ntuVP2-kMu_e7wurHazs29A7j-c0wzY&dib_tag=se&keywords=skincare+products&qid=1781064641&sr=8-13",
+    "reviews": 22,
+    "link": "https://www.amazon.com/dp/B0CTXRC14F/",
     "category": "Skincare",
-    "scrapedAt": "2026-06-10T04:10:40.341Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/81wwzhPtDaL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:47:51.138Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/81wwzhPtDaL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 24.99,
+        "at": "2026-06-10T04:10:40.341Z"
+      },
+      {
+        "price": 24.99,
+        "at": "2026-06-17T03:47:51.138Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 22,
+        "at": "2026-06-17T03:47:51.138Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": false
   },
   {
     "rank": 20,
     "asin": "B002NJ8X4Q",
-    "title": "Honeybee Gardens Irresistible Lip Liner Pencil – Fantasy Deep Red Berry, Long-Lasting Lip Pencil for Women, Smooth Precisi...",
+    "title": "Honeybee Gardens Irresistible Lip Liner Pencil – Fantasy Deep Red Berry, Long-Lasting Lip Pencil for Women, Smooth Precision Application, Vegan Makeup Lip Products, Gluten-Free, Paraben-Free, 0.04 oz",
     "price": 12.99,
     "rating": "4.3 out of 5 stars",
     "ratingValue": 4.3,
-    "reviews": null,
-    "link": "https://www.amazon.com/Honeybee-Gardens-Irresistible-Fantasy-Cruelty/dp/B002NJ8X4Q/ref=sr_1_17?dib=eyJ2IjoiMSJ9.gE8XQ4-yei3dANc0kYslx_b2_fW9R7Lb3A_EVBoJKWzdZkGZMiOlo_3DhFu7iBYcHDKKIR0-ofSMr7BjX7HuoGq3t0__ypAMq-w5Wgx--lHkYpA7buIzQTcVVjdQ233FnBPoaWWQ0KRXy9vWUzoYpGwThB-wXY1Gm1kBQextg_6QAOfRmN1HE8QpUD7tuuNwwu_WdBngfGNphqsLd3RMCDigFEzHRksMpAHoxX76LfhsWWFSnLpyieMUCVNxL2KrENP7DQ-p6Ap5PN_sCZSIW1a9xtZQEJiM392Lme52Ji0.Y0AKKZkvADq2yxWE7vIMpkDh9ltMCm1mHLiED8Aq1js&dib_tag=se&keywords=makeup+products&qid=1781064662&sr=8-17",
+    "reviews": 752,
+    "link": "https://www.amazon.com/dp/B002NJ8X4Q/",
     "category": "Makeup",
-    "scrapedAt": "2026-06-10T04:10:59.893Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/41-GFSyFI3L._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:48:10.793Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/41-GFSyFI3L._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 12.99,
+        "at": "2026-06-10T04:10:59.893Z"
+      },
+      {
+        "price": 12.99,
+        "at": "2026-06-17T03:48:10.793Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 752,
+        "at": "2026-06-17T03:48:10.793Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": false
   },
   {
     "rank": 20,
     "asin": "B07D6SZ74W",
-    "title": "MONAT Studio One Blow Out Cream - Anti Frizz Hair Care/Cream Helps Smooth and Soften Hair While Using Heat Styling Product...",
-    "price": 44.8,
+    "title": "MONAT Studio One Blow Out Cream - Anti Frizz Hair Care/Cream Helps Smooth and Soften Hair While Using Heat Styling Products. Thermal/Heat Protectant - Net Wt. 118 ml / 4 fl. oz.",
+    "price": 38,
     "rating": "4.7 out of 5 stars",
     "ratingValue": 4.7,
-    "reviews": null,
-    "link": "https://www.amazon.com/Monat-Blow-Out-Cream-118/dp/B07D6SZ74W/ref=sr_1_14?dib=eyJ2IjoiMSJ9.sa9N5NJJFMRSQokf7Qx2FbF5dZ6xi5u0-X9t9vNzLe3OB-nKhln4mXwaaO8HioXqYQHv0aXUj3aPZiVeEMdH8ZnCWGdHV_gUy1G9yDZyPnKZjhJ6ngzDThhQrOFJjADw6MFNlHPSYM9M9_c3Lp-quNuueJYKRTUPygw9Tw87WszCCBXZJWXbDqHBh13JG7IBba23cQe4MNKvcvnBwaNezBHR7bX9n2M5CBQLIi0SPIIM4o8B0Pjiqm_leXUVnFxbC3ftq0bhfRAwQFqNyIeMgb_sTk-mPmznRmuDLcdWPHU.3XfAC1vC7B9tQejBWENGMDyVir7hZiosEuIpy8eKSpw&dib_tag=se&keywords=hair+care+products&qid=1781064681&sr=8-14",
+    "reviews": 516,
+    "link": "https://www.amazon.com/dp/B07D6SZ74W/",
     "category": "HairCare",
-    "scrapedAt": "2026-06-10T04:11:20.117Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/616ol7QD+QL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:48:29.697Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/616ol7QD+QL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 44.8,
+        "at": "2026-06-10T04:11:20.117Z"
+      },
+      {
+        "price": 38,
+        "at": "2026-06-17T03:48:29.697Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 516,
+        "at": "2026-06-17T03:48:29.697Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": false
   },
   {
     "rank": 20,
     "asin": "B0CHQXMDHC",
     "title": "Victoria's Secret Desert Wonders Fragrance Mist Collection, 8.4 Fl Oz (Cactus Water)",
     "price": null,
-    "rating": "5.0 out of 5 stars",
+    "rating": "5 out of 5 stars",
     "ratingValue": 5,
-    "reviews": null,
-    "link": "https://www.amazon.com/Victorias-Secret-Wonders-Fragrance-Collection/dp/B0CHQXMDHC/ref=sr_1_15?dib=eyJ2IjoiMSJ9.t_4PZapEI-OIE9sayiZuOFtIsw7ZH_b75s0IkRuT9Oj2P7wDadwC2_4f5zwCJbzalSJPiFIC7wCht1YqWv4qddFSkz9LtYSLA_pcNXy1t__phIf8Jnz08Wckg4qihq68RGBKpx7j0BEFdv65L5fOl3VWYwnaNipck6kNy4Ra4iCe0J9JD-fXcnfCVu_Fb2E2aW8BG14_ZgSdwCRrEb60n2F1g4Xid4sxb0Pbwo57Cv7Kmfb_RxzRmQUTLIiMXvMBBrnNlau8ChKn3eveU03DV7LntwoJG786R3mynG5Zpro.YhevGJULG1B3jDdao8uICeAcLkFcm06wGi-m28cKGjs&dib_tag=se&keywords=fragrances+for+women&qid=1781064702&sr=8-15",
+    "reviews": 30,
+    "link": "https://www.amazon.com/dp/B0CHQXMDHC/",
     "category": "Fragrances",
-    "scrapedAt": "2026-06-10T04:11:39.623Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/61lPNhUvX0L._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:48:48.820Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/61lPNhUvX0L._AC_SL1000_.jpg",
+    "priceHistory": [],
+    "reviewsHistory": [
+      {
+        "count": 30,
+        "at": "2026-06-17T03:48:48.820Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": false
   },
   {
     "rank": 20,
     "asin": "B0GSL59222",
-    "title": "Lymphatic Contour Face Brush with Soft Synthetic Bristles, Lymphatic Drainage Massager, Travel Makeup Brush with Case, Gua...",
+    "title": "Lymphatic Contour Face Brush with Soft Synthetic Bristles, Lymphatic Drainage Massager, Travel Makeup Brush with Case, Gua Sha Facial Tools Inspired Beauty Accessory",
     "price": 7.12,
     "rating": "4.9 out of 5 stars",
     "ratingValue": 4.9,
-    "reviews": null,
-    "link": "https://www.amazon.com/Lymphatic-Synthetic-Bristles-Drainage-Accessory/dp/B0GSL59222/ref=sr_1_17?dib=eyJ2IjoiMSJ9.R9N_uOBldLUjkw4FNGv13Wn7Hcqm9V4p2kw-yY9DVehCQD8ZRxO3lFuewMWHhZellfalSF1aPD2HrZs_mLFM3wQ5fAdg_tdiXNSh65KnTQpGebJrQnk2D927WklSUeQLjVhza_9xOAZLOr9TTVMLdpy4DxdjZCia47zQ7pBJIyf9JOsjb61y9SicDRbBquApXNlKgr0dwMx5r2ZIvHFz_iIf5sEUZroUbsMJt1y6u-kgqQYEsp54gDbJFVKVBEhyhB31ZMnwRobSParPfMvb6OpYBQGYA07jfEhTcTVevKE.osGyfjmqzNHw89y99_PnDplwh3B3IpNWtsfkb40dpKo&dib_tag=se&keywords=beauty+tools&qid=1781064721&sr=8-17",
+    "reviews": 54,
+    "link": "https://www.amazon.com/dp/B0GSL59222/",
     "category": "BeautyTools",
-    "scrapedAt": "2026-06-10T04:12:00.052Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/816xAcpWogL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:49:58.527Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/71n3G1U6+QL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 7.12,
+        "at": "2026-06-10T04:12:00.052Z"
+      },
+      {
+        "price": 7.12,
+        "at": "2026-06-17T03:49:58.527Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 54,
+        "at": "2026-06-17T03:49:58.527Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": true
   },
   {
     "rank": 21,
     "asin": "B0CGCPLFX7",
-    "title": "Rowcay 4 Piece Silicone Mixing Bowls, 3.93 Inch Microwaveable Silicone Bowl with Dual Ended Stirring Sticks for Facial Mas...",
+    "title": "4 Piece Silicone Mixing Bowls, 3.93 Inch Microwaveable Silicone Bowl with Dual Ended Stirring Sticks for Facial Masks, Mud Masks, and Other Skin Care Products Facial Bowls for Aestheticians.",
     "price": 6.97,
     "rating": "4.9 out of 5 stars",
     "ratingValue": 4.9,
-    "reviews": null,
-    "link": "https://www.amazon.com/Rowcay-Silicone-Microwavable-Double-ended-Stirring/dp/B0CGCPLFX7/ref=sr_1_14?dib=eyJ2IjoiMSJ9.anVEqyOvaJKdKNwBWTh5TA6pgngKkbfxTrAgc9cawHh7CiWns5ucXxVKc7sjPCnoa6sDI4uFnc0Ax9iphABEpq1BImKFqk5AKJ_TlQmZQrIvyzILJxdrEkBiz40WXgNsMF8AXKO095hN9cTQbb3M0Lj3Pb7RobvHnSgw72Zc1krvFFVJq4VPNihr3sOVkw20eejajZvavB0axCiKXD41Mt3vNgjy2lA2XsOKqjYmJM_jMXTdv_l9KADTJ52PP3H0EvtJPtPv0JLyQaEcqRXBdr4UymFxoHX5c6UEiSWEMaw.Q8vhLSbJFFz0ntuVP2-kMu_e7wurHazs29A7j-c0wzY&dib_tag=se&keywords=skincare+products&qid=1781064641&sr=8-14",
+    "reviews": 23,
+    "link": "https://www.amazon.com/dp/B0CGCPLFX7/",
     "category": "Skincare",
-    "scrapedAt": "2026-06-10T04:10:40.341Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/51W-0HB6JlL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:50:16.695Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/51W-0HB6JlL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 6.97,
+        "at": "2026-06-10T04:10:40.341Z"
+      },
+      {
+        "price": 6.97,
+        "at": "2026-06-17T03:50:16.695Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 23,
+        "at": "2026-06-17T03:50:16.695Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": true
   },
   {
     "rank": 21,
     "asin": "B0G2852784",
-    "title": "DFRACT Anti-Shine Invisible Blur Balm | Without Makeup Or As A Topper | Skin Blurring & Antishine For On-Camera Content & ...",
+    "title": "Anti-Shine Invisible Blur Balm | Without Makeup Or As A Topper | Skin Blurring & Antishine For On-Camera Content & Media Creation With Production Lights & Zoomed In Lenses | 1oz",
     "price": 49.95,
-    "rating": "4.4 out of 5 stars",
-    "ratingValue": 4.4,
-    "reviews": null,
-    "link": "https://www.amazon.com/DFRACT-Anti-Shine-Invisible-Soft-Focus-Photography/dp/B0G2852784/ref=sr_1_18?dib=eyJ2IjoiMSJ9.gE8XQ4-yei3dANc0kYslx_b2_fW9R7Lb3A_EVBoJKWzdZkGZMiOlo_3DhFu7iBYcHDKKIR0-ofSMr7BjX7HuoGq3t0__ypAMq-w5Wgx--lHkYpA7buIzQTcVVjdQ233FnBPoaWWQ0KRXy9vWUzoYpGwThB-wXY1Gm1kBQextg_6QAOfRmN1HE8QpUD7tuuNwwu_WdBngfGNphqsLd3RMCDigFEzHRksMpAHoxX76LfhsWWFSnLpyieMUCVNxL2KrENP7DQ-p6Ap5PN_sCZSIW1a9xtZQEJiM392Lme52Ji0.Y0AKKZkvADq2yxWE7vIMpkDh9ltMCm1mHLiED8Aq1js&dib_tag=se&keywords=makeup+products&qid=1781064662&sr=8-18",
+    "rating": "4.5 out of 5 stars",
+    "ratingValue": 4.5,
+    "reviews": 36,
+    "link": "https://www.amazon.com/dp/B0G2852784/",
     "category": "Makeup",
-    "scrapedAt": "2026-06-10T04:10:59.896Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/61BnEP1ntiL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:50:35.756Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/61BnEP1ntiL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 49.95,
+        "at": "2026-06-10T04:10:59.896Z"
+      },
+      {
+        "price": 49.95,
+        "at": "2026-06-17T03:50:35.756Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 36,
+        "at": "2026-06-17T03:50:35.756Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": true,
+    "isAmazonChoice": true
   },
   {
     "rank": 21,
     "asin": "B0DQ55CJLK",
-    "title": "Ever Ego Italy Garlic Mask For Damaged, Bleached or Colored Hair | Repairing And Hydrating Hair Care Product For Men And W...",
+    "title": "Garlic Mask For Damaged, Bleached or Colored Hair | Repairing And Hydrating Hair Care Product For Men And Women | 1L Tub (Pack of 2)",
     "price": 80.66,
-    "rating": "",
-    "ratingValue": null,
+    "rating": "4.2 out of 5 stars",
+    "ratingValue": 4.2,
     "reviews": 0,
-    "link": "https://www.amazon.com/Ever-Ego-Italy-Repairing-Hydrating/dp/B0DQ55CJLK/ref=sr_1_15?dib=eyJ2IjoiMSJ9.sa9N5NJJFMRSQokf7Qx2FbF5dZ6xi5u0-X9t9vNzLe3OB-nKhln4mXwaaO8HioXqYQHv0aXUj3aPZiVeEMdH8ZnCWGdHV_gUy1G9yDZyPnKZjhJ6ngzDThhQrOFJjADw6MFNlHPSYM9M9_c3Lp-quNuueJYKRTUPygw9Tw87WszCCBXZJWXbDqHBh13JG7IBba23cQe4MNKvcvnBwaNezBHR7bX9n2M5CBQLIi0SPIIM4o8B0Pjiqm_leXUVnFxbC3ftq0bhfRAwQFqNyIeMgb_sTk-mPmznRmuDLcdWPHU.3XfAC1vC7B9tQejBWENGMDyVir7hZiosEuIpy8eKSpw&dib_tag=se&keywords=hair+care+products&qid=1781064681&sr=8-15",
+    "link": "https://www.amazon.com/dp/B0DQ55CJLK/",
     "category": "HairCare",
-    "scrapedAt": "2026-06-10T04:11:20.117Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/71pT5auxevL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:50:56.110Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/71pT5auxevL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 80.66,
+        "at": "2026-06-10T04:11:20.117Z"
+      },
+      {
+        "price": 80.66,
+        "at": "2026-06-17T03:50:56.110Z"
+      }
+    ],
+    "reviewsHistory": [],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": false
   },
   {
     "rank": 21,
     "asin": "B08ZW5S4W4",
     "title": "Tremendous Calgon Hawaiian Ginger by Calgon, 3 Pack 8 oz Fragrance Mist for Women",
-    "price": null,
+    "price": 29.34,
     "rating": "4.9 out of 5 stars",
     "ratingValue": 4.9,
-    "reviews": null,
-    "link": "https://www.amazon.com/Calgon-Hawaiian-Ginger-Fragrance-Women/dp/B08ZW5S4W4/ref=sr_1_16?dib=eyJ2IjoiMSJ9.t_4PZapEI-OIE9sayiZuOFtIsw7ZH_b75s0IkRuT9Oj2P7wDadwC2_4f5zwCJbzalSJPiFIC7wCht1YqWv4qddFSkz9LtYSLA_pcNXy1t__phIf8Jnz08Wckg4qihq68RGBKpx7j0BEFdv65L5fOl3VWYwnaNipck6kNy4Ra4iCe0J9JD-fXcnfCVu_Fb2E2aW8BG14_ZgSdwCRrEb60n2F1g4Xid4sxb0Pbwo57Cv7Kmfb_RxzRmQUTLIiMXvMBBrnNlau8ChKn3eveU03DV7LntwoJG786R3mynG5Zpro.YhevGJULG1B3jDdao8uICeAcLkFcm06wGi-m28cKGjs&dib_tag=se&keywords=fragrances+for+women&qid=1781064702&sr=8-16",
+    "reviews": 51,
+    "link": "https://www.amazon.com/dp/B08ZW5S4W4/",
     "category": "Fragrances",
-    "scrapedAt": "2026-06-10T04:11:39.623Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/61Z-Prz615L._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:51:14.773Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/61Z-Prz615L._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 29.34,
+        "at": "2026-06-17T03:51:14.773Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 51,
+        "at": "2026-06-17T03:51:14.773Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": true,
+    "isAmazonChoice": true
   },
   {
     "rank": 21,
     "asin": "B0BRXR29P2",
-    "title": "Pimoys 6 Pieces Powder Puff Face Triangle Makeup Sponge Soft Velour Puffs for Loose Powder Setting Powder Blender Foundati...",
+    "title": "Pimoys 6 Pieces Powder Puff Face Triangle Makeup Sponge Soft Velour Puffs for Loose Powder Setting Powder Blender Foundation Sponge Beauty Makeup Tool for Women",
     "price": 5.99,
     "rating": "4.7 out of 5 stars",
     "ratingValue": 4.7,
-    "reviews": 0,
-    "link": "https://www.amazon.com/Pimoys-Triangle-Foundation-Stocking-Stuffers/dp/B0BRXR29P2/ref=sr_1_18?dib=eyJ2IjoiMSJ9.R9N_uOBldLUjkw4FNGv13Wn7Hcqm9V4p2kw-yY9DVehCQD8ZRxO3lFuewMWHhZellfalSF1aPD2HrZs_mLFM3wQ5fAdg_tdiXNSh65KnTQpGebJrQnk2D927WklSUeQLjVhza_9xOAZLOr9TTVMLdpy4DxdjZCia47zQ7pBJIyf9JOsjb61y9SicDRbBquApXNlKgr0dwMx5r2ZIvHFz_iIf5sEUZroUbsMJt1y6u-kgqQYEsp54gDbJFVKVBEhyhB31ZMnwRobSParPfMvb6OpYBQGYA07jfEhTcTVevKE.osGyfjmqzNHw89y99_PnDplwh3B3IpNWtsfkb40dpKo&dib_tag=se&keywords=beauty+tools&qid=1781064721&sr=8-18",
+    "reviews": 25446,
+    "link": "https://www.amazon.com/dp/B0BRXR29P2/",
     "category": "BeautyTools",
-    "scrapedAt": "2026-06-10T04:12:00.055Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/71TOoYNRnzL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:51:36.089Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/71TOoYNRnzL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 5.99,
+        "at": "2026-06-10T04:12:00.055Z"
+      },
+      {
+        "price": 5.99,
+        "at": "2026-06-17T03:51:36.088Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 25446,
+        "at": "2026-06-17T03:51:36.089Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": true
   },
   {
     "rank": 22,
     "asin": "B0C62TF87P",
-    "title": "Serious Skincare Ultra-Mare Pure Marine Infusion Facial Serum - Encourages Collagen Production, Cell Turnover and Plumper ...",
+    "title": "Serious Skincare Ultra-Mare Pure Marine Infusion Facial Serum - Encourages Collagen Production, Cell Turnover and Plumper Skin - Niacinamide - Acid Free - Concentrated 2 oz.",
     "price": 69,
     "rating": "4.8 out of 5 stars",
     "ratingValue": 4.8,
-    "reviews": null,
-    "link": "https://www.amazon.com/Serious-Skincare-Ultra-Mare-Marine-Infusion/dp/B0C62TF87P/ref=sr_1_15?dib=eyJ2IjoiMSJ9.anVEqyOvaJKdKNwBWTh5TA6pgngKkbfxTrAgc9cawHh7CiWns5ucXxVKc7sjPCnoa6sDI4uFnc0Ax9iphABEpq1BImKFqk5AKJ_TlQmZQrIvyzILJxdrEkBiz40WXgNsMF8AXKO095hN9cTQbb3M0Lj3Pb7RobvHnSgw72Zc1krvFFVJq4VPNihr3sOVkw20eejajZvavB0axCiKXD41Mt3vNgjy2lA2XsOKqjYmJM_jMXTdv_l9KADTJ52PP3H0EvtJPtPv0JLyQaEcqRXBdr4UymFxoHX5c6UEiSWEMaw.Q8vhLSbJFFz0ntuVP2-kMu_e7wurHazs29A7j-c0wzY&dib_tag=se&keywords=skincare+products&qid=1781064641&sr=8-15",
+    "reviews": 32,
+    "link": "https://www.amazon.com/dp/B0C62TF87P/",
     "category": "Skincare",
-    "scrapedAt": "2026-06-10T04:10:40.342Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/51Ns1f+WtSL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:51:56.354Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/51Ns1f+WtSL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 69,
+        "at": "2026-06-10T04:10:40.342Z"
+      },
+      {
+        "price": 69,
+        "at": "2026-06-17T03:51:56.354Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 32,
+        "at": "2026-06-17T03:51:56.354Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": true,
+    "isAmazonChoice": false
   },
   {
     "rank": 22,
     "asin": "B0GT5MH94G",
-    "title": "BossUp Cosmetics Red Hydrating Lip Oil | Non-Sticky Moisturizing Lip Gloss Alternative | Scented Lip Care Products | Clean...",
+    "title": "BossUp Cosmetics Red Hydrating Lip Oil | Non-Sticky Moisturizing Lip Gloss Alternative | Scented Lip Care Products | Clean Beauty | Travel Size Shimmer Lip Tint Oil | 6 mL",
     "price": 12,
     "rating": "4.4 out of 5 stars",
     "ratingValue": 4.4,
-    "reviews": null,
-    "link": "https://www.amazon.com/Cosmetics-Hydrating-Non-Sticky-Moisturizing-Alternative/dp/B0GT5MH94G/ref=sr_1_19?dib=eyJ2IjoiMSJ9.gE8XQ4-yei3dANc0kYslx_b2_fW9R7Lb3A_EVBoJKWzdZkGZMiOlo_3DhFu7iBYcHDKKIR0-ofSMr7BjX7HuoGq3t0__ypAMq-w5Wgx--lHkYpA7buIzQTcVVjdQ233FnBPoaWWQ0KRXy9vWUzoYpGwThB-wXY1Gm1kBQextg_6QAOfRmN1HE8QpUD7tuuNwwu_WdBngfGNphqsLd3RMCDigFEzHRksMpAHoxX76LfhsWWFSnLpyieMUCVNxL2KrENP7DQ-p6Ap5PN_sCZSIW1a9xtZQEJiM392Lme52Ji0.Y0AKKZkvADq2yxWE7vIMpkDh9ltMCm1mHLiED8Aq1js&dib_tag=se&keywords=makeup+products&qid=1781064662&sr=8-19",
+    "reviews": 30,
+    "link": "https://www.amazon.com/dp/B0GT5MH94G/",
     "category": "Makeup",
-    "scrapedAt": "2026-06-10T04:10:59.898Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/61zc8zyNvgL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:52:16.777Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/61zc8zyNvgL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 12,
+        "at": "2026-06-10T04:10:59.898Z"
+      },
+      {
+        "price": 12,
+        "at": "2026-06-17T03:52:16.777Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 30,
+        "at": "2026-06-17T03:52:16.777Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": true,
+    "isAmazonChoice": true
   },
   {
     "rank": 22,
     "asin": "B00YPVCDZK",
-    "title": "Macadamia Professional Nourishing Moisture Hair Conditioner – Hydrating Conditioner for Dry and Damaged Hair, Care Product...",
+    "title": "Macadamia Professional Nourishing Moisture Hair Conditioner – Hydrating Conditioner for Dry and Damaged Hair, Care Products, Sulfate & Paraben Free Vegan, 33.8 oz",
     "price": 39.99,
     "rating": "4.7 out of 5 stars",
     "ratingValue": 4.7,
-    "reviews": null,
-    "link": "https://www.amazon.com/Macadamia-Professional-Nourishing-Moisture-Conditioner/dp/B00YPVCDZK/ref=sr_1_16?dib=eyJ2IjoiMSJ9.sa9N5NJJFMRSQokf7Qx2FbF5dZ6xi5u0-X9t9vNzLe3OB-nKhln4mXwaaO8HioXqYQHv0aXUj3aPZiVeEMdH8ZnCWGdHV_gUy1G9yDZyPnKZjhJ6ngzDThhQrOFJjADw6MFNlHPSYM9M9_c3Lp-quNuueJYKRTUPygw9Tw87WszCCBXZJWXbDqHBh13JG7IBba23cQe4MNKvcvnBwaNezBHR7bX9n2M5CBQLIi0SPIIM4o8B0Pjiqm_leXUVnFxbC3ftq0bhfRAwQFqNyIeMgb_sTk-mPmznRmuDLcdWPHU.3XfAC1vC7B9tQejBWENGMDyVir7hZiosEuIpy8eKSpw&dib_tag=se&keywords=hair+care+products&qid=1781064681&sr=8-16",
+    "reviews": 463,
+    "link": "https://www.amazon.com/dp/B00YPVCDZK/",
     "category": "HairCare",
-    "scrapedAt": "2026-06-10T04:11:20.118Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/412KVpJup-L._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:52:37.166Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/412KVpJup-L._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 39.99,
+        "at": "2026-06-10T04:11:20.118Z"
+      },
+      {
+        "price": 39.99,
+        "at": "2026-06-17T03:52:37.166Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 463,
+        "at": "2026-06-17T03:52:37.166Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": true,
+    "isAmazonChoice": false
   },
   {
     "rank": 22,
     "asin": "B0CVDBK8SP",
     "title": "Tru Fragrance Gourmand Chai Eclair Hair & Body Mist 3.4 oz",
-    "price": 31.9,
+    "price": 34.94,
     "rating": "4.8 out of 5 stars",
     "ratingValue": 4.8,
-    "reviews": null,
-    "link": "https://www.amazon.com/Tru-Fragrance-Gourmand-Chai-Eclair/dp/B0CVDBK8SP/ref=sr_1_17?dib=eyJ2IjoiMSJ9.t_4PZapEI-OIE9sayiZuOFtIsw7ZH_b75s0IkRuT9Oj2P7wDadwC2_4f5zwCJbzalSJPiFIC7wCht1YqWv4qddFSkz9LtYSLA_pcNXy1t__phIf8Jnz08Wckg4qihq68RGBKpx7j0BEFdv65L5fOl3VWYwnaNipck6kNy4Ra4iCe0J9JD-fXcnfCVu_Fb2E2aW8BG14_ZgSdwCRrEb60n2F1g4Xid4sxb0Pbwo57Cv7Kmfb_RxzRmQUTLIiMXvMBBrnNlau8ChKn3eveU03DV7LntwoJG786R3mynG5Zpro.YhevGJULG1B3jDdao8uICeAcLkFcm06wGi-m28cKGjs&dib_tag=se&keywords=fragrances+for+women&qid=1781064702&sr=8-17",
+    "reviews": 109,
+    "link": "https://www.amazon.com/dp/B0CVDBK8SP/",
     "category": "Fragrances",
-    "scrapedAt": "2026-06-10T04:11:39.624Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/515xiWYdzXL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:52:56.138Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/515xiWYdzXL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 31.9,
+        "at": "2026-06-10T04:11:39.624Z"
+      },
+      {
+        "price": 34.94,
+        "at": "2026-06-17T03:52:56.138Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 109,
+        "at": "2026-06-17T03:52:56.138Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": true
   },
   {
     "rank": 22,
     "asin": "B08YZ6YXZP",
-    "title": "Sink Topper Bathroom Counter Cover & Storage Saver, Foldable Silicone Mat for Hot Tools, Hair Styling & Makeup, Beauty Bru...",
+    "title": "Sink Topper Bathroom Counter Cover & Storage Saver, Foldable Silicone Mat for Hot Tools, Hair Styling & Makeup, Beauty Brush Cleaning Mat, RV Camper Sink Cover & for Small Spaces (Standard Black)",
     "price": 26.39,
     "rating": "4.7 out of 5 stars",
     "ratingValue": 4.7,
-    "reviews": null,
-    "link": "https://www.amazon.com/Sink-Topper-Foldable-Bathroom-Organizer/dp/B08YZ6YXZP/ref=sr_1_19?dib=eyJ2IjoiMSJ9.R9N_uOBldLUjkw4FNGv13Wn7Hcqm9V4p2kw-yY9DVehCQD8ZRxO3lFuewMWHhZellfalSF1aPD2HrZs_mLFM3wQ5fAdg_tdiXNSh65KnTQpGebJrQnk2D927WklSUeQLjVhza_9xOAZLOr9TTVMLdpy4DxdjZCia47zQ7pBJIyf9JOsjb61y9SicDRbBquApXNlKgr0dwMx5r2ZIvHFz_iIf5sEUZroUbsMJt1y6u-kgqQYEsp54gDbJFVKVBEhyhB31ZMnwRobSParPfMvb6OpYBQGYA07jfEhTcTVevKE.osGyfjmqzNHw89y99_PnDplwh3B3IpNWtsfkb40dpKo&dib_tag=se&keywords=beauty+tools&qid=1781064721&sr=8-19",
+    "reviews": 5734,
+    "link": "https://www.amazon.com/dp/B08YZ6YXZP/",
     "category": "BeautyTools",
-    "scrapedAt": "2026-06-10T04:12:00.058Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/71l+mPulsvL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:53:20.207Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/71l+mPulsvL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 26.39,
+        "at": "2026-06-10T04:12:00.058Z"
+      },
+      {
+        "price": 26.39,
+        "at": "2026-06-17T03:53:20.207Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 5734,
+        "at": "2026-06-17T03:53:20.207Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": true,
+    "isAmazonChoice": false
   },
   {
     "rank": 23,
     "asin": "B09XC5BMHQ",
-    "title": "Rose Water Spray for Face, Body & Hair by Baja Basics - Hydrating Facial Toner, Refreshing, Soothing Mist Moisturizer for ...",
+    "title": "Rose Water Spray for Face, Body & Hair by Baja Basics - Hydrating Facial Toner, Refreshing, Soothing Mist Moisturizer for Dry Skin - Vegan Beauty Skincare Products - 4oz 2 Pack",
     "price": 23.95,
     "rating": "4.6 out of 5 stars",
     "ratingValue": 4.6,
-    "reviews": null,
-    "link": "https://www.amazon.com/Baja-Basics-Moroccan-Water-Spray/dp/B09XC5BMHQ/ref=sr_1_16?dib=eyJ2IjoiMSJ9.anVEqyOvaJKdKNwBWTh5TA6pgngKkbfxTrAgc9cawHh7CiWns5ucXxVKc7sjPCnoa6sDI4uFnc0Ax9iphABEpq1BImKFqk5AKJ_TlQmZQrIvyzILJxdrEkBiz40WXgNsMF8AXKO095hN9cTQbb3M0Lj3Pb7RobvHnSgw72Zc1krvFFVJq4VPNihr3sOVkw20eejajZvavB0axCiKXD41Mt3vNgjy2lA2XsOKqjYmJM_jMXTdv_l9KADTJ52PP3H0EvtJPtPv0JLyQaEcqRXBdr4UymFxoHX5c6UEiSWEMaw.Q8vhLSbJFFz0ntuVP2-kMu_e7wurHazs29A7j-c0wzY&dib_tag=se&keywords=skincare+products&qid=1781064641&sr=8-16",
+    "reviews": 5516,
+    "link": "https://www.amazon.com/dp/B09XC5BMHQ/",
     "category": "Skincare",
-    "scrapedAt": "2026-06-10T04:10:40.343Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/81U5WUeQ3nL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:53:43.752Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/81U5WUeQ3nL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 23.95,
+        "at": "2026-06-10T04:10:40.343Z"
+      },
+      {
+        "price": 23.95,
+        "at": "2026-06-17T03:53:43.752Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 5516,
+        "at": "2026-06-17T03:53:43.752Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": false
   },
   {
     "rank": 23,
     "asin": "B0BHYZS5GH",
-    "title": "M. Asam Magic Care Perfect Teint (1.01 Fl Oz) - Transparent Make Up, Skin Care Face Cream And Makeup Primer. Beauty Produc...",
-    "price": null,
+    "title": "M. Asam Magic Care Perfect Teint (1.01 Fl Oz) - Transparent Make Up, Skin Care Face Cream And Makeup Primer. Beauty Product That Is Known To Minimize Wrinkles & Pores, With Peptide Complex & Retinol",
+    "price": 32.99,
     "rating": "4.2 out of 5 stars",
     "ratingValue": 4.2,
-    "reviews": null,
-    "link": "https://www.amazon.com/M-Asam-MAGIC-Perfect-Teint/dp/B0BHYZS5GH/ref=sr_1_20?dib=eyJ2IjoiMSJ9.gE8XQ4-yei3dANc0kYslx_b2_fW9R7Lb3A_EVBoJKWzdZkGZMiOlo_3DhFu7iBYcHDKKIR0-ofSMr7BjX7HuoGq3t0__ypAMq-w5Wgx--lHkYpA7buIzQTcVVjdQ233FnBPoaWWQ0KRXy9vWUzoYpGwThB-wXY1Gm1kBQextg_6QAOfRmN1HE8QpUD7tuuNwwu_WdBngfGNphqsLd3RMCDigFEzHRksMpAHoxX76LfhsWWFSnLpyieMUCVNxL2KrENP7DQ-p6Ap5PN_sCZSIW1a9xtZQEJiM392Lme52Ji0.Y0AKKZkvADq2yxWE7vIMpkDh9ltMCm1mHLiED8Aq1js&dib_tag=se&keywords=makeup+products&qid=1781064662&sr=8-20",
+    "reviews": 4431,
+    "link": "https://www.amazon.com/dp/B0BHYZS5GH/",
     "category": "Makeup",
-    "scrapedAt": "2026-06-10T04:10:59.906Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/61R8tBQI5TL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:54:06.224Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/61R8tBQI5TL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 32.99,
+        "at": "2026-06-17T03:54:06.224Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 4431,
+        "at": "2026-06-17T03:54:06.224Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": false
   },
   {
     "rank": 23,
     "asin": "B0F7R9ZCTV",
-    "title": "DEMIKI Hair Oil For Frizzy Hair With Coconut Oil - Hair Treatment For Dry Damaged Hair, Hair Perfume Oil For Curly Hair, F...",
+    "title": "DEMIKI Hair Oil For Frizzy Hair With Coconut Oil - Hair Treatment For Dry Damaged Hair, Hair Perfume Oil For Curly Hair, Frizz Control Hair Care Products, Mini Bottles Hair Oil For Damaged Hair, 12pcs",
     "price": 29.9,
     "rating": "4.8 out of 5 stars",
     "ratingValue": 4.8,
-    "reviews": null,
-    "link": "https://www.amazon.com/DEMIKI-Hair-Oil-Frizzy-Coconut/dp/B0F7R9ZCTV/ref=sr_1_17?dib=eyJ2IjoiMSJ9.sa9N5NJJFMRSQokf7Qx2FbF5dZ6xi5u0-X9t9vNzLe3OB-nKhln4mXwaaO8HioXqYQHv0aXUj3aPZiVeEMdH8ZnCWGdHV_gUy1G9yDZyPnKZjhJ6ngzDThhQrOFJjADw6MFNlHPSYM9M9_c3Lp-quNuueJYKRTUPygw9Tw87WszCCBXZJWXbDqHBh13JG7IBba23cQe4MNKvcvnBwaNezBHR7bX9n2M5CBQLIi0SPIIM4o8B0Pjiqm_leXUVnFxbC3ftq0bhfRAwQFqNyIeMgb_sTk-mPmznRmuDLcdWPHU.3XfAC1vC7B9tQejBWENGMDyVir7hZiosEuIpy8eKSpw&dib_tag=se&keywords=hair+care+products&qid=1781064681&sr=8-17",
+    "reviews": 50,
+    "link": "https://www.amazon.com/dp/B0F7R9ZCTV/",
     "category": "HairCare",
-    "scrapedAt": "2026-06-10T04:11:20.119Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/61Wn+mMl9zL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:54:28.632Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/61Wn+mMl9zL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 29.9,
+        "at": "2026-06-10T04:11:20.119Z"
+      },
+      {
+        "price": 29.9,
+        "at": "2026-06-17T03:54:28.632Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 50,
+        "at": "2026-06-17T03:54:28.632Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": false
   },
   {
     "rank": 23,
     "asin": "B0GKBR1SXX",
     "title": "Sol de Janeiro Mist and Match Hair & Body Perfume Bundle | Includes 5 90ml Cheirosa Fragrances - Amazon Exclusive",
-    "price": null,
+    "price": 26,
     "rating": "4.9 out of 5 stars",
     "ratingValue": 4.9,
-    "reviews": null,
-    "link": "https://www.amazon.com/Sol-Janeiro-Perfume-Cheirosa-Fragrances/dp/B0GKBR1SXX/ref=sr_1_18?dib=eyJ2IjoiMSJ9.t_4PZapEI-OIE9sayiZuOFtIsw7ZH_b75s0IkRuT9Oj2P7wDadwC2_4f5zwCJbzalSJPiFIC7wCht1YqWv4qddFSkz9LtYSLA_pcNXy1t__phIf8Jnz08Wckg4qihq68RGBKpx7j0BEFdv65L5fOl3VWYwnaNipck6kNy4Ra4iCe0J9JD-fXcnfCVu_Fb2E2aW8BG14_ZgSdwCRrEb60n2F1g4Xid4sxb0Pbwo57Cv7Kmfb_RxzRmQUTLIiMXvMBBrnNlau8ChKn3eveU03DV7LntwoJG786R3mynG5Zpro.YhevGJULG1B3jDdao8uICeAcLkFcm06wGi-m28cKGjs&dib_tag=se&keywords=fragrances+for+women&qid=1781064702&sr=8-18",
+    "reviews": 44,
+    "link": "https://www.amazon.com/dp/B0GKBR1SXX/",
     "category": "Fragrances",
-    "scrapedAt": "2026-06-10T04:11:39.624Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/71EG95530ML._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:54:47.124Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/71EG95530ML._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 26,
+        "at": "2026-06-17T03:54:47.124Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 44,
+        "at": "2026-06-17T03:54:47.124Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": true
   },
   {
     "rank": 23,
     "asin": "B00ABTJAJM",
-    "title": "Olivia Garden The Brush Cleaner - Hair Brush Cleaner Tool for all Brush Sizes and Models - Removes Build-Up - 2 Tools in 1...",
+    "title": "Olivia Garden The Brush Cleaner - Hair Brush Cleaner Tool for all Brush Sizes and Models - Removes Build-Up - 2 Tools in 1 - Beauty Care Accessories",
     "price": 21.95,
     "rating": "4.7 out of 5 stars",
     "ratingValue": 4.7,
-    "reviews": null,
-    "link": "https://www.amazon.com/Olivia-Garden-Cleaner-Individual-Pieces/dp/B00ABTJAJM/ref=sr_1_20?dib=eyJ2IjoiMSJ9.R9N_uOBldLUjkw4FNGv13Wn7Hcqm9V4p2kw-yY9DVehCQD8ZRxO3lFuewMWHhZellfalSF1aPD2HrZs_mLFM3wQ5fAdg_tdiXNSh65KnTQpGebJrQnk2D927WklSUeQLjVhza_9xOAZLOr9TTVMLdpy4DxdjZCia47zQ7pBJIyf9JOsjb61y9SicDRbBquApXNlKgr0dwMx5r2ZIvHFz_iIf5sEUZroUbsMJt1y6u-kgqQYEsp54gDbJFVKVBEhyhB31ZMnwRobSParPfMvb6OpYBQGYA07jfEhTcTVevKE.osGyfjmqzNHw89y99_PnDplwh3B3IpNWtsfkb40dpKo&dib_tag=se&keywords=beauty+tools&qid=1781064721&sr=8-20",
+    "reviews": 4545,
+    "link": "https://www.amazon.com/dp/B00ABTJAJM/",
     "category": "BeautyTools",
-    "scrapedAt": "2026-06-10T04:12:00.060Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/41kB0hTYQcL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:55:06.258Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/41kB0hTYQcL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 21.95,
+        "at": "2026-06-10T04:12:00.060Z"
+      },
+      {
+        "price": 21.95,
+        "at": "2026-06-17T03:55:06.258Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 4545,
+        "at": "2026-06-17T03:55:06.258Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": true
   },
   {
     "rank": 24,
     "asin": "B08DGF25YT",
-    "title": "Harry's Exfoliating Face Wash for Men, Gentle Facial Skin Care Products with Volcanic Rock Exfoliant, Dermatologist Teste...",
-    "price": 18.85,
+    "title": "Harry's Exfoliating Face Wash for Men, Gentle Facial Skin Care Products with Volcanic Rock Exfoliant, Dermatologist Tested, 5.1 Fl. Oz, 3 Pack",
+    "price": 20.94,
     "rating": "4.6 out of 5 stars",
     "ratingValue": 4.6,
-    "reviews": 22,
-    "link": "https://www.amazon.com/Harrys-Face-Facial-Cleanser-Peppermint/dp/B08DGF25YT/ref=sr_1_17?dib=eyJ2IjoiMSJ9.anVEqyOvaJKdKNwBWTh5TA6pgngKkbfxTrAgc9cawHh7CiWns5ucXxVKc7sjPCnoa6sDI4uFnc0Ax9iphABEpq1BImKFqk5AKJ_TlQmZQrIvyzILJxdrEkBiz40WXgNsMF8AXKO095hN9cTQbb3M0Lj3Pb7RobvHnSgw72Zc1krvFFVJq4VPNihr3sOVkw20eejajZvavB0axCiKXD41Mt3vNgjy2lA2XsOKqjYmJM_jMXTdv_l9KADTJ52PP3H0EvtJPtPv0JLyQaEcqRXBdr4UymFxoHX5c6UEiSWEMaw.Q8vhLSbJFFz0ntuVP2-kMu_e7wurHazs29A7j-c0wzY&dib_tag=se&keywords=skincare+products&qid=1781064641&rdc=1&sr=8-17",
+    "reviews": 2948,
+    "link": "https://www.amazon.com/dp/B08DGF25YT/",
     "category": "Skincare",
-    "scrapedAt": "2026-06-10T04:10:40.344Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/81KahcPK6KL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:55:28.616Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/81KahcPK6KL._AC_SL1000_.jpg",
+    "priceHistory": [],
+    "reviewsHistory": [],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": true,
+    "isAmazonChoice": true
   },
   {
     "rank": 24,
     "asin": "B0CF69H7DX",
-    "title": "Indie Lee Hints SPF 50 Primer - Tinted Face Primer with Niacinamide, Non-Nano Zinc Oxide & Allantoin - Soothes Redness, Ev...",
+    "title": "Indie Lee Hints SPF 50 Primer - Tinted Face Primer with Niacinamide, Non-Nano Zinc Oxide & Allantoin - Soothes Redness, Evens Tone, Primes Skin for Makeup - Paraben-Free Skin Care Products (40ml)",
     "price": 46,
     "rating": "4.4 out of 5 stars",
     "ratingValue": 4.4,
-    "reviews": null,
-    "link": "https://www.amazon.com/Indie-Lee-Hints-SPF-Primer/dp/B0CF69H7DX/ref=sr_1_21?dib=eyJ2IjoiMSJ9.gE8XQ4-yei3dANc0kYslx_b2_fW9R7Lb3A_EVBoJKWzdZkGZMiOlo_3DhFu7iBYcHDKKIR0-ofSMr7BjX7HuoGq3t0__ypAMq-w5Wgx--lHkYpA7buIzQTcVVjdQ233FnBPoaWWQ0KRXy9vWUzoYpGwThB-wXY1Gm1kBQextg_6QAOfRmN1HE8QpUD7tuuNwwu_WdBngfGNphqsLd3RMCDigFEzHRksMpAHoxX76LfhsWWFSnLpyieMUCVNxL2KrENP7DQ-p6Ap5PN_sCZSIW1a9xtZQEJiM392Lme52Ji0.Y0AKKZkvADq2yxWE7vIMpkDh9ltMCm1mHLiED8Aq1js&dib_tag=se&keywords=makeup+products&qid=1781064662&sr=8-21",
+    "reviews": 23,
+    "link": "https://www.amazon.com/dp/B0CF69H7DX/",
     "category": "Makeup",
-    "scrapedAt": "2026-06-10T04:10:59.907Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/51l1FkPgk2L._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:55:50.491Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/51l1FkPgk2L._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 46,
+        "at": "2026-06-10T04:10:59.907Z"
+      },
+      {
+        "price": 46,
+        "at": "2026-06-17T03:55:50.491Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 23,
+        "at": "2026-06-17T03:55:50.491Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": true
   },
   {
     "rank": 24,
     "asin": "B07TZ1QTJW",
-    "title": "Ever Ego Italy Energizing Mask For Thinning, Fine and Weak Hair | Stimulating and Revitalizing Hair Care Product For Men A...",
+    "title": "Energizing Mask For Thinning, Fine and Weak Hair | Stimulating and Revitalizing Hair Care Product For Men And Women | 1 Liter Tub",
     "price": 31.25,
     "rating": "4.7 out of 5 stars",
     "ratingValue": 4.7,
-    "reviews": null,
-    "link": "https://www.amazon.com/Ever-Ego-Italy-Stimulating-Revitalizing/dp/B07TZ1QTJW/ref=sr_1_18?dib=eyJ2IjoiMSJ9.sa9N5NJJFMRSQokf7Qx2FbF5dZ6xi5u0-X9t9vNzLe3OB-nKhln4mXwaaO8HioXqYQHv0aXUj3aPZiVeEMdH8ZnCWGdHV_gUy1G9yDZyPnKZjhJ6ngzDThhQrOFJjADw6MFNlHPSYM9M9_c3Lp-quNuueJYKRTUPygw9Tw87WszCCBXZJWXbDqHBh13JG7IBba23cQe4MNKvcvnBwaNezBHR7bX9n2M5CBQLIi0SPIIM4o8B0Pjiqm_leXUVnFxbC3ftq0bhfRAwQFqNyIeMgb_sTk-mPmznRmuDLcdWPHU.3XfAC1vC7B9tQejBWENGMDyVir7hZiosEuIpy8eKSpw&dib_tag=se&keywords=hair+care+products&qid=1781064681&sr=8-18",
+    "reviews": 126,
+    "link": "https://www.amazon.com/dp/B07TZ1QTJW/",
     "category": "HairCare",
-    "scrapedAt": "2026-06-10T04:11:20.120Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/51AizcmRaYL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:56:10.412Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/51AizcmRaYL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 31.25,
+        "at": "2026-06-10T04:11:20.120Z"
+      },
+      {
+        "price": 31.25,
+        "at": "2026-06-17T03:56:10.412Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 126,
+        "at": "2026-06-17T03:56:10.412Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": true
   },
   {
     "rank": 24,
     "asin": "B01IA9DC3E",
     "title": "Calgon Hawaiian Ginger Fragrance Body Mist 8 oz (Pack of 5)",
-    "price": 37.93,
+    "price": 39.42,
     "rating": "4.8 out of 5 stars",
     "ratingValue": 4.8,
-    "reviews": null,
-    "link": "https://www.amazon.com/Calgon-Hawaiian-Ginger-Fragrance-Body/dp/B01IA9DC3E/ref=sr_1_19?dib=eyJ2IjoiMSJ9.t_4PZapEI-OIE9sayiZuOFtIsw7ZH_b75s0IkRuT9Oj2P7wDadwC2_4f5zwCJbzalSJPiFIC7wCht1YqWv4qddFSkz9LtYSLA_pcNXy1t__phIf8Jnz08Wckg4qihq68RGBKpx7j0BEFdv65L5fOl3VWYwnaNipck6kNy4Ra4iCe0J9JD-fXcnfCVu_Fb2E2aW8BG14_ZgSdwCRrEb60n2F1g4Xid4sxb0Pbwo57Cv7Kmfb_RxzRmQUTLIiMXvMBBrnNlau8ChKn3eveU03DV7LntwoJG786R3mynG5Zpro.YhevGJULG1B3jDdao8uICeAcLkFcm06wGi-m28cKGjs&dib_tag=se&keywords=fragrances+for+women&qid=1781064702&sr=8-19",
+    "reviews": 105,
+    "link": "https://www.amazon.com/dp/B01IA9DC3E/",
     "category": "Fragrances",
-    "scrapedAt": "2026-06-10T04:11:39.625Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/71i7nXIDpOL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:56:30.042Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/71i7nXIDpOL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 37.93,
+        "at": "2026-06-10T04:11:39.625Z"
+      },
+      {
+        "price": 39.42,
+        "at": "2026-06-17T03:56:30.042Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 105,
+        "at": "2026-06-17T03:56:30.042Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": true,
+    "isAmazonChoice": true
   },
   {
     "rank": 24,
     "asin": "B088T329M3",
-    "title": "Mooerca 650PCS Disposable Lip Gloss Applicators Make Up Brush Lipstick Wands Makeup Applicators Brushes Applicator Tool Ma...",
-    "price": 8.89,
+    "title": "650PCS Disposable Lip Gloss Applicators Make Up Brush Lipstick Wands Makeup Applicators Brushes Applicator Tool Makeup Beauty Tool Kits Disposable Lip Brushes Tool Kits Pink",
+    "price": 9.99,
     "rating": "4.7 out of 5 stars",
     "ratingValue": 4.7,
-    "reviews": null,
-    "link": "https://www.amazon.com/Disposable-Brushes-Applicators-Lipstick-Applicator/dp/B088T329M3/ref=sr_1_21?dib=eyJ2IjoiMSJ9.R9N_uOBldLUjkw4FNGv13Wn7Hcqm9V4p2kw-yY9DVehCQD8ZRxO3lFuewMWHhZellfalSF1aPD2HrZs_mLFM3wQ5fAdg_tdiXNSh65KnTQpGebJrQnk2D927WklSUeQLjVhza_9xOAZLOr9TTVMLdpy4DxdjZCia47zQ7pBJIyf9JOsjb61y9SicDRbBquApXNlKgr0dwMx5r2ZIvHFz_iIf5sEUZroUbsMJt1y6u-kgqQYEsp54gDbJFVKVBEhyhB31ZMnwRobSParPfMvb6OpYBQGYA07jfEhTcTVevKE.osGyfjmqzNHw89y99_PnDplwh3B3IpNWtsfkb40dpKo&dib_tag=se&keywords=beauty+tools&qid=1781064721&sr=8-21",
+    "reviews": 3720,
+    "link": "https://www.amazon.com/dp/B088T329M3/",
     "category": "BeautyTools",
-    "scrapedAt": "2026-06-10T04:12:00.061Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/713p5N8qFGL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:56:48.771Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/713p5N8qFGL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 8.89,
+        "at": "2026-06-10T04:12:00.061Z"
+      },
+      {
+        "price": 9.99,
+        "at": "2026-06-17T03:56:48.771Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 3720,
+        "at": "2026-06-17T03:56:48.771Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": true,
+    "isAmazonChoice": true
   },
   {
     "rank": 25,
     "asin": "B0D3FL9458",
-    "title": "SK-II Anti Aging Skincare Gift Set - Includes Full Size Skincare Products - Facial Cleanser, Facial Essence, SKINPOWER Fac...",
+    "title": "SK-II Anti Aging Skincare Gift Set - Includes Full Size Skincare Products - Facial Cleanser, Facial Essence, SKINPOWER Face & Eye Cream & 2 Treatment Masks (6 Count)",
     "price": 290,
     "rating": "4.8 out of 5 stars",
     "ratingValue": 4.8,
-    "reviews": null,
-    "link": "https://www.amazon.com/SK-II-PITERA-Anti-Aging-Set-Treatment/dp/B0D3FL9458/ref=sr_1_18?dib=eyJ2IjoiMSJ9.anVEqyOvaJKdKNwBWTh5TA6pgngKkbfxTrAgc9cawHh7CiWns5ucXxVKc7sjPCnoa6sDI4uFnc0Ax9iphABEpq1BImKFqk5AKJ_TlQmZQrIvyzILJxdrEkBiz40WXgNsMF8AXKO095hN9cTQbb3M0Lj3Pb7RobvHnSgw72Zc1krvFFVJq4VPNihr3sOVkw20eejajZvavB0axCiKXD41Mt3vNgjy2lA2XsOKqjYmJM_jMXTdv_l9KADTJ52PP3H0EvtJPtPv0JLyQaEcqRXBdr4UymFxoHX5c6UEiSWEMaw.Q8vhLSbJFFz0ntuVP2-kMu_e7wurHazs29A7j-c0wzY&dib_tag=se&keywords=skincare+products&qid=1781064641&sr=8-18",
+    "reviews": 31,
+    "link": "https://www.amazon.com/dp/B0D3FL9458/",
     "category": "Skincare",
-    "scrapedAt": "2026-06-10T04:10:40.344Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/71ijIVH+JKL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:57:07.999Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/71ijIVH+JKL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 290,
+        "at": "2026-06-10T04:10:40.344Z"
+      },
+      {
+        "price": 290,
+        "at": "2026-06-17T03:57:07.999Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 31,
+        "at": "2026-06-17T03:57:07.999Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": false
   },
   {
     "rank": 25,
     "asin": "B07FZ4D7PY",
-    "title": "Nykaa Cosmetics Matte to Last Transfer Proof Liquid Lipstick - Lip Makeup with Intense Color Payoff - Long Lasting Lip Pro...",
-    "price": 9.64,
+    "title": "Nykaa Cosmetics Matte to Last Transfer Proof Liquid Lipstick - Lip Makeup with Intense Color Payoff - Long Lasting Lip Product - 01 Bombae - 0.16 oz",
+    "price": 7.99,
     "rating": "4.2 out of 5 stars",
     "ratingValue": 4.2,
-    "reviews": null,
-    "link": "https://www.amazon.com/Nykaa-Matte-Last-Liquid-Lipstick/dp/B07FZ4D7PY/ref=sr_1_22?dib=eyJ2IjoiMSJ9.gE8XQ4-yei3dANc0kYslx_b2_fW9R7Lb3A_EVBoJKWzdZkGZMiOlo_3DhFu7iBYcHDKKIR0-ofSMr7BjX7HuoGq3t0__ypAMq-w5Wgx--lHkYpA7buIzQTcVVjdQ233FnBPoaWWQ0KRXy9vWUzoYpGwThB-wXY1Gm1kBQextg_6QAOfRmN1HE8QpUD7tuuNwwu_WdBngfGNphqsLd3RMCDigFEzHRksMpAHoxX76LfhsWWFSnLpyieMUCVNxL2KrENP7DQ-p6Ap5PN_sCZSIW1a9xtZQEJiM392Lme52Ji0.Y0AKKZkvADq2yxWE7vIMpkDh9ltMCm1mHLiED8Aq1js&dib_tag=se&keywords=makeup+products&qid=1781064662&sr=8-22",
+    "reviews": 190,
+    "link": "https://www.amazon.com/dp/B07FZ4D7PY/",
     "category": "Makeup",
-    "scrapedAt": "2026-06-10T04:10:59.908Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/51hlKA5wsiL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:57:28.919Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/51hlKA5wsiL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 9.64,
+        "at": "2026-06-10T04:10:59.908Z"
+      },
+      {
+        "price": 7.99,
+        "at": "2026-06-17T03:57:28.919Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 190,
+        "at": "2026-06-17T03:57:28.919Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": false
   },
   {
     "rank": 25,
     "asin": "B07TTPGVZF",
-    "title": "Ever Ego Italy Discontinued Bright & Shine Glossing Spray | Hair Care Product for Men and Women | 120 ml Bottle",
-    "price": 32.99,
+    "title": "Discontinued Bright & Shine Glossing Spray | Hair Care Product for Men and Women | 120 ml Bottle",
+    "price": 30,
     "rating": "4.9 out of 5 stars",
     "ratingValue": 4.9,
-    "reviews": null,
-    "link": "https://www.amazon.com/Ever-Ego-Italy-Glossing-Product/dp/B07TTPGVZF/ref=sr_1_19?dib=eyJ2IjoiMSJ9.sa9N5NJJFMRSQokf7Qx2FbF5dZ6xi5u0-X9t9vNzLe3OB-nKhln4mXwaaO8HioXqYQHv0aXUj3aPZiVeEMdH8ZnCWGdHV_gUy1G9yDZyPnKZjhJ6ngzDThhQrOFJjADw6MFNlHPSYM9M9_c3Lp-quNuueJYKRTUPygw9Tw87WszCCBXZJWXbDqHBh13JG7IBba23cQe4MNKvcvnBwaNezBHR7bX9n2M5CBQLIi0SPIIM4o8B0Pjiqm_leXUVnFxbC3ftq0bhfRAwQFqNyIeMgb_sTk-mPmznRmuDLcdWPHU.3XfAC1vC7B9tQejBWENGMDyVir7hZiosEuIpy8eKSpw&dib_tag=se&keywords=hair+care+products&qid=1781064681&sr=8-19",
+    "reviews": 25,
+    "link": "https://www.amazon.com/dp/B07TTPGVZF/",
     "category": "HairCare",
-    "scrapedAt": "2026-06-10T04:11:20.120Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/61S5OSq0RvS._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:57:48.034Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/61S5OSq0RvS._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 32.99,
+        "at": "2026-06-10T04:11:20.120Z"
+      },
+      {
+        "price": 30,
+        "at": "2026-06-17T03:57:48.034Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 25,
+        "at": "2026-06-17T03:57:48.034Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": true
   },
   {
     "rank": 25,
     "asin": "B0CCYVMH58",
     "title": "Victoria's Secret Love Spell Golden Fragrance Mist 8.4 Fl Oz",
-    "price": 39.51,
+    "price": 39.49,
     "rating": "4.9 out of 5 stars",
     "ratingValue": 4.9,
-    "reviews": null,
-    "link": "https://www.amazon.com/Victorias-Secret-Spell-Golden-Fragrance/dp/B0CCYVMH58/ref=sr_1_20?dib=eyJ2IjoiMSJ9.t_4PZapEI-OIE9sayiZuOFtIsw7ZH_b75s0IkRuT9Oj2P7wDadwC2_4f5zwCJbzalSJPiFIC7wCht1YqWv4qddFSkz9LtYSLA_pcNXy1t__phIf8Jnz08Wckg4qihq68RGBKpx7j0BEFdv65L5fOl3VWYwnaNipck6kNy4Ra4iCe0J9JD-fXcnfCVu_Fb2E2aW8BG14_ZgSdwCRrEb60n2F1g4Xid4sxb0Pbwo57Cv7Kmfb_RxzRmQUTLIiMXvMBBrnNlau8ChKn3eveU03DV7LntwoJG786R3mynG5Zpro.YhevGJULG1B3jDdao8uICeAcLkFcm06wGi-m28cKGjs&dib_tag=se&keywords=fragrances+for+women&qid=1781064702&sr=8-20",
+    "reviews": 40,
+    "link": "https://www.amazon.com/dp/B0CCYVMH58/",
     "category": "Fragrances",
-    "scrapedAt": "2026-06-10T04:11:39.625Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/61P5AsDWkqL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:58:06.493Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/61P5AsDWkqL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 39.51,
+        "at": "2026-06-10T04:11:39.625Z"
+      },
+      {
+        "price": 39.49,
+        "at": "2026-06-17T03:58:06.493Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 40,
+        "at": "2026-06-17T03:58:06.493Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": false
   },
   {
     "rank": 25,
     "asin": "B0GH2WSWYP",
-    "title": "Pimoys 15 Pieces Powder Puff Triangle Makeup Sponge Setting Powder Puffs for Loose Powder Velour Puff for Face Exquisite M...",
+    "title": "Pimoys 15 Pieces Powder Puff Triangle Makeup Sponge Setting Powder Puffs for Loose Powder Velour Puff for Face Exquisite Makeup Eyes Contouring, Blender Sponge Beauty Makeup Tool(Black) (Pack of 2)",
     "price": 13.98,
-    "rating": "",
-    "ratingValue": null,
+    "rating": "4.6 out of 5 stars",
+    "ratingValue": 4.6,
     "reviews": 0,
-    "link": "https://www.amazon.com/Pimoys-Triangle-Setting-Exquisite-Contouring/dp/B0GH2WSWYP/ref=sr_1_22?dib=eyJ2IjoiMSJ9.R9N_uOBldLUjkw4FNGv13Wn7Hcqm9V4p2kw-yY9DVehCQD8ZRxO3lFuewMWHhZellfalSF1aPD2HrZs_mLFM3wQ5fAdg_tdiXNSh65KnTQpGebJrQnk2D927WklSUeQLjVhza_9xOAZLOr9TTVMLdpy4DxdjZCia47zQ7pBJIyf9JOsjb61y9SicDRbBquApXNlKgr0dwMx5r2ZIvHFz_iIf5sEUZroUbsMJt1y6u-kgqQYEsp54gDbJFVKVBEhyhB31ZMnwRobSParPfMvb6OpYBQGYA07jfEhTcTVevKE.osGyfjmqzNHw89y99_PnDplwh3B3IpNWtsfkb40dpKo&dib_tag=se&keywords=beauty+tools&qid=1781064721&sr=8-22",
+    "link": "https://www.amazon.com/dp/B0GH2WSWYP/",
     "category": "BeautyTools",
-    "scrapedAt": "2026-06-10T04:12:00.064Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/81Ox3kZodEL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:58:25.705Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/81Ox3kZodEL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 13.98,
+        "at": "2026-06-10T04:12:00.064Z"
+      },
+      {
+        "price": 13.98,
+        "at": "2026-06-17T03:58:25.705Z"
+      }
+    ],
+    "reviewsHistory": [],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": false
   },
   {
     "rank": 26,
     "asin": "B002OFS99I",
-    "title": "Malki Dead Sea Products Black Mud Mask Soap | Facial Care Product | Facial Skin Care with Pure Black Mud Soap | Natural Mi...",
-    "price": 8,
+    "title": "Malki Dead Sea Products Black Mud Mask Soap | Facial Care Product | Facial Skin Care with Pure Black Mud Soap | Natural Mineral Infusion for Skin Improvement",
+    "price": 11.21,
     "rating": "4.6 out of 5 stars",
     "ratingValue": 4.6,
-    "reviews": 33,
-    "link": "https://www.amazon.com/Malki-Products-Product-Infusion-Improvement/dp/B002OFS99I/ref=sr_1_19?dib=eyJ2IjoiMSJ9.anVEqyOvaJKdKNwBWTh5TA6pgngKkbfxTrAgc9cawHh7CiWns5ucXxVKc7sjPCnoa6sDI4uFnc0Ax9iphABEpq1BImKFqk5AKJ_TlQmZQrIvyzILJxdrEkBiz40WXgNsMF8AXKO095hN9cTQbb3M0Lj3Pb7RobvHnSgw72Zc1krvFFVJq4VPNihr3sOVkw20eejajZvavB0axCiKXD41Mt3vNgjy2lA2XsOKqjYmJM_jMXTdv_l9KADTJ52PP3H0EvtJPtPv0JLyQaEcqRXBdr4UymFxoHX5c6UEiSWEMaw.Q8vhLSbJFFz0ntuVP2-kMu_e7wurHazs29A7j-c0wzY&dib_tag=se&keywords=skincare+products&qid=1781064641&sr=8-19",
+    "reviews": 811,
+    "link": "https://www.amazon.com/dp/B002OFS99I/",
     "category": "Skincare",
-    "scrapedAt": "2026-06-10T04:10:40.345Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/71svF-5DbSL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:58:44.847Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/71svF-5DbSL._AC_SL1000_.jpg",
+    "priceHistory": [],
+    "reviewsHistory": [],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": true,
+    "isAmazonChoice": false
   },
   {
     "rank": 26,
     "asin": "B0FGJWR11V",
-    "title": "Claire's DIY Lipstick & Lip Gloss Making Kit, 97-Piece Real Makeup Arts & Crafts Set, Handmade Moisturizing Lip Glaze, Gir...",
-    "price": 33,
+    "title": "Claire's DIY Lipstick & Lip Gloss Making Kit, 97-Piece Real Makeup Arts & Crafts Set, Handmade Moisturizing Lip Glaze, Girl Toys & Cosmetic Products, Beauty & Science Gift, Ages 8+",
+    "price": 30.93,
     "rating": "4.2 out of 5 stars",
     "ratingValue": 4.2,
-    "reviews": null,
-    "link": "https://www.amazon.com/Claires-Lipstick-97-Piece-Handmade-Moisturizing/dp/B0FGJWR11V/ref=sr_1_23?dib=eyJ2IjoiMSJ9.gE8XQ4-yei3dANc0kYslx_b2_fW9R7Lb3A_EVBoJKWzdZkGZMiOlo_3DhFu7iBYcHDKKIR0-ofSMr7BjX7HuoGq3t0__ypAMq-w5Wgx--lHkYpA7buIzQTcVVjdQ233FnBPoaWWQ0KRXy9vWUzoYpGwThB-wXY1Gm1kBQextg_6QAOfRmN1HE8QpUD7tuuNwwu_WdBngfGNphqsLd3RMCDigFEzHRksMpAHoxX76LfhsWWFSnLpyieMUCVNxL2KrENP7DQ-p6Ap5PN_sCZSIW1a9xtZQEJiM392Lme52Ji0.Y0AKKZkvADq2yxWE7vIMpkDh9ltMCm1mHLiED8Aq1js&dib_tag=se&keywords=makeup+products&qid=1781064662&sr=8-23",
+    "reviews": 114,
+    "link": "https://www.amazon.com/dp/B0FGJWR11V/",
     "category": "Makeup",
-    "scrapedAt": "2026-06-10T04:10:59.909Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/81ZTY5PpRuL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:59:05.411Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/81ZTY5PpRuL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 33,
+        "at": "2026-06-10T04:10:59.909Z"
+      },
+      {
+        "price": 30.93,
+        "at": "2026-06-17T03:59:05.411Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 114,
+        "at": "2026-06-17T03:59:05.411Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": true
   },
   {
     "rank": 26,
     "asin": "B0GLDN244J",
-    "title": "[Genuine Product] &honey Melty Moist Repair Shampoo & Conditioner Set 440mL+450g/14.87.fl.Oz+15.69Oz Sulfate-Free Moisturi...",
-    "price": 40,
+    "title": "[Genuine Product] &honey Melty Moist Repair Shampoo & Conditioner Set 440mL+450g/14.87.fl.Oz+15.69Oz Sulfate-Free Moisturizing Hair Care Tame Frizz Waves",
+    "price": 44,
     "rating": "4.7 out of 5 stars",
     "ratingValue": 4.7,
-    "reviews": null,
-    "link": "https://www.amazon.com/Genuine-Conditioner-14-87-fl-Oz-Sulfate-Free-Moisturizing/dp/B0GLDN244J/ref=sr_1_20?dib=eyJ2IjoiMSJ9.sa9N5NJJFMRSQokf7Qx2FbF5dZ6xi5u0-X9t9vNzLe3OB-nKhln4mXwaaO8HioXqYQHv0aXUj3aPZiVeEMdH8ZnCWGdHV_gUy1G9yDZyPnKZjhJ6ngzDThhQrOFJjADw6MFNlHPSYM9M9_c3Lp-quNuueJYKRTUPygw9Tw87WszCCBXZJWXbDqHBh13JG7IBba23cQe4MNKvcvnBwaNezBHR7bX9n2M5CBQLIi0SPIIM4o8B0Pjiqm_leXUVnFxbC3ftq0bhfRAwQFqNyIeMgb_sTk-mPmznRmuDLcdWPHU.3XfAC1vC7B9tQejBWENGMDyVir7hZiosEuIpy8eKSpw&dib_tag=se&keywords=hair+care+products&qid=1781064681&sr=8-20",
+    "reviews": 107,
+    "link": "https://www.amazon.com/dp/B0GLDN244J/",
     "category": "HairCare",
-    "scrapedAt": "2026-06-10T04:11:20.121Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/610MXcehn0L._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:59:25.377Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/610MXcehn0L._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 40,
+        "at": "2026-06-10T04:11:20.121Z"
+      },
+      {
+        "price": 44,
+        "at": "2026-06-17T03:59:25.377Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 107,
+        "at": "2026-06-17T03:59:25.377Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": true
   },
   {
     "rank": 26,
     "asin": "B0F642SQHH",
     "title": "Bodycology Long-Lasting Fragrance Body Mist, Sweet Love, 8 fl oz (Pack of 2)",
-    "price": null,
+    "price": 10.99,
     "rating": "4.8 out of 5 stars",
     "ratingValue": 4.8,
-    "reviews": 77,
-    "link": "https://www.amazon.com/Bodycology-Long-Lasting-Fragrance-Body-Sweet/dp/B0F642SQHH/ref=sr_1_21?dib=eyJ2IjoiMSJ9.t_4PZapEI-OIE9sayiZuOFtIsw7ZH_b75s0IkRuT9Oj2P7wDadwC2_4f5zwCJbzalSJPiFIC7wCht1YqWv4qddFSkz9LtYSLA_pcNXy1t__phIf8Jnz08Wckg4qihq68RGBKpx7j0BEFdv65L5fOl3VWYwnaNipck6kNy4Ra4iCe0J9JD-fXcnfCVu_Fb2E2aW8BG14_ZgSdwCRrEb60n2F1g4Xid4sxb0Pbwo57Cv7Kmfb_RxzRmQUTLIiMXvMBBrnNlau8ChKn3eveU03DV7LntwoJG786R3mynG5Zpro.YhevGJULG1B3jDdao8uICeAcLkFcm06wGi-m28cKGjs&dib_tag=se&keywords=fragrances+for+women&qid=1781064702&sr=8-21",
+    "reviews": 87,
+    "link": "https://www.amazon.com/dp/B0F642SQHH/",
     "category": "Fragrances",
-    "scrapedAt": "2026-06-10T04:11:39.626Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/71cL+fRt5+L._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T03:59:46.265Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/71cL+fRt5+L._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 10.99,
+        "at": "2026-06-17T03:59:46.265Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 77,
+        "at": "2026-06-10T04:11:39.626Z"
+      },
+      {
+        "count": 87,
+        "at": "2026-06-17T03:59:46.265Z"
+      }
+    ],
+    "trendingScore": 0.13,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": true
   },
   {
     "rank": 26,
     "asin": "B09QGPJKXV",
-    "title": "Pimoys 15 Pieces Powder Puff Face Soft Triangle Makeup Velour Puff, Beauty Sponge for Loose Powder and Cosmetic Foundatio...",
+    "title": "Pimoys 15 Pieces Powder Puff Face Soft Triangle Makeup Velour Puff, Beauty Sponge for Loose Powder and Cosmetic Foundation, Blender Makeup Tool (Black, Pink, Flesh)",
     "price": 6.99,
     "rating": "4.7 out of 5 stars",
     "ratingValue": 4.7,
-    "reviews": null,
-    "link": "https://www.amazon.com/Triangle-Mineral-Cosmetic-Foundation-Blender/dp/B09QGPJKXV/ref=sr_1_23?dib=eyJ2IjoiMSJ9.R9N_uOBldLUjkw4FNGv13Wn7Hcqm9V4p2kw-yY9DVehCQD8ZRxO3lFuewMWHhZellfalSF1aPD2HrZs_mLFM3wQ5fAdg_tdiXNSh65KnTQpGebJrQnk2D927WklSUeQLjVhza_9xOAZLOr9TTVMLdpy4DxdjZCia47zQ7pBJIyf9JOsjb61y9SicDRbBquApXNlKgr0dwMx5r2ZIvHFz_iIf5sEUZroUbsMJt1y6u-kgqQYEsp54gDbJFVKVBEhyhB31ZMnwRobSParPfMvb6OpYBQGYA07jfEhTcTVevKE.osGyfjmqzNHw89y99_PnDplwh3B3IpNWtsfkb40dpKo&dib_tag=se&keywords=beauty+tools&qid=1781064721&sr=8-23",
+    "reviews": 2038,
+    "link": "https://www.amazon.com/dp/B09QGPJKXV/",
     "category": "BeautyTools",
-    "scrapedAt": "2026-06-10T04:12:00.068Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/51xLryDkNOL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T04:00:06.696Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/51xLryDkNOL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 6.99,
+        "at": "2026-06-10T04:12:00.068Z"
+      },
+      {
+        "price": 6.99,
+        "at": "2026-06-17T04:00:06.696Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 2038,
+        "at": "2026-06-17T04:00:06.696Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": true,
+    "isAmazonChoice": true
   },
   {
     "rank": 27,
     "asin": "B09WZTBL18",
-    "title": "Karuna Skin - QUENCH Biocellulose Facial Mask for Dry, Dull Skin, Cooling & Rejuvenating Facial Skin Care Products, Hydrat...",
+    "title": "Karuna Skin - QUENCH Biocellulose Facial Mask for Dry, Dull Skin, Cooling & Rejuvenating Facial Skin Care Products, Hydrating Face Masks with Black Truffle, Sheet Mask for Fine Lines & Wrinkles, 0.74",
     "price": 6.49,
     "rating": "4.6 out of 5 stars",
     "ratingValue": 4.6,
-    "reviews": 33,
-    "link": "https://www.amazon.com/Karuna-Skin-Quench-Bio-Cellulose-Mask/dp/B09WZTBL18/ref=sr_1_20_us_f3_0o_wf?dib=eyJ2IjoiMSJ9.anVEqyOvaJKdKNwBWTh5TA6pgngKkbfxTrAgc9cawHh7CiWns5ucXxVKc7sjPCnoa6sDI4uFnc0Ax9iphABEpq1BImKFqk5AKJ_TlQmZQrIvyzILJxdrEkBiz40WXgNsMF8AXKO095hN9cTQbb3M0Lj3Pb7RobvHnSgw72Zc1krvFFVJq4VPNihr3sOVkw20eejajZvavB0axCiKXD41Mt3vNgjy2lA2XsOKqjYmJM_jMXTdv_l9KADTJ52PP3H0EvtJPtPv0JLyQaEcqRXBdr4UymFxoHX5c6UEiSWEMaw.Q8vhLSbJFFz0ntuVP2-kMu_e7wurHazs29A7j-c0wzY&dib_tag=se&keywords=skincare+products&qid=1781064641&sr=8-20",
+    "reviews": 788,
+    "link": "https://www.amazon.com/dp/B09WZTBL18/",
     "category": "Skincare",
-    "scrapedAt": "2026-06-10T04:10:40.345Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/51XSPXkKSYL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T04:00:27.410Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/51XSPXkKSYL._AC_SL1000_.jpg",
+    "priceHistory": [],
+    "reviewsHistory": [],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": true,
+    "isAmazonChoice": false
   },
   {
     "rank": 27,
     "asin": "B0DQVHHZDY",
-    "title": "evpct Pink Single Eyeshadow Palette, Bright Light Pink Rose Glitter Shimmer Sparkle Cream Eye Shadow Palette Makeup for Ol...",
+    "title": "evpct Pink Single Eyeshadow Palette, Bright Light Pink Rose Glitter Shimmer Sparkle Cream Eye Shadow Palette Makeup for Older Women, High Pigment Waterproof Monochrome Mini Eyeshadow Makeup Products",
     "price": 6.99,
     "rating": "4.1 out of 5 stars",
     "ratingValue": 4.1,
-    "reviews": null,
-    "link": "https://www.amazon.com/evpct-Eyeshadow-Waterproof-Monochrome-Products/dp/B0DQVHHZDY/ref=sr_1_24?dib=eyJ2IjoiMSJ9.gE8XQ4-yei3dANc0kYslx_b2_fW9R7Lb3A_EVBoJKWzdZkGZMiOlo_3DhFu7iBYcHDKKIR0-ofSMr7BjX7HuoGq3t0__ypAMq-w5Wgx--lHkYpA7buIzQTcVVjdQ233FnBPoaWWQ0KRXy9vWUzoYpGwThB-wXY1Gm1kBQextg_6QAOfRmN1HE8QpUD7tuuNwwu_WdBngfGNphqsLd3RMCDigFEzHRksMpAHoxX76LfhsWWFSnLpyieMUCVNxL2KrENP7DQ-p6Ap5PN_sCZSIW1a9xtZQEJiM392Lme52Ji0.Y0AKKZkvADq2yxWE7vIMpkDh9ltMCm1mHLiED8Aq1js&dib_tag=se&keywords=makeup+products&qid=1781064662&sr=8-24",
+    "reviews": 2805,
+    "link": "https://www.amazon.com/dp/B0DQVHHZDY/",
     "category": "Makeup",
-    "scrapedAt": "2026-06-10T04:10:59.911Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/61lVwmnk19L._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T04:00:50.288Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/61lVwmnk19L._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 6.99,
+        "at": "2026-06-10T04:10:59.911Z"
+      },
+      {
+        "price": 6.99,
+        "at": "2026-06-17T04:00:50.288Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 2805,
+        "at": "2026-06-17T04:00:50.288Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": false
   },
   {
     "rank": 27,
     "asin": "B0G2GWFJ2V",
-    "title": "[Genuine Product] &honey Deep Moist Hair Oil 100mL/ 3.38 Oz Sulfate-Free Moisturizing Hair Oil for Dry Hair |Unique Blend ...",
+    "title": "[Genuine Product] &honey Deep Moist Hair Oil 100mL/ 3.38 Oz Sulfate-Free Moisturizing Hair Oil for Dry Hair |Unique Blend of Honeys & Argan Oil for Shine, Hydrated Hair Japanese Hair Care",
     "price": 25,
     "rating": "4.7 out of 5 stars",
     "ratingValue": 4.7,
-    "reviews": 22,
-    "link": "https://www.amazon.com/Genuine-Sulfate-Free-Moisturizing-Hydrated-Japanese/dp/B0G2GWFJ2V/ref=sr_1_21?dib=eyJ2IjoiMSJ9.sa9N5NJJFMRSQokf7Qx2FbF5dZ6xi5u0-X9t9vNzLe3OB-nKhln4mXwaaO8HioXqYQHv0aXUj3aPZiVeEMdH8ZnCWGdHV_gUy1G9yDZyPnKZjhJ6ngzDThhQrOFJjADw6MFNlHPSYM9M9_c3Lp-quNuueJYKRTUPygw9Tw87WszCCBXZJWXbDqHBh13JG7IBba23cQe4MNKvcvnBwaNezBHR7bX9n2M5CBQLIi0SPIIM4o8B0Pjiqm_leXUVnFxbC3ftq0bhfRAwQFqNyIeMgb_sTk-mPmznRmuDLcdWPHU.3XfAC1vC7B9tQejBWENGMDyVir7hZiosEuIpy8eKSpw&dib_tag=se&keywords=hair+care+products&qid=1781064681&sr=8-21",
+    "reviews": 74,
+    "link": "https://www.amazon.com/dp/B0G2GWFJ2V/",
     "category": "HairCare",
-    "scrapedAt": "2026-06-10T04:11:20.122Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/61jWstY-tLL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T04:01:10.495Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/61jWstY-tLL._AC_SL1000_.jpg",
+    "priceHistory": [],
+    "reviewsHistory": [],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": true,
+    "isAmazonChoice": true
   },
   {
     "rank": 27,
     "asin": "B0C2QS3Y3W",
     "title": "Bath & Body Works Life Of The Party 2 Pack Fine Fragrance Mist Set - Full Size",
-    "price": 59.98,
+    "price": 54.95,
     "rating": "4.9 out of 5 stars",
     "ratingValue": 4.9,
-    "reviews": null,
-    "link": "https://www.amazon.com/Bath-Body-Works-Party-Fragrance/dp/B0C2QS3Y3W/ref=sr_1_22?dib=eyJ2IjoiMSJ9.t_4PZapEI-OIE9sayiZuOFtIsw7ZH_b75s0IkRuT9Oj2P7wDadwC2_4f5zwCJbzalSJPiFIC7wCht1YqWv4qddFSkz9LtYSLA_pcNXy1t__phIf8Jnz08Wckg4qihq68RGBKpx7j0BEFdv65L5fOl3VWYwnaNipck6kNy4Ra4iCe0J9JD-fXcnfCVu_Fb2E2aW8BG14_ZgSdwCRrEb60n2F1g4Xid4sxb0Pbwo57Cv7Kmfb_RxzRmQUTLIiMXvMBBrnNlau8ChKn3eveU03DV7LntwoJG786R3mynG5Zpro.YhevGJULG1B3jDdao8uICeAcLkFcm06wGi-m28cKGjs&dib_tag=se&keywords=fragrances+for+women&qid=1781064702&sr=8-22",
+    "reviews": 35,
+    "link": "https://www.amazon.com/dp/B0C2QS3Y3W/",
     "category": "Fragrances",
-    "scrapedAt": "2026-06-10T04:11:39.626Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/71CJGb93aqL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T04:01:29.522Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/71CJGb93aqL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 59.98,
+        "at": "2026-06-10T04:11:39.626Z"
+      },
+      {
+        "price": 54.95,
+        "at": "2026-06-17T04:01:29.522Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 35,
+        "at": "2026-06-17T04:01:29.522Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": true
   },
   {
     "rank": 27,
     "asin": "B0BTBX4918",
-    "title": "EVAOUXIU 2 Pcs Triangle Powder Puff for Face Powder, Soft Plush Setting Makeup Puff, Velour Cosmetic Foundation Blender Sp...",
-    "price": 4.99,
-    "rating": "4.7 out of 5 stars",
-    "ratingValue": 4.7,
-    "reviews": null,
-    "link": "https://www.amazon.com/EVAOUXIU-Triangle-Setting-Cosmetic-Foundation/dp/B0BTBX4918/ref=sr_1_24?dib=eyJ2IjoiMSJ9.R9N_uOBldLUjkw4FNGv13Wn7Hcqm9V4p2kw-yY9DVehCQD8ZRxO3lFuewMWHhZellfalSF1aPD2HrZs_mLFM3wQ5fAdg_tdiXNSh65KnTQpGebJrQnk2D927WklSUeQLjVhza_9xOAZLOr9TTVMLdpy4DxdjZCia47zQ7pBJIyf9JOsjb61y9SicDRbBquApXNlKgr0dwMx5r2ZIvHFz_iIf5sEUZroUbsMJt1y6u-kgqQYEsp54gDbJFVKVBEhyhB31ZMnwRobSParPfMvb6OpYBQGYA07jfEhTcTVevKE.osGyfjmqzNHw89y99_PnDplwh3B3IpNWtsfkb40dpKo&dib_tag=se&keywords=beauty+tools&qid=1781064721&sr=8-24",
+    "title": "EVAOUXIU 2 Pcs Triangle Powder Puff for Face Powder, Soft Plush Setting Makeup Puff, Velour Cosmetic Foundation Blender Sponge Beauty Makeup Tools (Black)",
+    "price": 4.49,
+    "rating": "4.6 out of 5 stars",
+    "ratingValue": 4.6,
+    "reviews": 1977,
+    "link": "https://www.amazon.com/dp/B0BTBX4918/",
     "category": "BeautyTools",
-    "scrapedAt": "2026-06-10T04:12:00.070Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/71hUB777i+L._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T04:01:53.836Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/71hUB777i+L._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 4.99,
+        "at": "2026-06-10T04:12:00.070Z"
+      },
+      {
+        "price": 4.49,
+        "at": "2026-06-17T04:01:53.836Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 1977,
+        "at": "2026-06-17T04:01:53.836Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": true,
+    "isAmazonChoice": true
   },
   {
     "rank": 28,
     "asin": "B0C6FK6CGJ",
-    "title": "Burt’s Bees Clear and Balanced Herbal Blemish Stick, with Tea Tree Oil, On-the-Go Blemish Care, Unclogs Pores, Use with Sk...",
-    "price": 39.99,
+    "title": "Burt’s Bees Clear and Balanced Herbal Blemish Stick, with Tea Tree Oil, On-the-Go Blemish Care, Unclogs Pores, Use with Skincare Products, 2-Pack, 0.26 fl. oz.",
+    "price": 44.99,
     "rating": "4.6 out of 5 stars",
     "ratingValue": 4.6,
-    "reviews": null,
-    "link": "https://www.amazon.com/Burts-Bees-Herbal-Blemish-Stick/dp/B0C6FK6CGJ/ref=sr_1_21?dib=eyJ2IjoiMSJ9.anVEqyOvaJKdKNwBWTh5TA6pgngKkbfxTrAgc9cawHh7CiWns5ucXxVKc7sjPCnoa6sDI4uFnc0Ax9iphABEpq1BImKFqk5AKJ_TlQmZQrIvyzILJxdrEkBiz40WXgNsMF8AXKO095hN9cTQbb3M0Lj3Pb7RobvHnSgw72Zc1krvFFVJq4VPNihr3sOVkw20eejajZvavB0axCiKXD41Mt3vNgjy2lA2XsOKqjYmJM_jMXTdv_l9KADTJ52PP3H0EvtJPtPv0JLyQaEcqRXBdr4UymFxoHX5c6UEiSWEMaw.Q8vhLSbJFFz0ntuVP2-kMu_e7wurHazs29A7j-c0wzY&dib_tag=se&keywords=skincare+products&qid=1781064641&sr=8-21",
+    "reviews": 774,
+    "link": "https://www.amazon.com/dp/B0C6FK6CGJ/",
     "category": "Skincare",
-    "scrapedAt": "2026-06-10T04:10:40.346Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/813xfP6oCqL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T04:02:13.624Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/813xfP6oCqL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 39.99,
+        "at": "2026-06-10T04:10:40.346Z"
+      },
+      {
+        "price": 44.99,
+        "at": "2026-06-17T04:02:13.624Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 774,
+        "at": "2026-06-17T04:02:13.624Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": true
   },
   {
     "rank": 28,
     "asin": "B0F6RS6833",
-    "title": "Sigma Beauty Spectrum Eyeshadow Palette — 20 Neutral Eyeshadow Shades in Matte, Shimmer and Metallic Finishes - Highly Pig...",
+    "title": "Sigma Beauty Spectrum Eyeshadow Palette — 20 Neutral Eyeshadow Shades in Matte, Shimmer and Metallic Finishes - Highly Pigmented Vegan Eye Makeup Palette - Clean Beauty Products",
     "price": 65,
     "rating": "4.3 out of 5 stars",
     "ratingValue": 4.3,
-    "reviews": null,
-    "link": "https://www.amazon.com/Spectrum-Eyeshadow-Palette-Finishes-Pigmented/dp/B0F6RS6833/ref=sr_1_25?dib=eyJ2IjoiMSJ9.gE8XQ4-yei3dANc0kYslx_b2_fW9R7Lb3A_EVBoJKWzdZkGZMiOlo_3DhFu7iBYcHDKKIR0-ofSMr7BjX7HuoGq3t0__ypAMq-w5Wgx--lHkYpA7buIzQTcVVjdQ233FnBPoaWWQ0KRXy9vWUzoYpGwThB-wXY1Gm1kBQextg_6QAOfRmN1HE8QpUD7tuuNwwu_WdBngfGNphqsLd3RMCDigFEzHRksMpAHoxX76LfhsWWFSnLpyieMUCVNxL2KrENP7DQ-p6Ap5PN_sCZSIW1a9xtZQEJiM392Lme52Ji0.Y0AKKZkvADq2yxWE7vIMpkDh9ltMCm1mHLiED8Aq1js&dib_tag=se&keywords=makeup+products&qid=1781064662&sr=8-25",
+    "reviews": 16,
+    "link": "https://www.amazon.com/dp/B0F6RS6833/",
     "category": "Makeup",
-    "scrapedAt": "2026-06-10T04:10:59.912Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/51iRwSHQM1L._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T04:02:32.999Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/51iRwSHQM1L._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 65,
+        "at": "2026-06-10T04:10:59.912Z"
+      },
+      {
+        "price": 65,
+        "at": "2026-06-17T04:02:32.999Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 16,
+        "at": "2026-06-17T04:02:32.999Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": false
   },
   {
     "rank": 28,
     "asin": "B0CJ9ZQPGS",
-    "title": "SUTRA Heat Guard Renewal Hair Spray for Frizzy, Dry & Damaged Hair - Thermal Protecting Hairspray Hydrates, Protects & Rep...",
+    "title": "SUTRA Heat Guard Renewal Hair Spray for Frizzy, Dry & Damaged Hair - Thermal Protecting Hairspray Hydrates, Protects & Repairs Against Heat with Hyaluronic Acid - Anti-Frizz Haircare Products",
     "price": 23.8,
     "rating": "4.7 out of 5 stars",
     "ratingValue": 4.7,
-    "reviews": null,
-    "link": "https://www.amazon.com/Hair-Spray-Heat-Protectant-Thermal-Protector-Hairspray/dp/B0CJ9ZQPGS/ref=sr_1_22?dib=eyJ2IjoiMSJ9.sa9N5NJJFMRSQokf7Qx2FbF5dZ6xi5u0-X9t9vNzLe3OB-nKhln4mXwaaO8HioXqYQHv0aXUj3aPZiVeEMdH8ZnCWGdHV_gUy1G9yDZyPnKZjhJ6ngzDThhQrOFJjADw6MFNlHPSYM9M9_c3Lp-quNuueJYKRTUPygw9Tw87WszCCBXZJWXbDqHBh13JG7IBba23cQe4MNKvcvnBwaNezBHR7bX9n2M5CBQLIi0SPIIM4o8B0Pjiqm_leXUVnFxbC3ftq0bhfRAwQFqNyIeMgb_sTk-mPmznRmuDLcdWPHU.3XfAC1vC7B9tQejBWENGMDyVir7hZiosEuIpy8eKSpw&dib_tag=se&keywords=hair+care+products&qid=1781064681&sr=8-22",
+    "reviews": 71,
+    "link": "https://www.amazon.com/dp/B0CJ9ZQPGS/",
     "category": "HairCare",
-    "scrapedAt": "2026-06-10T04:11:20.122Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/6148mZGp82L._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T04:02:57.333Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/6148mZGp82L._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 23.8,
+        "at": "2026-06-10T04:11:20.122Z"
+      },
+      {
+        "price": 23.8,
+        "at": "2026-06-17T04:02:57.333Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 71,
+        "at": "2026-06-17T04:02:57.333Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": false
   },
   {
     "rank": 28,
     "asin": "B07JRG42D9",
     "title": "Victoria's Secret Body Fragrance Mist, Bare Vanilla - 8.4 fl oz",
-    "price": 16.97,
+    "price": 16.96,
     "rating": "4.7 out of 5 stars",
     "ratingValue": 4.7,
-    "reviews": 2626,
-    "link": "https://www.amazon.com/Victorias-Secret-Fragrance-Mist-Vanilla/dp/B07JRG42D9/ref=sr_1_23?dib=eyJ2IjoiMSJ9.t_4PZapEI-OIE9sayiZuOFtIsw7ZH_b75s0IkRuT9Oj2P7wDadwC2_4f5zwCJbzalSJPiFIC7wCht1YqWv4qddFSkz9LtYSLA_pcNXy1t__phIf8Jnz08Wckg4qihq68RGBKpx7j0BEFdv65L5fOl3VWYwnaNipck6kNy4Ra4iCe0J9JD-fXcnfCVu_Fb2E2aW8BG14_ZgSdwCRrEb60n2F1g4Xid4sxb0Pbwo57Cv7Kmfb_RxzRmQUTLIiMXvMBBrnNlau8ChKn3eveU03DV7LntwoJG786R3mynG5Zpro.YhevGJULG1B3jDdao8uICeAcLkFcm06wGi-m28cKGjs&dib_tag=se&keywords=fragrances+for+women&qid=1781064702&sr=8-23",
+    "reviews": 15734,
+    "link": "https://www.amazon.com/dp/B07JRG42D9/",
     "category": "Fragrances",
-    "scrapedAt": "2026-06-10T04:11:39.627Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/61WfTqDcqKL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T04:03:19.057Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/61WfTqDcqKL._AC_SL1000_.jpg",
+    "priceHistory": [],
+    "reviewsHistory": [],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": false
   },
   {
     "rank": 28,
     "asin": "B09B8MQRL4",
-    "title": "Pimoys 12 Pieces Powder Puff Face Triangle Makeup Sponge for Loose Powder Setting Powder Velour Foundation Blender Sponge ...",
+    "title": "Pimoys 12 Pieces Powder Puff Face Triangle Makeup Sponge for Loose Powder Setting Powder Velour Foundation Blender Sponge Beauty Makeup Tool, Black",
     "price": 5.99,
     "rating": "4.7 out of 5 stars",
     "ratingValue": 4.7,
-    "reviews": null,
-    "link": "https://www.amazon.com/Pieces-Triangle-Mineral-Cosmetic-Foundation/dp/B09B8MQRL4/ref=sr_1_25?dib=eyJ2IjoiMSJ9.R9N_uOBldLUjkw4FNGv13Wn7Hcqm9V4p2kw-yY9DVehCQD8ZRxO3lFuewMWHhZellfalSF1aPD2HrZs_mLFM3wQ5fAdg_tdiXNSh65KnTQpGebJrQnk2D927WklSUeQLjVhza_9xOAZLOr9TTVMLdpy4DxdjZCia47zQ7pBJIyf9JOsjb61y9SicDRbBquApXNlKgr0dwMx5r2ZIvHFz_iIf5sEUZroUbsMJt1y6u-kgqQYEsp54gDbJFVKVBEhyhB31ZMnwRobSParPfMvb6OpYBQGYA07jfEhTcTVevKE.osGyfjmqzNHw89y99_PnDplwh3B3IpNWtsfkb40dpKo&dib_tag=se&keywords=beauty+tools&qid=1781064721&sr=8-25",
+    "reviews": 1915,
+    "link": "https://www.amazon.com/dp/B09B8MQRL4/",
     "category": "BeautyTools",
-    "scrapedAt": "2026-06-10T04:12:00.071Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/51nRrYdxu1L._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T04:03:38.941Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/51nRrYdxu1L._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 5.99,
+        "at": "2026-06-10T04:12:00.071Z"
+      },
+      {
+        "price": 5.99,
+        "at": "2026-06-17T04:03:38.941Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 1915,
+        "at": "2026-06-17T04:03:38.941Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": true,
+    "isAmazonChoice": true
   },
   {
     "rank": 29,
     "asin": "B000Z61L1Q",
-    "title": "Anti-Aging Vitamin C Serum with MDT5™ | Brightening Facial Serum | Somme Institute Skincare for Even Skin Tone | Collagen ...",
+    "title": "Anti-Aging Vitamin C Serum with MDT5™ | Brightening Facial Serum | Somme Institute Skincare for Even Skin Tone | Collagen Production, Remove Fine Lines, Wrinkles, Hyperpigmentation | 1 Fl Oz",
     "price": 98,
     "rating": "4.7 out of 5 stars",
     "ratingValue": 4.7,
-    "reviews": null,
-    "link": "https://www.amazon.com/Somme-Institute-Face-Serum-Vitamin/dp/B000Z61L1Q/ref=sr_1_22?dib=eyJ2IjoiMSJ9.anVEqyOvaJKdKNwBWTh5TA6pgngKkbfxTrAgc9cawHh7CiWns5ucXxVKc7sjPCnoa6sDI4uFnc0Ax9iphABEpq1BImKFqk5AKJ_TlQmZQrIvyzILJxdrEkBiz40WXgNsMF8AXKO095hN9cTQbb3M0Lj3Pb7RobvHnSgw72Zc1krvFFVJq4VPNihr3sOVkw20eejajZvavB0axCiKXD41Mt3vNgjy2lA2XsOKqjYmJM_jMXTdv_l9KADTJ52PP3H0EvtJPtPv0JLyQaEcqRXBdr4UymFxoHX5c6UEiSWEMaw.Q8vhLSbJFFz0ntuVP2-kMu_e7wurHazs29A7j-c0wzY&dib_tag=se&keywords=skincare+products&qid=1781064641&sr=8-22",
+    "reviews": 57,
+    "link": "https://www.amazon.com/dp/B000Z61L1Q/",
     "category": "Skincare",
-    "scrapedAt": "2026-06-10T04:10:40.347Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/71IXl3ebXpL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T04:03:58.587Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/71IXl3ebXpL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 98,
+        "at": "2026-06-10T04:10:40.347Z"
+      },
+      {
+        "price": 98,
+        "at": "2026-06-17T04:03:58.587Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 57,
+        "at": "2026-06-17T04:03:58.587Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": true
   },
   {
     "rank": 29,
     "asin": "B0F2XN1Q41",
-    "title": "BeautiHome Blush Stick for Cheeks & Lips Multistick Cream Blush- Easy to Apply & Blend- Infused with Nourishing Ingredient...",
+    "title": "Blush Stick for Cheeks & Lips Multistick Cream Blush- Easy to Apply & Blend- Infused with Nourishing Ingredients for your Skin Compact Travel Size Makeup- & Beauty Products for Women",
     "price": 9.99,
     "rating": "4.1 out of 5 stars",
     "ratingValue": 4.1,
-    "reviews": null,
-    "link": "https://www.amazon.com/BeautiHome-Multistick-Nourishing-Ingredients-Products/dp/B0F2XN1Q41/ref=sr_1_26?dib=eyJ2IjoiMSJ9.gE8XQ4-yei3dANc0kYslx_b2_fW9R7Lb3A_EVBoJKWzdZkGZMiOlo_3DhFu7iBYcHDKKIR0-ofSMr7BjX7HuoGq3t0__ypAMq-w5Wgx--lHkYpA7buIzQTcVVjdQ233FnBPoaWWQ0KRXy9vWUzoYpGwThB-wXY1Gm1kBQextg_6QAOfRmN1HE8QpUD7tuuNwwu_WdBngfGNphqsLd3RMCDigFEzHRksMpAHoxX76LfhsWWFSnLpyieMUCVNxL2KrENP7DQ-p6Ap5PN_sCZSIW1a9xtZQEJiM392Lme52Ji0.Y0AKKZkvADq2yxWE7vIMpkDh9ltMCm1mHLiED8Aq1js&dib_tag=se&keywords=makeup+products&qid=1781064662&sr=8-26",
+    "reviews": 61,
+    "link": "https://www.amazon.com/dp/B0F2XN1Q41/",
     "category": "Makeup",
-    "scrapedAt": "2026-06-10T04:10:59.913Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/81G8+OyLx6L._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T04:04:18.565Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/81G8+OyLx6L._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 9.99,
+        "at": "2026-06-10T04:10:59.913Z"
+      },
+      {
+        "price": 9.99,
+        "at": "2026-06-17T04:04:18.565Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 61,
+        "at": "2026-06-17T04:04:18.565Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": false
   },
   {
     "rank": 29,
     "asin": "B0GTBR3PCM",
-    "title": "OUAI Detox Shampoo - Salon Size Clarifying Shampoo for Build Up, Dirt, Oil, Product and Hard Water - Apple Cider Vinegar &...",
+    "title": "OUAI Detox Shampoo - Salon Size Clarifying Shampoo for Build Up, Dirt, Oil, Product and Hard Water - Apple Cider Vinegar & Keratin for Clean, Refreshed Hair - Sulfate-Free Hair Care, 32 Oz",
     "price": 88,
-    "rating": "",
-    "ratingValue": null,
+    "rating": "4.6 out of 5 stars",
+    "ratingValue": 4.6,
     "reviews": 0,
-    "link": "https://www.amazon.com/OUAI-Detox-Shampoo-Clarifying-Sulfate-Free/dp/B0GTBR3PCM/ref=sr_1_23?dib=eyJ2IjoiMSJ9.sa9N5NJJFMRSQokf7Qx2FbF5dZ6xi5u0-X9t9vNzLe3OB-nKhln4mXwaaO8HioXqYQHv0aXUj3aPZiVeEMdH8ZnCWGdHV_gUy1G9yDZyPnKZjhJ6ngzDThhQrOFJjADw6MFNlHPSYM9M9_c3Lp-quNuueJYKRTUPygw9Tw87WszCCBXZJWXbDqHBh13JG7IBba23cQe4MNKvcvnBwaNezBHR7bX9n2M5CBQLIi0SPIIM4o8B0Pjiqm_leXUVnFxbC3ftq0bhfRAwQFqNyIeMgb_sTk-mPmznRmuDLcdWPHU.3XfAC1vC7B9tQejBWENGMDyVir7hZiosEuIpy8eKSpw&dib_tag=se&keywords=hair+care+products&qid=1781064681&sr=8-23",
+    "link": "https://www.amazon.com/dp/B0GTBR3PCM/",
     "category": "HairCare",
-    "scrapedAt": "2026-06-10T04:11:20.123Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/51iH58WXzHL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T04:04:39.057Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/51iH58WXzHL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 88,
+        "at": "2026-06-10T04:11:20.123Z"
+      },
+      {
+        "price": 88,
+        "at": "2026-06-17T04:04:39.057Z"
+      }
+    ],
+    "reviewsHistory": [],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": false
   },
   {
     "rank": 29,
     "asin": "B01JSH53PC",
     "title": "Ariana Grande Sweet Like Candy Eau De Parfum – Fruity & Gourmand Fragrance for Women",
-    "price": null,
+    "price": 75,
     "rating": "4.7 out of 5 stars",
     "ratingValue": 4.7,
-    "reviews": 55,
-    "link": "https://www.amazon.com/Ariana-Grande-Sweet-Candy-Parfum/dp/B01JSH53PC/ref=sr_1_24?dib=eyJ2IjoiMSJ9.t_4PZapEI-OIE9sayiZuOFtIsw7ZH_b75s0IkRuT9Oj2P7wDadwC2_4f5zwCJbzalSJPiFIC7wCht1YqWv4qddFSkz9LtYSLA_pcNXy1t__phIf8Jnz08Wckg4qihq68RGBKpx7j0BEFdv65L5fOl3VWYwnaNipck6kNy4Ra4iCe0J9JD-fXcnfCVu_Fb2E2aW8BG14_ZgSdwCRrEb60n2F1g4Xid4sxb0Pbwo57Cv7Kmfb_RxzRmQUTLIiMXvMBBrnNlau8ChKn3eveU03DV7LntwoJG786R3mynG5Zpro.YhevGJULG1B3jDdao8uICeAcLkFcm06wGi-m28cKGjs&dib_tag=se&keywords=fragrances+for+women&qid=1781064702&sr=8-24",
+    "reviews": 17516,
+    "link": "https://www.amazon.com/dp/B01JSH53PC/",
     "category": "Fragrances",
-    "scrapedAt": "2026-06-10T04:11:39.628Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/51F05l3zqML._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T04:04:58.493Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/51F05l3zqML._AC_SL1000_.jpg",
+    "priceHistory": [],
+    "reviewsHistory": [],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": true
   },
   {
     "rank": 29,
     "asin": "B0FSRRBLPJ",
-    "title": "Travel Hair Dryer Case for Shark Flexstyle, Double-Layer Carrying Case for Shark Flex Style Blow Dryer, Portable Hair Tool...",
+    "title": "Travel Hair Dryer Case for Shark Flexstyle, Double-Layer Carrying Case for Shark Flex Style Blow Dryer, Portable Hair Tools Storage Organizer Bag for Shark Beauty Hairdryer Attchments(Black Rose Gold)",
     "price": 30.76,
-    "rating": "4.7 out of 5 stars",
-    "ratingValue": 4.7,
-    "reviews": null,
-    "link": "https://www.amazon.com/Flexstyle-Double-Layer-Organizer-Hairdryer-Attchments/dp/B0FSRRBLPJ/ref=sr_1_26?dib=eyJ2IjoiMSJ9.R9N_uOBldLUjkw4FNGv13Wn7Hcqm9V4p2kw-yY9DVehCQD8ZRxO3lFuewMWHhZellfalSF1aPD2HrZs_mLFM3wQ5fAdg_tdiXNSh65KnTQpGebJrQnk2D927WklSUeQLjVhza_9xOAZLOr9TTVMLdpy4DxdjZCia47zQ7pBJIyf9JOsjb61y9SicDRbBquApXNlKgr0dwMx5r2ZIvHFz_iIf5sEUZroUbsMJt1y6u-kgqQYEsp54gDbJFVKVBEhyhB31ZMnwRobSParPfMvb6OpYBQGYA07jfEhTcTVevKE.osGyfjmqzNHw89y99_PnDplwh3B3IpNWtsfkb40dpKo&dib_tag=se&keywords=beauty+tools&qid=1781064721&sr=8-26",
+    "rating": "4.8 out of 5 stars",
+    "ratingValue": 4.8,
+    "reviews": 1416,
+    "link": "https://www.amazon.com/dp/B0FSRRBLPJ/",
     "category": "BeautyTools",
-    "scrapedAt": "2026-06-10T04:12:00.150Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/71JK7fY5gqL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T04:05:21.522Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/71JK7fY5gqL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 30.76,
+        "at": "2026-06-10T04:12:00.150Z"
+      },
+      {
+        "price": 30.76,
+        "at": "2026-06-17T04:05:21.522Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 1416,
+        "at": "2026-06-17T04:05:21.522Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": true
   },
   {
     "rank": 30,
     "asin": "B003X4C4UY",
-    "title": "Epionce Lytic Tx - Product for Combination to Oily & Problem Skin with Salicylic Acid, Hyaluronic Acid & Azelaic Acid, Der...",
+    "title": "Epionce Lytic Tx - Product for Combination to Oily & Problem Skin with Salicylic Acid, Hyaluronic Acid & Azelaic Acid, Dermatologist Skincare",
     "price": 60,
     "rating": "4.6 out of 5 stars",
     "ratingValue": 4.6,
-    "reviews": null,
-    "link": "https://www.amazon.com/Epionce-Salicylic-Azelaic-Hyaluronic-Combination/dp/B003X4C4UY/ref=sr_1_23?dib=eyJ2IjoiMSJ9.anVEqyOvaJKdKNwBWTh5TA6pgngKkbfxTrAgc9cawHh7CiWns5ucXxVKc7sjPCnoa6sDI4uFnc0Ax9iphABEpq1BImKFqk5AKJ_TlQmZQrIvyzILJxdrEkBiz40WXgNsMF8AXKO095hN9cTQbb3M0Lj3Pb7RobvHnSgw72Zc1krvFFVJq4VPNihr3sOVkw20eejajZvavB0axCiKXD41Mt3vNgjy2lA2XsOKqjYmJM_jMXTdv_l9KADTJ52PP3H0EvtJPtPv0JLyQaEcqRXBdr4UymFxoHX5c6UEiSWEMaw.Q8vhLSbJFFz0ntuVP2-kMu_e7wurHazs29A7j-c0wzY&dib_tag=se&keywords=skincare+products&qid=1781064641&sr=8-23",
+    "reviews": 455,
+    "link": "https://www.amazon.com/dp/B003X4C4UY/",
     "category": "Skincare",
-    "scrapedAt": "2026-06-10T04:10:40.347Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/41Ijh1Amn6L._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T04:05:42.031Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/41Ijh1Amn6L._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 60,
+        "at": "2026-06-10T04:10:40.347Z"
+      },
+      {
+        "price": 60,
+        "at": "2026-06-17T04:05:42.031Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 455,
+        "at": "2026-06-17T04:05:42.031Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": true
   },
   {
     "rank": 30,
     "asin": "B00CE1IBLS",
-    "title": "Dermacol - Full Coverage Foundation, Liquid Matte Makeup with SPF 30, Waterproof, for Oily Skin, Acne, & Under Eye Bags, L...",
+    "title": "Dermacol - Full Coverage Foundation, Liquid Matte Makeup with SPF 30, Waterproof, for Oily Skin, Acne, & Under Eye Bags, Long-Lasting Makeup Products, 30g, Shade 222",
     "price": 21.44,
-    "rating": "4.0 out of 5 stars",
+    "rating": "4 out of 5 stars",
     "ratingValue": 4,
-    "reviews": null,
-    "link": "https://www.amazon.com/Dermacol-Make-up-Cover-Waterproof-Foundation/dp/B00CE1IBLS/ref=sr_1_27?dib=eyJ2IjoiMSJ9.gE8XQ4-yei3dANc0kYslx_b2_fW9R7Lb3A_EVBoJKWzdZkGZMiOlo_3DhFu7iBYcHDKKIR0-ofSMr7BjX7HuoGq3t0__ypAMq-w5Wgx--lHkYpA7buIzQTcVVjdQ233FnBPoaWWQ0KRXy9vWUzoYpGwThB-wXY1Gm1kBQextg_6QAOfRmN1HE8QpUD7tuuNwwu_WdBngfGNphqsLd3RMCDigFEzHRksMpAHoxX76LfhsWWFSnLpyieMUCVNxL2KrENP7DQ-p6Ap5PN_sCZSIW1a9xtZQEJiM392Lme52Ji0.Y0AKKZkvADq2yxWE7vIMpkDh9ltMCm1mHLiED8Aq1js&dib_tag=se&keywords=makeup+products&qid=1781064662&sr=8-27",
+    "reviews": 37589,
+    "link": "https://www.amazon.com/dp/B00CE1IBLS/",
     "category": "Makeup",
-    "scrapedAt": "2026-06-10T04:10:59.914Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/61P6VkpCZwL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T04:06:03.127Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/61P6VkpCZwL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 21.44,
+        "at": "2026-06-10T04:10:59.914Z"
+      },
+      {
+        "price": 21.44,
+        "at": "2026-06-17T04:06:03.127Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 37589,
+        "at": "2026-06-17T04:06:03.127Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": true
   },
   {
     "rank": 30,
     "asin": "B01IAEL3LC",
     "title": "It's a 10 Haircare Miracle Leave-In Product for Blondes, 4 oz. (Pack of 3)",
-    "price": 25.99,
+    "price": 25.05,
     "rating": "4.6 out of 5 stars",
     "ratingValue": 4.6,
-    "reviews": 66,
-    "link": "https://www.amazon.com/10-Miracle-Leave-Conditioner-Blondes/dp/B01IAEL3LC/ref=sr_1_24?dib=eyJ2IjoiMSJ9.sa9N5NJJFMRSQokf7Qx2FbF5dZ6xi5u0-X9t9vNzLe3OB-nKhln4mXwaaO8HioXqYQHv0aXUj3aPZiVeEMdH8ZnCWGdHV_gUy1G9yDZyPnKZjhJ6ngzDThhQrOFJjADw6MFNlHPSYM9M9_c3Lp-quNuueJYKRTUPygw9Tw87WszCCBXZJWXbDqHBh13JG7IBba23cQe4MNKvcvnBwaNezBHR7bX9n2M5CBQLIi0SPIIM4o8B0Pjiqm_leXUVnFxbC3ftq0bhfRAwQFqNyIeMgb_sTk-mPmznRmuDLcdWPHU.3XfAC1vC7B9tQejBWENGMDyVir7hZiosEuIpy8eKSpw&dib_tag=se&keywords=hair+care+products&qid=1781064681&sr=8-24",
+    "reviews": 4197,
+    "link": "https://www.amazon.com/dp/B01IAEL3LC/",
     "category": "HairCare",
-    "scrapedAt": "2026-06-10T04:11:20.124Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/512YuhHV9cL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T04:06:23.421Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/512YuhHV9cL._AC_SL1000_.jpg",
+    "priceHistory": [],
+    "reviewsHistory": [],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": true
   },
   {
     "rank": 30,
     "asin": "B07J5T8XNS",
     "title": "Bath & Body Works Works in The Stars Fine Fragrance Mist, 8 Ounce(Limited Edition)",
-    "price": null,
+    "price": 15.49,
     "rating": "4.7 out of 5 stars",
     "ratingValue": 4.7,
-    "reviews": null,
-    "link": "https://www.amazon.com/Bath-Body-Works-Fragrance-Limited/dp/B07J5T8XNS/ref=sr_1_25?dib=eyJ2IjoiMSJ9.t_4PZapEI-OIE9sayiZuOFtIsw7ZH_b75s0IkRuT9Oj2P7wDadwC2_4f5zwCJbzalSJPiFIC7wCht1YqWv4qddFSkz9LtYSLA_pcNXy1t__phIf8Jnz08Wckg4qihq68RGBKpx7j0BEFdv65L5fOl3VWYwnaNipck6kNy4Ra4iCe0J9JD-fXcnfCVu_Fb2E2aW8BG14_ZgSdwCRrEb60n2F1g4Xid4sxb0Pbwo57Cv7Kmfb_RxzRmQUTLIiMXvMBBrnNlau8ChKn3eveU03DV7LntwoJG786R3mynG5Zpro.YhevGJULG1B3jDdao8uICeAcLkFcm06wGi-m28cKGjs&dib_tag=se&keywords=fragrances+for+women&qid=1781064702&sr=8-25",
+    "reviews": 6518,
+    "link": "https://www.amazon.com/dp/B07J5T8XNS/",
     "category": "Fragrances",
-    "scrapedAt": "2026-06-10T04:11:39.628Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/61uH035LLEL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T04:06:43.976Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/61uH035LLEL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 15.49,
+        "at": "2026-06-17T04:06:43.976Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 6518,
+        "at": "2026-06-17T04:06:43.976Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": false,
+    "isAmazonChoice": true
   },
   {
     "rank": 30,
     "asin": "B0B2N9V5SP",
-    "title": "12 Pieces Velour Pure Cotton Powder Puff Face Makeup Triangle Powder Puffs for Loose Powder Wet Dry Cosmetic Foundation Be...",
+    "title": "12 Pieces Velour Pure Cotton Powder Puff Face Makeup Triangle Powder Puffs for Loose Powder Wet Dry Cosmetic Foundation Beauty Sponge Makeup Tools -Black Rose Red",
     "price": 5.99,
     "rating": "4.7 out of 5 stars",
     "ratingValue": 4.7,
-    "reviews": null,
-    "link": "https://www.amazon.com/Pieces-Velour-Triangle-Cosmetic-Foundation/dp/B0B2N9V5SP/ref=sr_1_27?dib=eyJ2IjoiMSJ9.R9N_uOBldLUjkw4FNGv13Wn7Hcqm9V4p2kw-yY9DVehCQD8ZRxO3lFuewMWHhZellfalSF1aPD2HrZs_mLFM3wQ5fAdg_tdiXNSh65KnTQpGebJrQnk2D927WklSUeQLjVhza_9xOAZLOr9TTVMLdpy4DxdjZCia47zQ7pBJIyf9JOsjb61y9SicDRbBquApXNlKgr0dwMx5r2ZIvHFz_iIf5sEUZroUbsMJt1y6u-kgqQYEsp54gDbJFVKVBEhyhB31ZMnwRobSParPfMvb6OpYBQGYA07jfEhTcTVevKE.osGyfjmqzNHw89y99_PnDplwh3B3IpNWtsfkb40dpKo&dib_tag=se&keywords=beauty+tools&qid=1781064721&sr=8-27",
+    "reviews": 1357,
+    "link": "https://www.amazon.com/dp/B0B2N9V5SP/",
     "category": "BeautyTools",
-    "scrapedAt": "2026-06-10T04:12:00.151Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/71ZW6olKLrL._AC_SL1000_.jpg"
+    "scrapedAt": "2026-06-17T04:07:03.850Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/71ZW6olKLrL._AC_SL1000_.jpg",
+    "priceHistory": [
+      {
+        "price": 5.99,
+        "at": "2026-06-10T04:12:00.151Z"
+      },
+      {
+        "price": 5.99,
+        "at": "2026-06-17T04:07:03.850Z"
+      }
+    ],
+    "reviewsHistory": [
+      {
+        "count": 1357,
+        "at": "2026-06-17T04:07:03.850Z"
+      }
+    ],
+    "trendingScore": 0,
+    "isTrending": false,
+    "isBestSeller": true,
+    "isAmazonChoice": true
   }
 ]
