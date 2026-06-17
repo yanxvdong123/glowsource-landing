@@ -281,6 +281,7 @@ function computeOemViability(product) {
 app.get('/api/oem-scores', (req, res) => {
   try {
     const products = JSON.parse(fs.readFileSync(PRODUCTS_FILE, 'utf8'));
+    const minScore = parseInt(req.query.minScore, 10) || 0;
     const scored = products.map(p => ({
       asin: p.asin,
       title: p.title,
@@ -289,10 +290,22 @@ app.get('/api/oem-scores', (req, res) => {
       rating: p.ratingValue,
       reviews: p.reviews,
       isTrending: p.isTrending,
+      isBestSeller: p.isBestSeller,
+      isAmazonChoice: p.isAmazonChoice,
+      imageUrl: p.imageUrl,
+      link: p.link,
+      scrapedAt: p.scrapedAt,
       ...computeOemViability(p),
     }));
     scored.sort((a, b) => b.score - a.score);
-    res.json({ total: scored.length, products: scored });
+    const filtered = minScore > 0 ? scored.filter(p => p.score >= minScore) : scored;
+    res.json({
+      total: scored.length,
+      filteredCount: filtered.length,
+      minScore,
+      lastRefreshed: products[0]?.scrapedAt || null,
+      products: filtered,
+    });
   } catch (err) {
     res.status(500).json({ error: 'Failed to compute OEM scores' });
   }
@@ -375,6 +388,10 @@ app.get('/api/market-data', (req, res) => {
 
 app.get('/admin', basicAuth, (req, res) => {
   res.sendFile(path.join(__dirname, 'admin', 'admin.html'));
+});
+
+app.get('/oem', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'oem.html'));
 });
 
 app.get('*', (req, res) => {

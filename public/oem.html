@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OEM-Ready Products — GlowSource</title>
+  <meta name="description" content="Products we've scored as best-fits for white-label / OEM manufacturing from China. Filter by category, price range, and OEM viability score.">
+  <style>
+    :root {
+      --bg: #faf9f7;
+      --surface: #ffffff;
+      --surface2: #f5f4f1;
+      --text: #1a1a1a;
+      --text-muted: #666666;
+      --accent: #c9a96e;
+      --accent-dark: #a8843f;
+      --accent-light: #f5edd9;
+      --border: #e8e4de;
+      --radius: 12px;
+      --green: #10b981;
+      --amber: #f59e0b;
+      --red: #ef4444;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+
+    header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 16px 0; position: sticky; top: 0; z-index: 50; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-size: 20px; font-weight: 700; color: var(--text); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+    .logo-mark { width: 32px; height: 32px; background: linear-gradient(135deg, var(--accent), var(--accent-dark)); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 16px; }
+    nav { display: flex; gap: 24px; align-items: center; }
+    nav a { color: var(--text-muted); text-decoration: none; font-size: 14px; font-weight: 500; }
+    nav a:hover { color: var(--accent-dark); }
+
+    .hero { padding: 48px 0 24px; text-align: center; }
+    .hero-badge { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-dark); background: var(--accent-light); padding: 6px 14px; border-radius: 999px; margin-bottom: 16px; }
+    .hero h1 { font-size: 36px; font-weight: 800; line-height: 1.2; letter-spacing: -0.02em; max-width: 720px; margin: 0 auto 12px; }
+    .hero h1 em { font-style: normal; color: var(--accent-dark); }
+    .hero p { font-size: 16px; color: var(--text-muted); max-width: 600px; margin: 0 auto 24px; }
+    .hero-stats { display: flex; gap: 32px; justify-content: center; flex-wrap: wrap; margin-top: 8px; }
+    .stat { text-align: center; }
+    .stat-value { font-size: 28px; font-weight: 800; color: var(--accent-dark); letter-spacing: -0.02em; }
+    .stat-label { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+    .layout { display: grid; grid-template-columns: 260px 1fr; gap: 24px; padding: 24px 0 48px; }
+    @media (max-width: 768px) { .layout { grid-template-columns: 1fr; } }
+
+    .filters { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; height: fit-content; position: sticky; top: 88px; }
+    .filters h3 { font-size: 14px; font-weight: 700; margin-bottom: 14px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-muted); }
+    .filter-group { margin-bottom: 18px; }
+    .filter-group label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px; color: var(--text); }
+    .filter-group select, .filter-group input { width: 100%; padding: 9px 11px; border: 1px solid var(--border); border-radius: 8px; font-size: 14px; background: var(--surface); font-family: inherit; color: var(--text); }
+    .filter-group select:focus, .filter-group input:focus { outline: none; border-color: var(--accent); }
+    .filter-group .range-row { display: flex; gap: 8px; align-items: center; }
+    .filter-group .range-row input { flex: 1; }
+    .reset-btn { width: 100%; padding: 9px; background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; font-size: 13px; cursor: pointer; font-weight: 600; color: var(--text-muted); }
+    .reset-btn:hover { background: var(--bg); color: var(--text); }
+
+    .results-bar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; flex-wrap: wrap; gap: 12px; }
+    .results-count { font-size: 14px; color: var(--text-muted); }
+    .results-count strong { color: var(--text); font-weight: 700; }
+    .sort-select { padding: 8px 12px; border: 1px solid var(--border); border-radius: 8px; font-size: 13px; background: var(--surface); }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; transition: border-color 0.15s, box-shadow 0.15s, transform 0.1s; display: flex; flex-direction: column; }
+    .card:hover { border-color: var(--accent); box-shadow: 0 6px 28px rgba(201, 169, 110, 0.18); transform: translateY(-2px); }
+    .card-img { width: 100%; aspect-ratio: 1; background: var(--surface2); display: flex; align-items: center; justify-content: center; font-size: 56px; position: relative; overflow: hidden; }
+    .card-img img { width: 100%; height: 100%; object-fit: cover; }
+    .oem-tag { position: absolute; top: 8px; right: 8px; padding: 4px 10px; border-radius: 999px; font-size: 11px; font-weight: 800; color: white; }
+    .oem-tag.high { background: var(--green); }
+    .oem-tag.mid { background: var(--amber); }
+    .oem-tag.low { background: var(--text-muted); }
+    .card-body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+    .card-cat { font-size: 11px; font-weight: 700; color: var(--accent-dark); text-transform: uppercase; letter-spacing: 0.5px; }
+    .card-title { font-size: 13px; line-height: 1.4; color: var(--text); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 36px; }
+    .card-meta { display: flex; gap: 10px; flex-wrap: wrap; font-size: 12px; color: var(--text-muted); }
+    .card-meta strong { color: var(--text); font-weight: 600; }
+    .card-reasons { font-size: 11px; color: var(--text-muted); background: var(--surface2); padding: 8px 10px; border-radius: 6px; line-height: 1.5; }
+    .card-reasons li { list-style: none; padding-left: 14px; position: relative; }
+    .card-reasons li::before { content: '✓'; position: absolute; left: 0; color: var(--green); font-weight: 700; }
+    .card-actions { display: flex; gap: 6px; margin-top: auto; }
+    .card-btn { flex: 1; padding: 8px 10px; border-radius: 6px; font-size: 12px; font-weight: 600; text-align: center; text-decoration: none; border: 1px solid var(--border); cursor: pointer; background: var(--surface); color: var(--text); }
+    .card-btn:hover { background: var(--surface2); }
+    .card-btn.primary { background: var(--accent); color: white; border-color: var(--accent); }
+    .card-btn.primary:hover { background: var(--accent-dark); border-color: var(--accent-dark); }
+
+    .empty { text-align: center; padding: 60px 20px; color: var(--text-muted); grid-column: 1 / -1; }
+    .empty-icon { font-size: 48px; margin-bottom: 12px; }
+    .loading { text-align: center; padding: 60px 20px; color: var(--text-muted); grid-column: 1 / -1; }
+
+    .footer-cta { background: var(--accent-light); padding: 32px 24px; border-radius: var(--radius); text-align: center; margin-top: 32px; }
+    .footer-cta h3 { font-size: 22px; font-weight: 800; margin-bottom: 8px; color: var(--accent-dark); }
+    .footer-cta p { color: var(--text-muted); margin-bottom: 16px; }
+    .footer-cta .btn { display: inline-block; background: var(--accent); color: white; padding: 12px 28px; border-radius: 8px; text-decoration: none; font-weight: 700; }
+    .footer-cta .btn:hover { background: var(--accent-dark); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-inner">
+        <a href="/" class="logo"><span class="logo-mark">G</span> GlowSource</a>
+        <nav>
+          <a href="/">Home</a>
+          <a href="/oem" style="color:var(--accent-dark);font-weight:700;">OEM Catalog</a>
+          <a href="/#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">For Brand Buyers</div>
+      <h1>OEM-Ready <em>Beauty Products</em></h1>
+      <p>Every product below has been scored for white-label viability. Filter by category, price, and OEM score to find your next product.</p>
+      <div class="hero-stats">
+        <div class="stat"><div class="stat-value" data-stat="total">—</div><div class="stat-label">Products analyzed</div></div>
+        <div class="stat"><div class="stat-value" data-stat="oemReady">—</div><div class="stat-label">OEM-ready (≥80)</div></div>
+        <div class="stat"><div class="stat-value" data-stat="avgRating">—</div><div class="stat-label">Avg rating</div></div>
+        <div class="stat"><div class="stat-value">48h</div><div class="stat-label">Match time</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="layout">
+      <aside class="filters">
+        <h3>Filter</h3>
+
+        <div class="filter-group">
+          <label for="catFilter">Category</label>
+          <select id="catFilter">
+            <option value="">All categories</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label>Price (USD)</label>
+          <div class="range-row">
+            <input type="number" id="priceMin" placeholder="Min" min="0">
+            <span>—</span>
+            <input type="number" id="priceMax" placeholder="Max" min="0">
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label for="minScore">Min OEM Score</label>
+          <select id="minScore">
+            <option value="0">All scores</option>
+            <option value="50">≥ 50 (decent)</option>
+            <option value="70">≥ 70 (good)</option>
+            <option value="80" selected>≥ 80 (highly OEM-ready)</option>
+            <option value="90">≥ 90 (top tier)</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="searchBox">Search by name</label>
+          <input type="text" id="searchBox" placeholder="e.g. lipstick, serum…">
+        </div>
+
+        <button class="reset-btn" onclick="resetFilters()">↺ Reset Filters</button>
+      </aside>
+
+      <div>
+        <div class="results-bar">
+          <div class="results-count">Showing <strong id="visibleCount">0</strong> of <strong id="totalCount">0</strong> products</div>
+          <select class="sort-select" id="sortSelect">
+            <option value="score-desc">Sort: OEM Score ↓</option>
+            <option value="price-asc">Sort: Price ↑</option>
+            <option value="price-desc">Sort: Price ↓</option>
+            <option value="rating-desc">Sort: Rating ↓</option>
+            <option value="reviews-desc">Sort: Reviews ↓</option>
+          </select>
+        </div>
+
+        <div class="grid" id="grid">
+          <div class="loading">Loading OEM catalog…</div>
+        </div>
+
+        <div class="footer-cta">
+          <h3>Found a product you want to OEM?</h3>
+          <p>Tell us which products interest you. We'll match you with verified factories within 48 hours.</p>
+          <a href="/#contact" class="btn">Start a Sourcing Inquiry →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let allProducts = [];
+    const $ = (id) => document.getElementById(id);
+
+    function esc(s) {
+      return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({
+        '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+      }[c]));
+    }
+
+    function fmtPrice(p) {
+      if (p == null || p <= 0) return '—';
+      return '$' + Number(p).toFixed(p % 1 === 0 ? 0 : 2);
+    }
+    function fmtReviews(n) {
+      if (!n) return '0';
+      if (n >= 1000) return (n / 1000).toFixed(1).replace(/\.0$/, '') + 'K';
+      return String(n);
+    }
+    function fmtDate(iso) {
+      if (!iso) return '—';
+      const days = Math.floor((Date.now() - new Date(iso).getTime()) / 86400000);
+      if (days === 0) return 'today';
+      if (days === 1) return 'yesterday';
+      return days + 'd ago';
+    }
+    function emojiFor(cat) {
+      const m = { skincare: '🧴', makeup: '💄', haircare: '💇', fragrances: '🌸', beautytools: '🔧', 'beauty-tools': '🔧' };
+      return m[(cat || '').toLowerCase()] || '🛍️';
+    }
+
+    function tagClass(score) {
+      if (score >= 80) return 'high';
+      if (score >= 50) return 'mid';
+      return 'low';
+    }
+
+    function renderCard(p) {
+      const tag = tagClass(p.score);
+      const reasons = (p.reasons || []).slice(0, 3).map(r => `<li>${esc(r)}</li>`).join('');
+      const amazonHref = esc(p.link || `https://www.amazon.com/dp/${p.asin}`);
+      return `
+        <div class="card">
+          <div class="card-img">
+            <span class="oem-tag ${tag}" title="OEM viability: ${p.score}/100">🏭 ${p.score}</span>
+            ${p.imageUrl ? `<img src="${esc(p.imageUrl)}" alt="${esc(p.title)}" loading="lazy" onerror="this.outerHTML='<div style=font-size:48px>${emojiFor(p.category)}</div>'">` : `<div style="font-size:48px">${emojiFor(p.category)}</div>`}
+          </div>
+          <div class="card-body">
+            <div class="card-cat">${emojiFor(p.category)} ${esc(p.category || '')}</div>
+            <div class="card-title" title="${esc(p.title)}">${esc(p.title)}</div>
+            <div class="card-meta">
+              <span><strong>${fmtPrice(p.price)}</strong> US retail</span>
+              <span>⭐ <strong>${(p.rating || 0).toFixed(1)}</strong> (${fmtReviews(p.reviews)})</span>
+            </div>
+            ${reasons ? `<ul class="card-reasons">${reasons}</ul>` : ''}
+            <div class="card-actions">
+              <a class="card-btn" href="${amazonHref}" target="_blank" rel="noopener">↗ Amazon</a>
+              <a class="card-btn" href="https://s.1688.com/selloffer/offer_search.htm?keywords=${encodeURIComponent((p.title || '').split(' ').slice(0, 4).join(' '))}" target="_blank" rel="noopener">🔍 1688 source</a>
+              <a class="card-btn primary" href="/?product=${encodeURIComponent(p.asin)}#contact">💌 Inquire</a>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function applyFilters() {
+      const cat = $('catFilter').value;
+      const minScore = parseInt($('minScore').value, 10) || 0;
+      const priceMin = parseFloat($('priceMin').value);
+      const priceMax = parseFloat($('priceMax').value);
+      const q = $('searchBox').value.toLowerCase().trim();
+      const sort = $('sortSelect').value;
+
+      let list = allProducts.filter(p => {
+        if (cat && p.category !== cat) return false;
+        if (p.score < minScore) return false;
+        if (!isNaN(priceMin) && (p.price == null || p.price < priceMin)) return false;
+        if (!isNaN(priceMax) && p.price != null && p.price > priceMax) return false;
+        if (q && !(p.title || '').toLowerCase().includes(q)) return false;
+        return true;
+      });
+
+      const [field, dir] = sort.split('-');
+      list.sort((a, b) => {
+        let va, vb;
+        if (field === 'score') { va = a.score; vb = b.score; }
+        else if (field === 'price') { va = a.price || 0; vb = b.price || 0; }
+        else if (field === 'rating') { va = a.rating || 0; vb = b.rating || 0; }
+        else if (field === 'reviews') { va = a.reviews || 0; vb = b.reviews || 0; }
+        else return 0;
+        return dir === 'desc' ? vb - va : va - vb;
+      });
+
+      $('visibleCount').textContent = list.length;
+      const grid = $('grid');
+      if (list.length === 0) {
+        grid.innerHTML = '<div class="empty"><div class="empty-icon">🔍</div><p>No products match these filters. Try lowering the OEM score requirement or widening price range.</p></div>';
+        return;
+      }
+      grid.innerHTML = list.map(renderCard).join('');
+    }
+
+    function resetFilters() {
+      $('catFilter').value = '';
+      $('priceMin').value = '';
+      $('priceMax').value = '';
+      $('minScore').value = '80';
+      $('searchBox').value = '';
+      $('sortSelect').value = 'score-desc';
+      applyFilters();
+    }
+
+    function buildCategoryOptions() {
+      const cats = Array.from(new Set(allProducts.map(p => p.category).filter(Boolean))).sort();
+      const sel = $('catFilter');
+      cats.forEach(c => {
+        const opt = document.createElement('option');
+        opt.value = c;
+        opt.textContent = c;
+        sel.appendChild(opt);
+      });
+    }
+
+    function updateStats() {
+      const total = allProducts.length;
+      const oemReady = allProducts.filter(p => p.score >= 80).length;
+      const rated = allProducts.filter(p => p.rating > 0);
+      const avgRating = rated.length ? rated.reduce((s, p) => s + p.rating, 0) / rated.length : 0;
+      document.querySelectorAll('[data-stat]').forEach(el => {
+        const k = el.dataset.stat;
+        if (k === 'total') el.textContent = total;
+        else if (k === 'oemReady') el.textContent = oemReady;
+        else if (k === 'avgRating') el.textContent = avgRating.toFixed(1);
+      });
+      $('totalCount').textContent = total;
+    }
+
+    // Wire up listeners
+    ['catFilter', 'minScore', 'sortSelect'].forEach(id => $(id).addEventListener('change', applyFilters));
+    ['priceMin', 'priceMax', 'searchBox'].forEach(id => $(id).addEventListener('input', applyFilters));
+
+    // Load
+    fetch('/api/oem-scores?minScore=0', { credentials: 'omit' })
+      .then(r => r.json())
+      .then(data => {
+        allProducts = data.products;
+        buildCategoryOptions();
+        updateStats();
+        applyFilters();
+      })
+      .catch(err => {
+        console.error('oem-scores load failed', err);
+        $('grid').innerHTML = '<div class="empty"><div class="empty-icon">⚠️</div><p>Failed to load OEM catalog. Please refresh.</p></div>';
+      });
+  </script>
+</body>
+</html>
