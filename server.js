@@ -196,6 +196,76 @@ app.get('/api/products', (req, res) => {
   }
 });
 
+// Trending products — sorted by trendingScore desc, top N
+app.get('/api/trending', (req, res) => {
+  try {
+    const limit = parseInt(req.query.limit, 10) || 10;
+    const products = JSON.parse(fs.readFileSync(PRODUCTS_FILE, 'utf8'));
+    const trending = products
+      .filter(p => p.isTrending)
+      .sort((a, b) => (b.trendingScore || 0) - (a.trendingScore || 0))
+      .slice(0, limit);
+    res.json({
+      total: products.length,
+      trendingCount: products.filter(p => p.isTrending).length,
+      lastRefreshed: products[0]?.scrapedAt || null,
+      products: trending,
+    });
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to load trending data' });
+  }
+});
+
+// OEM viability scoring — heuristic for "is this product easy to OEM from China?"
+// Score 0-100 based on price (sweet spot for OEM), rating, review count (low = not monopolized), category maturity
+function computeOemViability(product) {
+  let score = 0;
+  const reasons = [];
+  // Price band: $10-50 is the sweet spot for China OEM (low enough margin to source, high enough ticket)
+  if (product.price != null) {
+    if (product.price >= 10 && product.price <= 50) { score += 30; reasons.push('Price in OEM sweet spot ($10-50)'); }
+    else if (product.price > 5 && product.price < 100) { score += 15; reasons.push('Price workable for OEM'); }
+  }
+  // Rating: >4.5 is the proven demand signal
+  if (product.ratingValue != null) {
+    if (product.ratingValue >= 4.5) { score += 25; reasons.push('Strong rating (4.5+)'); }
+    else if (product.ratingValue >= 4.0) { score += 15; }
+  }
+  // Review count: low = opportunity (not yet monopolized by big brands), high = proven demand
+  if (product.reviews != null) {
+    if (product.reviews >= 100 && product.reviews <= 5000) { score += 25; reasons.push('Proven demand but not saturated'); }
+    else if (product.reviews > 5000 && product.reviews <= 50000) { score += 20; }
+    else if (product.reviews < 100) { score += 10; reasons.push('Too early — demand not proven'); }
+    else if (product.reviews > 50000) { score += 5; reasons.push('Highly competitive — hard to break in'); }
+  }
+  // Category maturity for China OEM
+  const cat = (product.category || '').toLowerCase();
+  if (/skin|makeup|color|beauty|hair|fragrance/.test(cat)) { score += 20; reasons.push('Category has strong China OEM supply chain'); }
+  // Trending bonus
+  if (product.isTrending) { score += 10; reasons.push('Currently trending — good timing'); }
+  return { score: Math.min(score, 100), reasons };
+}
+
+app.get('/api/oem-scores', (req, res) => {
+  try {
+    const products = JSON.parse(fs.readFileSync(PRODUCTS_FILE, 'utf8'));
+    const scored = products.map(p => ({
+      asin: p.asin,
+      title: p.title,
+      category: p.category,
+      price: p.price,
+      rating: p.ratingValue,
+      reviews: p.reviews,
+      isTrending: p.isTrending,
+      ...computeOemViability(p),
+    }));
+    scored.sort((a, b) => b.score - a.score);
+    res.json({ total: scored.length, products: scored });
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to compute OEM scores' });
+  }
+});
+
 app.get('/api/market-data', (req, res) => {
   res.json({
     source: 'beauty-supply-chain-platform',

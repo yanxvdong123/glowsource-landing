@@ -1,12 +1,8 @@
 const https = require('https');
 
 const data = JSON.stringify({
-  query: `query {
-    deploymentLogs(deploymentId: "dd721e3e-f050-4305-9d44-a896b3fef5d8", limit: 100) {
-      severity
-      message
-      timestamp
-    }
+  query: `mutation {
+    serviceInstanceRedeploy(serviceId: "e4789c77-2364-45fe-a206-3ac838a9bf41", environmentId: "6be0be54-72c5-40a8-a668-c1058db48d4e")
   }`,
 });
 
@@ -25,15 +21,7 @@ const req = https.request({
   res.on('data', (c) => (body += c));
   res.on('end', () => {
     console.log('Status:', res.statusCode);
-    const j = JSON.parse(body);
-    if (j.errors) {
-      console.log('Errors:', JSON.stringify(j.errors, null, 2));
-    } else {
-      console.log('Deployment logs:');
-      for (const l of j.data.deploymentLogs) {
-        console.log(`[${l.severity || '?'}] ${l.message}`);
-      }
-    }
+    console.log('Body:', body);
   });
 });
 req.on('error', (e) => console.error('ERR:', e.message));
