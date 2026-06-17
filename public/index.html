@@ -190,6 +190,35 @@
       margin-top: 4px;
     }
 
+    .hero-live-note {
+      font-size: 14px !important;
+      color: var(--text-muted);
+      max-width: 560px;
+      margin: 12px auto 0 !important;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(201, 169, 110, 0.08);
+      padding: 8px 16px;
+      border-radius: 999px;
+      line-height: 1.4 !important;
+    }
+
+    .hero-live-dot {
+      width: 8px;
+      height: 8px;
+      background: #2ecc71;
+      border-radius: 50%;
+      display: inline-block;
+      box-shadow: 0 0 0 4px rgba(46, 204, 113, 0.18);
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 4px rgba(46, 204, 113, 0.18); }
+      50% { box-shadow: 0 0 0 8px rgba(46, 204, 113, 0.05); }
+    }
+
     /* ─── Section shared ─── */
     section { padding: 72px 0; }
 
@@ -661,6 +690,7 @@
     <h1>Source <em>beauty products</em> directly from China — without the headache</h1>
 
     <p>We connect you with verified cosmetics manufacturers in Guangzhou, Yiwu, and across China. OEM formulas, ODM packaging, or ready-stock — matched to your needs in 24 hours.</p>
+    <p class="hero-live-note"><span class="hero-live-dot"></span> Live data: <span data-stat="topRatedCount">—</span> top-rated Amazon products, refreshed weekly</p>
 
     <div class="hero-actions">
       <a href="#contact" class="btn">Start Sourcing →</a>
@@ -669,16 +699,16 @@
 
     <div class="hero-stats">
       <div class="stat">
-        <div class="stat-value">50+</div>
-        <div class="stat-label">Verified Factories</div>
+        <div class="stat-value" data-stat="totalProducts">—</div>
+        <div class="stat-label">Amazon products tracked</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value" data-stat="topRatedCount">—</div>
+        <div class="stat-label">4.6★+ &amp; 500+ reviews</div>
       </div>
       <div class="stat">
         <div class="stat-value">6</div>
         <div class="stat-label">Product Categories</div>
-      </div>
-      <div class="stat">
-        <div class="stat-value">15+</div>
-        <div class="stat-label">Countries Served</div>
       </div>
       <div class="stat">
         <div class="stat-value">48h</div>
@@ -1200,6 +1230,19 @@ document.addEventListener('click', e => {
       console.error('top-products fetch failed', err);
       grid.innerHTML = '<div class="top-products-empty">Couldn\'t load top products.</div>';
     });
+})();
+
+// ─── Hero live stats ───
+(function() {
+  fetch('/api/stats', { credentials: 'omit' })
+    .then(r => r.json())
+    .then(s => {
+      document.querySelectorAll('[data-stat]').forEach(el => {
+        const key = el.dataset.stat;
+        if (s[key] != null) el.textContent = s[key];
+      });
+    })
+    .catch(err => console.warn('stats fetch failed', err));
 })();
 </script>
 

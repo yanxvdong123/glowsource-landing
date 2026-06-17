@@ -302,6 +302,29 @@ app.get('/api/top-products', (req, res) => {
   }
 });
 
+// Live aggregate stats for hero section
+app.get('/api/stats', (req, res) => {
+  try {
+    const products = JSON.parse(fs.readFileSync(PRODUCTS_FILE, 'utf8'));
+    const totalProducts = products.length;
+    const topRatedCount = products.filter(p => p.ratingValue >= 4.6 && p.reviews >= 500).length;
+    const avgRating = (() => {
+      const rated = products.filter(p => p.ratingValue > 0);
+      if (rated.length === 0) return 0;
+      return rated.reduce((s, p) => s + p.ratingValue, 0) / rated.length;
+    })();
+    const lastRefreshed = products[0]?.scrapedAt || null;
+    res.json({
+      totalProducts,
+      topRatedCount,
+      avgRating: Math.round(avgRating * 10) / 10,
+      lastRefreshed,
+    });
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to compute stats' });
+  }
+});
+
 app.get('/api/market-data', (req, res) => {
   res.json({
     source: 'beauty-supply-chain-platform',
