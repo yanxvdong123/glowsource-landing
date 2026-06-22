@@ -46,6 +46,17 @@ function saveLeads(leads) {
   fs.writeFileSync(LEADS_FILE, JSON.stringify(leads, null, 2));
 }
 
+const EVENTS_FILE = path.join(__dirname, 'data', 'events.json');
+function loadEvents() {
+  try {
+    if (!fs.existsSync(EVENTS_FILE)) return [];
+    return JSON.parse(fs.readFileSync(EVENTS_FILE, 'utf8'));
+  } catch { return []; }
+}
+function saveEvents(events) {
+  try { fs.writeFileSync(EVENTS_FILE, JSON.stringify(events, null, 2)); } catch {}
+}
+
 // Email via Resend HTTP API (works from any cloud, no SMTP port needed)
 async function sendContactNotification({ name, email, company, message, interest, productName, productAsin }) {
   const apiKey = process.env.RESEND_API_KEY;
@@ -77,6 +88,28 @@ async function sendContactNotification({ name, email, company, message, interest
 // Routes
 app.get('/health', (req, res) => {
   res.json({ status: 'ok', service: 'beauty-supply-chain', timestamp: new Date().toISOString() });
+});
+
+// First-party analytics
+app.post('/api/track', (req, res) => {
+  try {
+    const { type, path: p, ref } = req.body || {};
+    const events = loadEvents();
+    events.push({
+      type: (type || 'pageview').slice(0, 40), path: (p || '/').slice(0, 200),
+      ref: (ref || '').slice(0, 200), ua: (req.headers['user-agent'] || '').slice(0, 200),
+      at: new Date().toISOString()
+    });
+    saveEvents(events);
+    res.json({ ok: true });
+  } catch { res.json({ ok: false }); }
+});
+app.get('/api/analytics', basicAuth, (req, res) => {
+  const events = loadEvents();
+  const leads = loadLeads();
+  const pageviews = events.filter(e => e.type === 'pageview').length;
+  const ctaClicks = events.filter(e => e.type === 'cta_click').length;
+  res.json({ totalLeads: leads.length, totalPageviews: pageviews, ctaClicks });
 });
 
 // Image cache for product thumbnails
@@ -141,6 +174,29 @@ app.get('/api/leads', basicAuth, (req, res) => {
   res.json({ total: loadLeads().length, leads: loadLeads() });
 });
 
+// Lead pipeline stats (counts per status)
+app.get('/api/lead-stats', basicAuth, (req, res) => {
+  const leads = loadLeads();
+  const counts = { new: 0, contacted: 0, replied: 0, qualified: 0, closed_won: 0, closed_lost: 0 };
+  leads.forEach(l => {
+    const s = l.status || 'new';
+    if (counts[s] != null) counts[s]++;
+  });
+  // Recent activity
+  const recent = leads
+    .filter(l => l.notes && l.notes.length)
+    .sort((a, b) => {
+      const an = a.notes[a.notes.length - 1].at;
+      const bn = b.notes[b.notes.length - 1].at;
+      return new Date(bn) - new Date(an);
+    })
+    .slice(0, 5)
+    .map(l => ({ id: l.id, name: l.name, lastNote: l.notes[l.notes.length - 1] }));
+  res.json({ total: leads.length, counts, recent });
+});
+
+const ALLOWED_STATUSES = ['new', 'contacted', 'replied', 'qualified', 'closed_won', 'closed_lost'];
+
 app.patch('/api/leads/:id', basicAuth, (req, res) => {
   const { id } = req.params;
   const { status, note } = req.body;
@@ -148,9 +204,15 @@ app.patch('/api/leads/:id', basicAuth, (req, res) => {
   const idx = leads.findIndex(l => l.id === id);
   if (idx === -1) return res.status(404).json({ error: 'Lead not found' });
   if (status) {
+    if (!ALLOWED_STATUSES.includes(status)) {
+      return res.status(400).json({ error: `Invalid status. Allowed: ${ALLOWED_STATUSES.join(', ')}` });
+    }
     leads[idx].status = status;
-    if (status === 'contacted') leads[idx].contactedAt = new Date().toISOString();
-    if (status === 'replied') leads[idx].repliedAt = new Date().toISOString();
+    const now = new Date().toISOString();
+    if (status === 'contacted') leads[idx].contactedAt = now;
+    if (status === 'replied') leads[idx].repliedAt = now;
+    if (status === 'qualified') leads[idx].qualifiedAt = now;
+    if (status === 'closed_won' || status === 'closed_lost') leads[idx].closedAt = now;
   }
   if (note !== undefined) {
     if (!leads[idx].notes) leads[idx].notes = [];

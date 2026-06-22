@@ -4,3 +4,6 @@ node_modules/
 .DS_Store
 data/image-urls.json
 data/image-cache.json
+
+data/events.json
+data/leads.json

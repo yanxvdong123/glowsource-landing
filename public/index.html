@@ -998,6 +998,16 @@
 </footer>
 
 <script>
+  // ─── First-party analytics ──────────────────────────────────────────────────
+  function track(type){
+    try{ fetch('/api/track',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({type:type,path:location.pathname,ref:document.referrer})}); }catch(e){}
+  }
+  track('pageview');
+  document.querySelectorAll('a.btn, button.btn').forEach(function(el){
+    el.addEventListener('click', function(){ track('cta_click'); });
+  });
+
   // ─── Contact Form ───────────────────────────────────────────────────────────
   document.getElementById('contact-form').addEventListener('submit', async function(e) {
     e.preventDefault();
@@ -1024,6 +1034,7 @@
       });
 
       if (res.ok) {
+        track('lead');
         form.style.display = 'none';
         document.getElementById('form-success').classList.add('show');
       } else {
